@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-[[https://github.com/javan/whenever]]\\
+<https://github.com/javan/whenever>
 
 Add to gemfile
   gem 'whenever'

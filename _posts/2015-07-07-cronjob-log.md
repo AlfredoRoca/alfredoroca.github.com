@@ -2,12 +2,12 @@
 layout: post
 title: "cronjob log"
 description: ""
-category: 
+category: [linux, cronjobs]
 tags: []
 ---
 {% include JB/setup %}
 
-====== Cron log file ======
+###### Cron log file ######
 log file: /var/log/cron
 
   systemctl status crond.service -l
