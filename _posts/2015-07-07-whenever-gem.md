@@ -29,3 +29,4 @@ Update crontab
 Overwrite the whole crontab (be careful with this one!)
     bundle exec whenever -w
     current/bin/whenever -w
+
