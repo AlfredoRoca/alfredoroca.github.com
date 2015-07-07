@@ -2,6 +2,6 @@
 layout: page
 title: "Cronjobs"
 description: ""
-category : linux
+category: linux
 ---
 {% include JB/setup %}
