@@ -2,8 +2,8 @@
 layout: post
 title: "Setting up development environment"
 description: ""
-category: 
-tags: []
+category: [Installation]
+tags: [Installation]
 ---
 {% include JB/setup %}
 

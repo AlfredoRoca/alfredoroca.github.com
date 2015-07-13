@@ -2,8 +2,8 @@
 layout: post
 title: "Sorcery & RSpec"
 description: ""
-category: 
-tags: []
+category: [Sorcery, Rspec, Test]
+tags: [RSpec, Test]
 ---
 {% include JB/setup %}
 

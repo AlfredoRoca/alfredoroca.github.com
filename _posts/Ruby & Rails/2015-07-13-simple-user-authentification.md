@@ -2,7 +2,7 @@
 layout: post
 title: "Simple user authentification"
 description: ""
-category: [User authentification] 
+category: [User authentification, Ruby, Rails] 
 tags: [User authentification]
 ---
 {% include JB/setup %}

@@ -2,8 +2,8 @@
 layout: post
 title: "Ruby, Node, Rails on Ubuntu 14.04"
 description: ""
-category: 
-tags: []
+category: [Installation]
+tags: [Installation, Rails]
 ---
 {% include JB/setup %}
 

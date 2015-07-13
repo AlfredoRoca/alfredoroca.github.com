@@ -3,7 +3,7 @@ layout: post
 title: "Email configuration"
 description: ""
 category: [Email configuration] 
-tags: [Email configuration]
+tags: [Email, configuration]
 ---
 {% include JB/setup %}
 

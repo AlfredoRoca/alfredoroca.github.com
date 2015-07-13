@@ -141,11 +141,11 @@ Check if rails server can start
 
 </div>
 
-<h1 class="sectionedit3" id="reinicio_instancias_thin_-_shk">Reinicio instancias thin - SHK</h1>
+<h1 class="sectionedit3" id="reinicio_instancias_thin_-_shk">Thin instances restart - SHK</h1>
 <div class="level1">
 
 <p>
-Con el fichero para de configuración para permitir manejar las instancias de thin por separado:
+Every thin instance has its own configuration file:
 </p>
 <pre class="code">thin restart -C /etc/thin/shk.yml</pre>
 
