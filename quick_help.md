@@ -30,3 +30,5 @@ group: navigation
 [http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax)
 
 [http://greg.schueler.us/doc/markdown.txt](http://greg.schueler.us/doc/markdown.txt)
+
+[http://blog.ghost.org/markdown/](http://blog.ghost.org/markdown/)
