@@ -5,7 +5,7 @@ group: navigation
 ---
 {% include JB/setup %}
 
-# Table of contents creation from the markdown file
+# Generate Table of contents from the markdown file
 
     # create_toc.rb
     With next ruby code:
@@ -20,7 +20,7 @@ group: navigation
         end
       end
     else
-      puts "Usage: ruby create_toc <file>"
+      puts "Usage: ruby create_toc <md file>"
     end
 
 # New post creation
