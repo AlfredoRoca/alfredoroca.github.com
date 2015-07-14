@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "New app"
+title: "HABTM association migration"
 description: ""
 category: [Rails]
 tags: [Rails, associations, migrations, habtm]
