@@ -36,6 +36,7 @@ Combine file contents joining rows with delimiters
 
 # join
 Same as join checking common columns
+
     $ cat phonebook
     555-123-4567 Bob
     555-231-3325 Carol
@@ -49,6 +50,7 @@ Same as join checking common columns
     555-289-6193 Youngstown    
 
 The result of joining these two file is as shown in the output of the following command:
+
     $ join phonebook directory
     555-123-4567 Bob Anytown
     555-231-3325 Carol Mytown
