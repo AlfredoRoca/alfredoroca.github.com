@@ -34,7 +34,7 @@ Combine file contents joining rows with delimiters
     c457:3
     d3:4
 
-# join
+# Join
 Same as join checking common columns
 
     $ cat phonebook

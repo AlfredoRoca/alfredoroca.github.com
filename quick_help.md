@@ -31,4 +31,4 @@ group: navigation
 
 [http://greg.schueler.us/doc/markdown.txt](http://greg.schueler.us/doc/markdown.txt)
 
-[http://blog.ghost.org/markdown/](http://blog.ghost.org/markdown/)
+[http://blog.ghost.org/markdown/](http://support.ghost.org/markdown-guide/)
