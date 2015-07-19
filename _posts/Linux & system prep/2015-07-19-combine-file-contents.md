@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "combine file contents"
+title: "Combine file contents"
 description: ""
 category: Linux
 tags: [paste, join, file manipulation, file combination]

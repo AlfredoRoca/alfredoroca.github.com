@@ -3,7 +3,7 @@ layout: post
 title: "Sort file contents"
 description: ""
 category: Linux
-tags: [sort, file manipulation]
+tags: [sort, file manipulation, file combination]
 ---
 {% include JB/setup %}
 
