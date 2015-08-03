@@ -9,9 +9,9 @@ tags: [input form validation]
 
 JS
 
-  iban = "string";  
-  re = /^[a-zA-Z]{2}\d{2}\s*([0-9]{4}\s*){5}$/;  
-  valid = iban.match(re) != null;
+    iban = "string";  
+    re = /^[a-zA-Z]{2}\d{2}\s*([0-9]{4}\s*){5}$/;  
+    valid = iban.match(re) != null;
 
 In the model
 
@@ -51,9 +51,9 @@ Example
     $(document).on('page:load', bindIbanValidation);
 
 
-#
-# bank_account.html.erb
-#
+    #
+    # bank_account.html.erb
+    #
     <% content_for :js do %>  
       <%= javascript_include_tag 'validate-iban.js', 'data-turbolinks-track' => true %>
     <% end -%>
@@ -84,9 +84,9 @@ Example
     <script>bindIbanValidation();
     </script>
 
-#
-# profile.scss
-#
+    #
+    # profile.scss
+    #
 
     .with-validation-marks {  
       input {    

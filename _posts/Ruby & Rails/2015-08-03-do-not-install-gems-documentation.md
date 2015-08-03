@@ -7,4 +7,6 @@ tags: []
 ---
 {% include JB/setup %}
 
-    --no-document in ~/.gemrc or /etc/gemrc
+Add following line in ~/.gemrc or /etc/gemrc
+
+    --no-document 

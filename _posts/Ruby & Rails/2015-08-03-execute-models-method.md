@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "EXECUTE MODEL'S METHOD IN COMMAND CONSOLE OR WITH A CRONJOB"
+title: "Execute model's method in command console or with a cronjob"
 description: ""
 category: [Rails, cronjob]
 tags: [cronjob]
@@ -15,7 +15,8 @@ tags: [cronjob]
 
     $ rails runner Booking.pay_the_keepers
 
-whenever schedule taskhttps://github.com/javan/whenever
+whenever schedule task
+https://github.com/javan/whenever
 
     every 1.day, at: '23:00' do
         runner 'Booking.pay_the_keepers"
