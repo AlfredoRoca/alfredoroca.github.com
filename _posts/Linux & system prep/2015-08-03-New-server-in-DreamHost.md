@@ -59,7 +59,7 @@ Check with
 
     date
 
-#firewall
+##firewall
     yum install -y iptables-services
     systemctl enable iptables
     => Created symlink from /etc/systemd/system/basic.target.wants/iptables.service to /usr/lib/systemd/system/iptables.service.
@@ -101,9 +101,11 @@ Check with
         REJECT     all  --  anywhere             anywhere             reject-with icmp-host-prohibited
         ...
 
+## locate (optional)
     yum install -y mlocate
     updatedb
 
+##nginx
 [https://fedoraproject.org/wiki/Nginx](https://fedoraproject.org/wiki/Nginx){:target='_blank'}
 
     yum install nginx
@@ -132,6 +134,7 @@ Nginx needs to have *read* permissions for the file as well as *execute* permiss
         drwxrwxr-x root root 67webs.com
         -rw-rw-r-- root root index.html
 
+##SELinux
 If 403 error persists check and setup SELinux
 
 Source: [http://stackoverflow.com/questions/22586166/why-does-nginx-return-a-403-even-though-all-permissions-are-set-properly](http://stackoverflow.com/questions/22586166/why-does-nginx-return-a-403-even-though-all-permissions-are-set-properly)
@@ -147,7 +150,33 @@ If this solved the problem
     chcon -Rt httpd_sys_content_t /var/www
     setenforce Enforcing
 
-
+## DNS
 In register (Whois) change DNS to ns1, ns2, ns3.dreamhost.com
 In DH, add custom DNS record type A "" and "www" pointing to the assigned IP
+
+## RVM
+Create rvm group as superuser
+
+    groupadd rvm
+    usermod -a -G rvm root
+    usermod -a -G rvm <other users>
+    exit
+    su alfredo
+    gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+    \curl -sSL https://get.rvm.io | bash -s stable
+    source /home/alfredo/.rvm/scripts/rvm
+
+###Ruby
+    rvm install 2.2.1
+    rvm gemset create gemset_name    # create a gemset
+    rvm 2.2.1@gemset_name  # specify Ruby version and our new gemset
+
+###Rails
+Edit ~/.gemrc
+    install: --no-document
+    update: --no-document
+    
+    gem install rails [-v rails_version  # install specific Rails version]
+
+
 

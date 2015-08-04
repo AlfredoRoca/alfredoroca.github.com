@@ -102,6 +102,10 @@ Ex:
 
     Jun 10 12:14:50 VBoxDev1 sudo:  alfredo : TTY=pts/0 ; PWD=/home/alfredo ; USER=root ; COMMAND=/bin/cat /etc/sudoers.d/README
 
+#which group user belongs to
+    groups <user name>
+
+
 #profile
 
 On boot:
