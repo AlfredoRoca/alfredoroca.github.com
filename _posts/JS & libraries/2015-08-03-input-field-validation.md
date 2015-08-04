@@ -2,8 +2,8 @@
 layout: post
 title: "Input field validation in JS"
 description: ""
-category: [JS]
-tags: [input form validation]
+category: [js]
+tags: [input_form_validation]
 ---
 {% include JB/setup %}
 

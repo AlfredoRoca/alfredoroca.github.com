@@ -2,8 +2,8 @@
 layout: post
 title: "node.js installation"
 description: ""
-category: [NodeJS, JS]
-tags: [NodeJS, JS]
+category: [nodejs, js]
+tags: [nodejs, js]
 ---
 {% include JB/setup %}
 

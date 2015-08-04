@@ -2,8 +2,8 @@
 layout: post
 title: "Custom logger"
 description: ""
-category: [Logger] 
-tags: [Logger]
+category: [logger] 
+tags: [logger]
 ---
 {% include JB/setup %}
 

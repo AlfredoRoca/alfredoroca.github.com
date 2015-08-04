@@ -2,8 +2,8 @@
 layout: post
 title: "PSD to HTML"
 description: ""
-category: [PSD, design] 
-tags: [CSS, design, PSD]
+category: [psd, design] 
+tags: [css, design, psd]
 ---
 {% include JB/setup %}
 

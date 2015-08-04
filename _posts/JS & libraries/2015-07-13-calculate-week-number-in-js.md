@@ -2,8 +2,8 @@
 layout: post
 title: "Calculate week number in JS"
 description: ""
-category: JS 
-tags: [week number, JS]
+category: js 
+tags: [week_number, js]
 ---
 {% include JB/setup %}
 <h1 class="sectionedit1" id="calculate_week_number_in_js">Calculate week number in JS</h1>

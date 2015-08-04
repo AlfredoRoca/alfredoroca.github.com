@@ -3,7 +3,7 @@ layout: post
 title: "Resolve a conflict and test a remote branch in local machine before merging"
 description: ""
 category: [git]
-tags: [conflict resolution, workflow]
+tags: [conflict_resolution, workflow]
 ---
 {% include JB/setup %}
 

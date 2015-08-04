@@ -2,8 +2,8 @@
 layout: post
 title: "Advanced CSS"
 description: ""
-category: [CSS, design] 
-tags: [CSS, design, flexbox]
+category: [css, design] 
+tags: [design, flexbox]
 ---
 {% include JB/setup %}
 

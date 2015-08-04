@@ -3,7 +3,7 @@ layout: post
 title: "Image upload"
 description: ""
 category: Image Upload
-tags: [Image, upload]
+tags: [image, upload]
 ---
 {% include JB/setup %}
 

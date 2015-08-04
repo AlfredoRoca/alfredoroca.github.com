@@ -2,8 +2,8 @@
 layout: post
 title: "Seed data from a file"
 description: ""
-category: [Rails]
-tags: [import data, seed data]
+category: [rails]
+tags: [import_data, seed_data]
 ---
 {% include JB/setup %}
 

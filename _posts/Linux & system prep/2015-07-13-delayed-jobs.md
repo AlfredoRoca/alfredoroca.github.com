@@ -2,8 +2,8 @@
 layout: post
 title: "Delayed jobs"
 description: ""
-category: [ Delayed jobs, Cronjobs] 
-tags: [Delayed jobs, Cronjosbs]
+category: [ delayed_jobs, cronjobs] 
+tags: [delayed jobs, cronjobs]
 ---
 {% include JB/setup %}
 

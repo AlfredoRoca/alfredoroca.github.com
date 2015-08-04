@@ -2,8 +2,8 @@
 layout: post
 title: "Read text files"
 description: ""
-category: [Ruby]
-tags: [read files]
+category: [ruby]
+tags: [read_files]
 ---
 {% include JB/setup %}
 

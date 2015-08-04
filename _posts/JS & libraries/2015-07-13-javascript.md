@@ -2,8 +2,8 @@
 layout: post
 title: "Javascript"
 description: ""
-category: [JS, events, event binding] 
-tags: [JS, events, event binding]
+category: [js, events, event_binding] 
+tags: [js, events, event_binding]
 ---
 {% include JB/setup %}
 

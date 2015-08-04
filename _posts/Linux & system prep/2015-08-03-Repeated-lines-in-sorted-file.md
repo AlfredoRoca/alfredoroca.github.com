@@ -2,8 +2,8 @@
 layout: post
 title: "Report or delete repeated lines in sorted file"
 description: ""
-category: [Linux]
-tags: [text processing, file processing]
+category: [linux]
+tags: [text_manipulation, file_manipulation]
 ---
 {% include JB/setup %}
 

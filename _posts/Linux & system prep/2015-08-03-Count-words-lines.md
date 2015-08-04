@@ -2,8 +2,8 @@
 layout: post
 title: "Count lines, words in a file"
 description: ""
-category: [Linux]
-tags: [text processing]
+category: [linux]
+tags: [text_manipulation]
 ---
 {% include JB/setup %}
 

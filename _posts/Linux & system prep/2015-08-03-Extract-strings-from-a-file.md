@@ -2,8 +2,8 @@
 layout: post
 title: "Extract strings from a file"
 description: ""
-category: [Linux]
-tags: [text processing]
+category: [linux]
+tags: [text_manipulation]
 ---
 {% include JB/setup %}
 

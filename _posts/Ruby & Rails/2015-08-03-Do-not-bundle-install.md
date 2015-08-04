@@ -2,8 +2,8 @@
 layout: post
 title: "Do not bundle install on new app creation"
 description: ""
-category: [Rails]
-tags: [new app, bundle]
+category: [rails]
+tags: [new_app, bundle]
 ---
 {% include JB/setup %}
 

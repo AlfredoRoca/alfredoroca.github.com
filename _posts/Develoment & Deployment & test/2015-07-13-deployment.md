@@ -2,8 +2,8 @@
 layout: post
 title: "Deployment"
 description: ""
-category: [Deployment] 
-tags: [Deployment]
+category: [deployment] 
+tags: [deployment]
 ---
 {% include JB/setup %}
 

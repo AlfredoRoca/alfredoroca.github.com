@@ -2,7 +2,7 @@
 layout: post
 title: "SSL in local development"
 description: ""
-category: [Rails, SSL]
+category: [rails, ssl]
 tags: [development]
 ---
 {% include JB/setup %}

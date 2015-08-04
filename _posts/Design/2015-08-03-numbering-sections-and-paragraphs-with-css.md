@@ -2,7 +2,7 @@
 layout: post
 title: "Numbering sections and paragraphs with CSS"
 description: ""
-category: [HTML, CSS]
+category: [html, css]
 tags: [index, numbering]
 ---
 {% include JB/setup %}

@@ -2,7 +2,7 @@
 layout: post
 title: "nil? vs empty? vs blank?"
 description: ""
-category: [Ruby]
+category: [ruby]
 tags: []
 ---
 {% include JB/setup %}

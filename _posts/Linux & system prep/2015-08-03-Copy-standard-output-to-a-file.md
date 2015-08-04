@@ -2,7 +2,7 @@
 layout: post
 title: "Copy standard output to a file"
 description: ""
-category: [Linux]
+category: [linux]
 tags: []
 ---
 {% include JB/setup %}

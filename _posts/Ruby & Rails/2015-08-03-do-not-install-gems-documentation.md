@@ -2,7 +2,7 @@
 layout: post
 title: "Do not install gems documentation"
 description: ""
-category: [Rails]
+category: [rails]
 tags: []
 ---
 {% include JB/setup %}

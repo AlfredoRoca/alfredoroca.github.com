@@ -2,8 +2,8 @@
 layout: post
 title: "Combine file contents"
 description: ""
-category: Linux
-tags: [paste, join, file manipulation, file combination]
+category: [linux]
+tags: [paste, join, file_manipulation, file_combination]
 ---
 {% include JB/setup %}
 

@@ -2,8 +2,8 @@
 layout: post
 title: "Change characters inside a file"
 description: ""
-category: [Linux]
-tags: [file processing, text processing]
+category: [linux]
+tags: [file_manipulation, text_manipulation]
 ---
 {% include JB/setup %}
 

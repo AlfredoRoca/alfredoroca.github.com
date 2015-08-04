@@ -2,8 +2,8 @@
 layout: post
 title: "Capistrano"
 description: ""
-category: [Capistrano, Deployment] 
-tags: [Capistrano, Deployment]
+category: [capistrano, deployment] 
+tags: [capistrano, deployment]
 ---
 {% include JB/setup %}
 

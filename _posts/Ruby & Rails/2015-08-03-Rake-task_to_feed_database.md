@@ -2,8 +2,8 @@
 layout: post
 title: "Rake task to feed the database"
 description: ""
-category: [Rails, rake]
-tags: [feed database, rake]
+category: [rails, rake]
+tags: [feed_database, rake]
 ---
 {% include JB/setup %}
 

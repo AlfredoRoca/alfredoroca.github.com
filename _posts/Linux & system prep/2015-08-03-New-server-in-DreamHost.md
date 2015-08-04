@@ -2,8 +2,8 @@
 layout: post
 title: "Creating server in DreamHost.com"
 description: ""
-category: [system configuration]
-tags: [new install]
+category: [system_configuration]
+tags: [new_install]
 ---
 {% include JB/setup %}
 

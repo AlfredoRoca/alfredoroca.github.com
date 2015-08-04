@@ -2,7 +2,7 @@
 layout: post
 title: "Execute JS and submit form"
 description: ""
-category: [Rails, JS]
+category: [rails, js]
 tags: [js]
 ---
 {% include JB/setup %}

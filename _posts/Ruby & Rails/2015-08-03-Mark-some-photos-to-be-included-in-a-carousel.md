@@ -2,7 +2,7 @@
 layout: post
 title: "Mark some photos with a boolean field to be included in a carrousel"
 description: ""
-category: [Rails]
+category: [rails]
 tags: []
 ---
 {% include JB/setup %}

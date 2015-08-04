@@ -2,7 +2,7 @@
 layout: post
 title: "rake db:migrate fails with unitialized constant CKEditor"
 description: ""
-category: [rails, ckeditor]
+category: [rails, CKeditor]
 tags: []
 ---
 {% include JB/setup %}

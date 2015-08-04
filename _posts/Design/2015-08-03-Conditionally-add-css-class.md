@@ -2,7 +2,7 @@
 layout: post
 title: "Conditionally add css class"
 description: ""
-category: [Ruby, Rails, CSS]
+category: [ruby, rails, css]
 tags: []
 ---
 {% include JB/setup %}

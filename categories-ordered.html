@@ -1,0 +1,20 @@
+---
+layout: page
+title: Categories (ordered)
+header: Posts By Category
+group: navigation
+---
+{% include JB/setup %}
+{% capture categories %}
+  {% for category in site.categories %}
+    {{ category[0] | downcase }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedcategories = categories | split:' ' | sort %}
+
+<ul class="tag_box inline">
+  {% assign categories_list = sortedcategories %}
+  {% include JB/categories_list %}
+</ul>
+
+

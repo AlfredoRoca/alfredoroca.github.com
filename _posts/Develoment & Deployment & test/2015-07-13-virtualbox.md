@@ -2,8 +2,8 @@
 layout: post
 title: "VirtualBox"
 description: ""
-category: VirtualBox
-tags: [VirtualBox]
+category: [virtualbox]
+tags: [virtualbox]
 ---
 {% include JB/setup %}
 <!-- TOC START -->

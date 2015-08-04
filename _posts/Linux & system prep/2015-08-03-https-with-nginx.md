@@ -2,7 +2,7 @@
 layout: post
 title: "Proxy HTTPS requests to a HTTP backend with NGINX"
 description: ""
-category: [Rails, SSL, nginx]
+category: [rails, ssl, nginx]
 tags: []
 ---
 {% include JB/setup %}

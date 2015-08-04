@@ -32,3 +32,6 @@ group: navigation
 [http://greg.schueler.us/doc/markdown.txt](http://greg.schueler.us/doc/markdown.txt){:target="_blank"}
 
 [http://blog.ghost.org/markdown/](http://support.ghost.org/markdown-guide/){:target="_blank"}
+
+#Liquid
+[https://github.com/Shopify/liquid/wiki/Liquid-for-Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers){:target="_blank"}

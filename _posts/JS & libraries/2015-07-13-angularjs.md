@@ -2,8 +2,8 @@
 layout: post
 title: "AngularJS"
 description: ""
-category: [AngularJS, JS, Frameworks]
-tags: [AngularJS]
+category: [angularjs, js, frameworks]
+tags: [angularjs]
 ---
 {% include JB/setup %}
 

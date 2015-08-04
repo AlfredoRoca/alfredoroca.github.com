@@ -3,7 +3,7 @@ layout: post
 title: "Rake tasks"
 description: ""
 category: [Rake]
-tags: [Rake]
+tags: [rake]
 ---
 {% include JB/setup %}
 

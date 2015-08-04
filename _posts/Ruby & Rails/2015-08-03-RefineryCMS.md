@@ -2,8 +2,8 @@
 layout: post
 title: "REFINERY CMS clean install"
 description: ""
-category: [Rails, REfineryCMS]
-tags: [new install]
+category: [rails, refinerycms]
+tags: [new_install]
 ---
 {% include JB/setup %}
 

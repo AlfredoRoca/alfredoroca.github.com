@@ -2,8 +2,8 @@
 layout: post
 title: "Date and DateTime differences"
 description: ""
-category: [Ruby, Rails]
-tags: [Date, DateTime]
+category: [ruby, rails]
+tags: [date, datetime]
 ---
 {% include JB/setup %}
 
