@@ -173,10 +173,50 @@ Create rvm group as superuser
 
 ###Rails
 Edit ~/.gemrc
+
     install: --no-document
     update: --no-document
-    
+
     gem install rails [-v rails_version  # install specific Rails version]
+
+###PostgreSQL
+
+Source: [https://fedoraproject.org/wiki/PostgreSQL](https://fedoraproject.org/wiki/PostgreSQL)
+
+    sudo yum install postgresql-server postgresql-contrib
+    sudo systemctl enable postgresql
+    sudo postgresql-setup initdb
+    sudo systemctl start postgresql
+    sudo yum install pgadmin3   -> optional
+    sudo su - postgres
+    psql
+    => postgres=# 
+        \password postgres
+        create user <user-name> with password <pw>;
+
+/var/lib/pgsql/data/postgresql.conf change
+
+    log_destination = 'stderr'
+    logging_collector = on
+    log_filename = 'postgresql-%G-%m.log'
+    log_truncate_on_rotation = off
+    log_rotation_age = 31d
+    client_min_messages = notice
+    log_min_messages = info
+    log_min_error_statement = notice
+    log_min_duration_statement = 1000  # in ms
+    log_line_prefix = '%t %u@%r:%d [%p] '
+    # %t -- timestamp
+    # %u -- user
+    # %r -- client's host
+    # %d -- database
+    # %p -- PID
+    log_line_prefix = '%t [%p] '  -> simplified for one user one db
+
+    systemctl restart postgresql
+    
+
+
 
 
 
