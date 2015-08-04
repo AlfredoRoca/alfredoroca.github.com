@@ -148,4 +148,6 @@ If this solved the problem
     setenforce Enforcing
 
 
+In register (Whois) change DNS to ns1, ns2, ns3.dreamhost.com
+In DH, add custom DNS record type A "" and "www" pointing to the assigned IP
 
