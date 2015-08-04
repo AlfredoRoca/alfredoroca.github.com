@@ -121,3 +121,31 @@ In /etc/nginx/conf.d
 
     systemctl restart nginx.service
 
+priviledges: apply 755 for directories and 644 for files
+Nginx needs to have *read* permissions for the file as well as *execute* permissions for all the folders in the path
+    namei -l /var/www/67webs.com/index.html
+    =>
+        f: /var/www/67webs.com/index.html
+        dr-xr-xr-x root root /
+        drwxr-xr-x root root var
+        drwxr-xr-x root root www
+        drwxrwxr-x root root 67webs.com
+        -rw-rw-r-- root root index.html
+
+If 403 error persists check and setup SELinux
+
+Source: [http://stackoverflow.com/questions/22586166/why-does-nginx-return-a-403-even-though-all-permissions-are-set-properly](http://stackoverflow.com/questions/22586166/why-does-nginx-return-a-403-even-though-all-permissions-are-set-properly)
+
+    getenforce
+    => Enforcing
+    setenforce Permissive
+
+Check with curl localhost
+
+If this solved the problem
+
+    chcon -Rt httpd_sys_content_t /var/www
+    setenforce Enforcing
+
+
+
