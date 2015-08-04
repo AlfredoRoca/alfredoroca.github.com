@@ -27,8 +27,8 @@ group: navigation
     rake post title="new post title"
 
 # Markdown sintaxis
-[http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax)
+[http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax){:target="_blank"}
 
-[http://greg.schueler.us/doc/markdown.txt](http://greg.schueler.us/doc/markdown.txt)
+[http://greg.schueler.us/doc/markdown.txt](http://greg.schueler.us/doc/markdown.txt){:target="_blank"}
 
-[http://blog.ghost.org/markdown/](http://support.ghost.org/markdown-guide/)
+[http://blog.ghost.org/markdown/](http://support.ghost.org/markdown-guide/){:target="_blank"}

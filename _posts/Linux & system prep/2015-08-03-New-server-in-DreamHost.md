@@ -22,9 +22,10 @@ Access & security
 Associate floating IP
 
 OpenStack client for accessing through ssh console
-http://wiki.dreamhost.com/Launch_an_Instance_from_the_Command_Line
 
-http://docs.openstack.org/user-guide/common/cli_install_openstack_command_line_clients.html
+[http://wiki.dreamhost.com/Launch_an_Instance_from_the_Command_Line](http://wiki.dreamhost.com/Launch_an_Instance_from_the_Command_Line){:target="_blank"}
+
+[http://docs.openstack.org/user-guide/common/cli_install_openstack_command_line_clients.html](http://docs.openstack.org/user-guide/common/cli_install_openstack_command_line_clients.html){:target="_blank"}
 
 and set environment variables using the OpenStack RC file: http://docs.openstack.org/user-guide/common/cli_set_environment_variables_using_openstack_rc.html
 SSH login to floating IP addr

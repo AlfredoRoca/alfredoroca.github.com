@@ -7,4 +7,4 @@ tags: []
 ---
 {% include JB/setup %}
 
-http://serverfault.com/questions/145383/proxy-https-requests-to-a-http-backend-with-nginx
+[http://serverfault.com/questions/145383/proxy-https-requests-to-a-http-backend-with-nginx](http://serverfault.com/questions/145383/proxy-https-requests-to-a-http-backend-with-nginx){:target="_blank"}
