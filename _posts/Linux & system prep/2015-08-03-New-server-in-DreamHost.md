@@ -251,8 +251,3 @@ Source: [https://fedoraproject.org/wiki/PostgreSQL](https://fedoraproject.org/wi
 ## Rails App folder
     mkdir /var/www/shk
     chown -R /var/www deployer:deployers
-
-
-
-
-
