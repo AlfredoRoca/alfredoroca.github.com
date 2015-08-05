@@ -258,6 +258,7 @@ As deployer user
     => postgres=# 
         \password postgres
         create user <user-name> with password <pw>;
+        ALTER USER myuser WITH SUPERUSER;
 
 /var/lib/pgsql/data/postgresql.conf change
 
@@ -319,5 +320,5 @@ As deployer user
 
 Login server, cd /app_folder/releases/<release> and execute
 
-    bundle exec rake db:create
-    bundle exec rake db:seed
+    RAILS_ENV=staging bundle exec rake db:create
+    RAILS_ENV=staging bundle exec rake db:seed
