@@ -49,15 +49,19 @@ login again as superuser
     
 ##GROUPS AND USERS
 
-###create password for root
+###Create password for root
     passwd  => pw for root
 
-###deployers group with root access
+###Deployers group with root access
     groupadd deployers
-    visudo   and add line
-        %deployers      ALL=(ALL) ALL
 
-###add users to deployers group
+###Sudoers config
+Create file /etc/sudoers.d/myuser with one or more lines like
+    myuser ALL=(ALL) NOPASSWD: /usr/sbin/service nginx start,/usr/sbin/service nginx stop,/usr/sbin/service nginx restart
+
+    chmod 0440 /etc/sudoers.d/myuser
+
+###Add users to deployers group
     useradd -G deployers,rvm <deployer-name>
     userpw <deployer-name>
 
@@ -260,7 +264,14 @@ As deployer user
         create user <user-name> with password <pw>;
         ALTER USER myuser WITH SUPERUSER;
 
-/var/lib/pgsql/data/postgresql.conf change
+    Alternative:
+    $ sudo -u postgres psql postgres
+    => postgres=#
+            CREATE USER username WITH PASSWORD 'password';
+            ALTER ROLE username WITH SUPERUSER;
+
+
+Change /var/lib/pgsql/data/postgresql.conf 
 
     log_destination = 'stderr'
     logging_collector = on
@@ -322,3 +333,36 @@ Login server, cd /app_folder/releases/<release> and execute
 
     RAILS_ENV=staging bundle exec rake db:create
     RAILS_ENV=staging bundle exec rake db:seed
+
+##Thin
+As root
+    gem install thin
+    thin install
+    mv /etc/rc.d/thin /etc/rc.d/init.d/
+    /sbin/chkconfig --level 345 thin on
+
+    service thin start
+    => /usr/bin/env: ruby_executable_hooks: No such file or directory
+    rvm @global do gem regenerate_binstubs
+    gem regenerate_binstubs
+    gem install executable-hooks
+    gem regenerate_binstubs
+    error not fixed ***********
+    systemctl start thin.service -> does nothing
+
+    ln -s `which ruby_executable_hooks` /usr/bin/ruby_executable_hooks
+    ln -s `which ruby` /usr/bin/ruby
+    login as deployer user
+    rvm gemset use global
+    gem install thin
+
+    rvm use 2.2.0 --default
+
+    =>
+    /home/deployer/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/dependency.rb:315:in `to_specs': Could not find 'thin' (>= 0) among 15 total gem(s) (Gem::LoadError)
+    Checked in 'GEM_PATH=/.gem/ruby/2.2.0:/home/deployer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0', execute `gem env` for more information
+        from /home/deployer/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/dependency.rb:324:in `to_spec'
+        from /home/deployer/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_gem.rb:64:in `gem'
+        from /home/deployer/.rvm/gems/ruby-2.2.0@shk/bin/thin:22:in `<main>'
+        from /bin/ruby_executable_hooks:15:in `eval'
+        from /bin/ruby_executable_hooks:15:in `<main>'
