@@ -55,6 +55,7 @@ login again as superuser
     userpw <deployer-name>
 
 ## SSH access
+
 ###Config port
 
     /etc/ssh/sshd_config
@@ -88,7 +89,7 @@ login again as superuser
     ssh-add -L (or cat id_rsa.pub)
     copy and add the pubkey to authorization_keys of deployer user name in remote server
 
-### PROCEDURE FOR ADDING A NEW DEVELOPER TO DEPLOY
+###PROCEDURE FOR ADDING A NEW DEVELOPER TO DEPLOY
 
     1. Ask for his/her public key
     2. Add it to deployer/.ssh/authorization_keys file
