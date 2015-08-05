@@ -8,18 +8,20 @@ tags: [new_install]
 {% include JB/setup %}
 
 #DH Dashboard,
-Launch instance
-Details:
-    Flavour: subsonic
-    Boot source: Boot from image (creates new volume)
-    Image: Fedora 21
-    Dev size: 80 GB (default for subsonic)
-    Dev name: vda (default)
-Access & security
-    Import SSH public key and choose it
-    Security group: default
+####Launch instance
 
-Associate floating IP
+Details:
+- Flavour: subsonic
+- Boot source: Boot from image (creates new volume)
+- Image: Fedora 21
+- Dev size: 80 GB (default for subsonic)
+- Dev name: vda (default)
+
+Access & security
+- Import SSH public key and choose it
+- Security group: default
+
+#### Associate floating IP
 
 OpenStack client for accessing through ssh console
 
@@ -27,34 +29,39 @@ OpenStack client for accessing through ssh console
 
 [http://docs.openstack.org/user-guide/common/cli_install_openstack_command_line_clients.html](http://docs.openstack.org/user-guide/common/cli_install_openstack_command_line_clients.html){:target="_blank"}
 
-and set environment variables using the OpenStack RC file: http://docs.openstack.org/user-guide/common/cli_set_environment_variables_using_openstack_rc.html
+and set environment variables using the OpenStack RC file: [http://docs.openstack.org/user-guide/common/cli_set_environment_variables_using_openstack_rc.html](http://docs.openstack.org/user-guide/common/cli_set_environment_variables_using_openstack_rc.html)
+
 SSH login to floating IP addr
 
 
 #1st configuration
 Source: [https://www.digitalocean.com/community/tutorials/initial-setup-of-a-fedora-21-server](https://www.digitalocean.com/community/tutorials/initial-setup-of-a-fedora-21-server)
+
 Source: [http://vladigleba.com/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/](http://vladigleba.com/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/)
 
-Login as superuser:
+The following done as root
 
-##system update
+##SYSTEM UPDATE
     yum update
     reboot
 
 login again as superuser
     
-##groups and users
+##GROUPS AND USERS
+
 ###create password for root
     passwd  => pw for root
+
 ###deployers group with root access
     groupadd deployers
     visudo   and add line
         %deployers      ALL=(ALL) ALL
+
 ###add users to deployers group
     useradd -G deployers,rvm <deployer-name>
     userpw <deployer-name>
 
-## SSH access
+## SSH ACCESS
 
 ###Config port
 
@@ -64,42 +71,41 @@ login again as superuser
     => last line UseDNS no
     => PasswordAuthentication yes
 
-### restart ssh service
+### Restart ssh service
     service restart sshd
 
-### check if ssh service is running
+### Check if ssh service is running
     ps aux | grep sshd
     service sshd status
 
-###Check who is listening on port #PORT
+### Check who is listening on port #PORT
     netstat -plant | grep #PORT
 
 ### Check open ports
     lsof -i
 
-###Tell SELinux about the port    
+### Tell SELinux about the port    
     semanage port -a -t ssh_port_t -p tcp #PORTNUMBER
 
-###SSH keys for developer
+### SSH keys for developer
     ssh-key-gen -C "dev email"
     ssh-copy-id dev@your_server_ip 
 
-###SSH keys for developer for deployment
+### SSH keys for developer for deployment
     ssh-key-gen -C "dev email"   -> if there is no key pair in .ssh
     ssh-add -L (or cat id_rsa.pub)
     copy and add the pubkey to authorization_keys of deployer user name in remote server
 
-###PROCEDURE FOR ADDING A NEW DEVELOPER TO DEPLOY
-
+### PROCEDURE FOR ADDING A NEW DEVELOPER TO DEPLOY
     1. Ask for his/her public key
     2. Add it to deployer/.ssh/authorization_keys file
 
-###SSH keys for login user with custom file name 
+### SSH keys for login user with custom file name 
     ssh-keygen -f custom-name -C "user email"
     => creates custom-name and custom-name.pub files
     ssh-copy-id -i custom-name user@your_server_ip 
 
-##configuring the Time Zone
+## CONFIGURING THE TIME ZONE
 Localize proper zone file in */usr/share/zoneinfo/*
 
     ln -sf /usr/share/zoneinfo/Europe/Madrid /etc/localtime
@@ -108,7 +114,7 @@ Check with
 
     date
 
-##firewall
+## FIREWALL: IPTABLES
     yum install -y iptables-services
     systemctl enable iptables
     => Created symlink from /etc/systemd/system/basic.target.wants/iptables.service to /usr/lib/systemd/system/iptables.service.
@@ -150,11 +156,11 @@ Check with
         REJECT     all  --  anywhere             anywhere             reject-with icmp-host-prohibited
         ...
 
-## locate (optional)
+## LOCATE (optional)
     yum install -y mlocate
     updatedb
 
-##nginx
+## NGINX
 [https://fedoraproject.org/wiki/Nginx](https://fedoraproject.org/wiki/Nginx){:target='_blank'}
 
     yum install nginx
@@ -173,7 +179,9 @@ In /etc/nginx/conf.d
     systemctl restart nginx.service
 
 priviledges: apply 755 for directories and 644 for files
+
 Nginx needs to have *read* permissions for the file as well as *execute* permissions for all the folders in the path
+
     namei -l /var/www/67webs.com/index.html
     =>
         f: /var/www/67webs.com/index.html
@@ -183,7 +191,7 @@ Nginx needs to have *read* permissions for the file as well as *execute* permiss
         drwxrwxr-x root root 67webs.com
         -rw-rw-r-- root root index.html
 
-##SELinux
+## SELINUX
 If 403 error persists check and setup SELinux
 
 Source: [http://stackoverflow.com/questions/22586166/why-does-nginx-return-a-403-even-though-all-permissions-are-set-properly](http://stackoverflow.com/questions/22586166/why-does-nginx-return-a-403-even-though-all-permissions-are-set-properly)
@@ -201,6 +209,7 @@ If this solved the problem
 
 ## DNS
 In register (Whois) change DNS to ns1, ns2, ns3.dreamhost.com
+
 In DH, add custom DNS record type A "" and "www" pointing to the assigned IP
 
 ## RVM
@@ -215,12 +224,12 @@ Create rvm group as superuser
     \curl -sSL https://get.rvm.io | bash -s stable
     source /home/alfredo/.rvm/scripts/rvm
 
-###Ruby
+### Ruby
     rvm install 2.2.1
     rvm gemset create gemset_name    # create a gemset
     rvm 2.2.1@gemset_name  # specify Ruby version and our new gemset
 
-###Rails
+### Rails
 Edit ~/.gemrc
 
     install: --no-document
@@ -228,7 +237,7 @@ Edit ~/.gemrc
 
     gem install rails [-v rails_version  # install specific Rails version]
 
-###PostgreSQL
+### PostgreSQL
 
 Source: [https://fedoraproject.org/wiki/PostgreSQL](https://fedoraproject.org/wiki/PostgreSQL)
 
@@ -270,13 +279,24 @@ Source: [https://fedoraproject.org/wiki/PostgreSQL](https://fedoraproject.org/wi
     chmod 755 /var/www -R
 
 ## Capistrano
-copy here staging.rb and deploy.rb contents
+
+    # staging.rb
+    server 'xx.xx.xx.xx', user: 'xxxxxxx', roles: %w{web app db}, primary: true, port: xxxx
+    set :deploy_to, '/var/www/shk/'
+    set :use_sudo, false
+    set :rvm_ruby_version, '2.2.1@shk'
+    set :rvm_custom_path, '/home/alfredo/.rvm' # rvm installed by alfredo!
+    set :rails_env, 'staging'
+    set :rake_env, 'staging'
+
 
     cap staging rvm:check
     cap staging check_write_permissions
     cap staging deploy
     cap staging setup:upload_sensitive_files
     cap staging deploy
+
 Login server, cd /app_folder/releases/<release> and execute
+
     bundle exec rake db:create
     bundle exec rake db:seed
