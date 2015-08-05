@@ -38,8 +38,7 @@ new terminal window/tab
 If needed, a message will ask for JS Runtime:
 
     gem install execjs
-    sudo apt-get install nodejs
-    yum -y install nodejs
+    yum -y install nodejs  or sudo apt-get install nodejs
 
 http://localhost:3000/refinery the 1st time
 

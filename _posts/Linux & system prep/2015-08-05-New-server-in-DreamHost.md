@@ -217,19 +217,24 @@ Create rvm group as superuser
 
     groupadd rvm
     usermod -a -G rvm root
-    usermod -a -G rvm <other users>  like 'deployer'
+    usermod -a -G rvm <deployer user>
     exit
-    su alfredo
+    su <deployer user>
     gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
     \curl -sSL https://get.rvm.io | bash -s stable
     source /home/alfredo/.rvm/scripts/rvm
 
+    rvm info -> gives lot of info
+
 ### Ruby
+As deployer user
     rvm install 2.2.1
     rvm gemset create gemset_name    # create a gemset
     rvm 2.2.1@gemset_name  # specify Ruby version and our new gemset
 
 ### Rails
+As deployer user
+
 Edit ~/.gemrc
 
     install: --no-document
@@ -237,11 +242,13 @@ Edit ~/.gemrc
 
     gem install rails [-v rails_version  # install specific Rails version]
 
-### PostgreSQL
+## PostgreSQL
 
 Source: [https://fedoraproject.org/wiki/PostgreSQL](https://fedoraproject.org/wiki/PostgreSQL)
 
-    sudo yum install postgresql-server postgresql-contrib
+As deployer user
+
+    sudo yum install postgresql-server postgresql-contrib postgresql-devel
     sudo systemctl enable postgresql
     sudo postgresql-setup initdb
     sudo systemctl start postgresql
@@ -273,6 +280,11 @@ Source: [https://fedoraproject.org/wiki/PostgreSQL](https://fedoraproject.org/wi
 
     systemctl restart postgresql
 
+## ExecJs runtime and NodeJS
+As deployer user
+    gem install execjs
+    sudo yum -y install nodejs
+
 ## GIT
     sudo yum -y install git
     git --version
@@ -299,8 +311,9 @@ Source: [https://fedoraproject.org/wiki/PostgreSQL](https://fedoraproject.org/wi
 
 
     cap staging rvm:check
+    cap staging rvm1:check
     cap staging check_write_permissions
-    cap staging deploy
+    cap staging deploy:check
     cap staging setup:upload_sensitive_files
     cap staging deploy
 
