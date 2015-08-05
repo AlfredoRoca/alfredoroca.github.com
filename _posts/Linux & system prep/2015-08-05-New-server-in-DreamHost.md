@@ -272,6 +272,14 @@ Source: [https://fedoraproject.org/wiki/PostgreSQL](https://fedoraproject.org/wi
     log_line_prefix = '%t [%p] '  -> simplified for one user one db
 
     systemctl restart postgresql
+
+## GIT
+    sudo yum -y install git
+    git --version
+    sudo git config --global user.name "testuser"
+    sudo git config --global user.email "testuser@example.com"
+    sudo git config --list
+
     
 ## Rails App folder
     mkdir /var/www/shk
