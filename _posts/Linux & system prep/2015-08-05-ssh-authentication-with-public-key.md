@@ -7,6 +7,8 @@ tags: [public_key]
 ---
 {% include JB/setup %}
 
+Source: [http://vladigleba.com/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/](http://vladigleba.com/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/)
+
 You can see if you already have an SSH key by running:
   
     ls ~/.ssh
