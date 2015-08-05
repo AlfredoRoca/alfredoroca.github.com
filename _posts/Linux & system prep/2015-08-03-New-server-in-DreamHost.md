@@ -33,6 +33,7 @@ SSH login to floating IP addr
 
 #1st configuration
 Source: [https://www.digitalocean.com/community/tutorials/initial-setup-of-a-fedora-21-server](https://www.digitalocean.com/community/tutorials/initial-setup-of-a-fedora-21-server)
+Source: [http://vladigleba.com/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/](http://vladigleba.com/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/)
 
 Login as superuser:
 
@@ -43,12 +44,44 @@ Login as superuser:
 login again as superuser
     
 ##groups and users
+###create password for root
+    passwd  => pw for root
+###deployers group with root access
     groupadd deployers
-    useradd -G deployers <deployer-name>
+    visudo   and add line
+        %deployers      ALL=(ALL) ALL
+###add users to deployers group
+    useradd -G deployers,rvm <deployer-name>
     userpw <deployer-name>
 
-##ssh keys for login
-    ssh-copy-id <user>@your_server_ip
+## SSH access
+###Config port
+
+    /etc/ssh/sshd_config
+    => change Port #PORTNUMBER
+    => PermitRootLogin no
+    => last line UseDNS no
+    => PasswordAuthentication yes
+
+### restart ssh service
+    service restart sshd
+
+### check if ssh service is running
+    ps aux | grep sshd
+    service sshd status
+
+###Check who is listening on port #PORT
+    netstat -plant | grep #PORT
+
+### Check open ports
+    lsof -i
+
+###Tell SELinux about the port    
+    semanage port -a -t ssh_port_t -p tcp #PORTNUMBER
+
+###ssh keys for login
+    ssh-key-gen
+    ssh-copy-id user@your_server_ip 
 
 ##configuring the Time Zone
 Localize proper zone file in */usr/share/zoneinfo/*
@@ -159,7 +192,7 @@ Create rvm group as superuser
 
     groupadd rvm
     usermod -a -G rvm root
-    usermod -a -G rvm <other users>
+    usermod -a -G rvm <other users>  like 'deployer'
     exit
     su alfredo
     gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
@@ -215,6 +248,9 @@ Source: [https://fedoraproject.org/wiki/PostgreSQL](https://fedoraproject.org/wi
 
     systemctl restart postgresql
     
+## Rails App folder
+    mkdir /var/www/shk
+    chown -R /var/www deployer:deployers
 
 
 
