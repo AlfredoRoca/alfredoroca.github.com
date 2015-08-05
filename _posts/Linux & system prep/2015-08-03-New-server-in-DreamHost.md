@@ -79,9 +79,24 @@ login again as superuser
 ###Tell SELinux about the port    
     semanage port -a -t ssh_port_t -p tcp #PORTNUMBER
 
-###ssh keys for login
-    ssh-key-gen
-    ssh-copy-id user@your_server_ip 
+###SSH keys for developer
+    ssh-key-gen -C "dev email"
+    ssh-copy-id dev@your_server_ip 
+
+###SSH keys for developer for deployment
+    ssh-key-gen -C "dev email"   -> if there is no key pair in .ssh
+    ssh-add -L (or cat id_rsa.pub)
+    copy and add the pubkey to authorization_keys of deployer user name in remote server
+
+### PROCEDURE FOR ADDING A NEW DEVELOPER TO DEPLOY
+
+    1. Ask for his/her public key
+    2. Add it to deployer/.ssh/authorization_keys file
+
+###SSH keys for login user with custom file name 
+    ssh-keygen -f custom-name -C "user email"
+    => creates custom-name and custom-name.pub files
+    ssh-copy-id -i custom-name user@your_server_ip 
 
 ##configuring the Time Zone
 Localize proper zone file in */usr/share/zoneinfo/*
@@ -251,3 +266,16 @@ Source: [https://fedoraproject.org/wiki/PostgreSQL](https://fedoraproject.org/wi
 ## Rails App folder
     mkdir /var/www/shk
     chown -R /var/www deployer:deployers
+    chmod 755 /var/www -R
+
+## Capistrano
+copy here staging.rb and deploy.rb contents
+
+    cap staging rvm:check
+    cap staging check_write_permissions
+    cap staging deploy
+    cap staging setup:upload_sensitive_files
+    cap staging deploy
+Login server, cd /app_folder/releases/<release> and execute
+    bundle exec rake db:create
+    bundle exec rake db:seed
