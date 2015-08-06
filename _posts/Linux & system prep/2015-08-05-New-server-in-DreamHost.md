@@ -57,9 +57,13 @@ login again as superuser
 
 ###Sudoers config
 Create file /etc/sudoers.d/myuser with one or more lines like
-    myuser ALL=(ALL) NOPASSWD: /usr/sbin/service nginx start,/usr/sbin/service nginx stop,/usr/sbin/service nginx restart
 
-    chmod 0440 /etc/sudoers.d/myuser
+    my_deployer_user ALL=(ALL) NOPASSWD: /usr/sbin/service nginx start,/usr/sbin/service nginx restart,/usr/sbin/service nginx reload,/usr/sbin/service thin start,/usr/sbin/service thin restart
+
+next line only to install thin as a service, later can be removed
+    my_deployer_user ALL=(ALL) NOPASSWD: /var/www/shk/current/bin/thin install
+
+    chmod 0440 /etc/sudoers.d/myuser  -> read only
 
 ###Add users to deployers group
     useradd -G deployers,rvm <deployer-name>
@@ -227,8 +231,10 @@ Create rvm group as superuser
     gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
     \curl -sSL https://get.rvm.io | bash -s stable
     source /home/alfredo/.rvm/scripts/rvm
+    echo 'rvm_path="$HOME/.rvm"' >> ~/.rvmrc
 
     rvm info -> gives lot of info
+
 
 ### Ruby
 As deployer user
@@ -345,34 +351,35 @@ Login server, cd /app_folder/releases/<release> and execute
     RAILS_ENV=staging bundle exec rake db:seed
 
 ##Thin
-As root
+login as deployer user (with proper priviledges)
     gem install thin
-    thin install
+    bin/thin install
+
+if error about ruby version discrepancies with gemfile, change in gemfile and try again or try rvm use 2.2.0 --default
     mv /etc/rc.d/thin /etc/rc.d/init.d/
     /sbin/chkconfig --level 345 thin on
 
-    service thin start
-    => /usr/bin/env: ruby_executable_hooks: No such file or directory
-    rvm @global do gem regenerate_binstubs
-    gem regenerate_binstubs
-    gem install executable-hooks
-    gem regenerate_binstubs
-    error not fixed ***********
-    systemctl start thin.service -> does nothing
+In the app code folder, to test server
+    cd /var/www/shk/current/
+    bin/thin start -C /etc/thin/shk.yml
 
-    ln -s `which ruby_executable_hooks` /usr/bin/ruby_executable_hooks
-    ln -s `which ruby` /usr/bin/ruby
-    login as deployer user
-    rvm gemset use global
-    gem install thin
+Reboot
 
-    rvm use 2.2.0 --default
-
-    =>
-    /home/deployer/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/dependency.rb:315:in `to_specs': Could not find 'thin' (>= 0) among 15 total gem(s) (Gem::LoadError)
-    Checked in 'GEM_PATH=/.gem/ruby/2.2.0:/home/deployer/.rvm/rubies/ruby-2.2.1/lib/ruby/gems/2.2.0', execute `gem env` for more information
-        from /home/deployer/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/dependency.rb:324:in `to_spec'
-        from /home/deployer/.rvm/rubies/ruby-2.2.1/lib/ruby/site_ruby/2.2.0/rubygems/core_ext/kernel_gem.rb:64:in `gem'
-        from /home/deployer/.rvm/gems/ruby-2.2.0@shk/bin/thin:22:in `<main>'
-        from /bin/ruby_executable_hooks:15:in `eval'
-        from /bin/ruby_executable_hooks:15:in `<main>'
+###Thin config file sample
+Set environment, app folder, port accordingly
+    #/etc/thin/shk.yml
+    ---
+    chdir: "var/www/shk/current"
+    environment: production
+    address: 0.0.0.0
+    port: 3000
+    timeout: 30
+    log: "/var/www/log/thin.log"
+    pid: tmp/pids/thin.pid
+    max_conns: 1024
+    max_persistent_conns: 100
+    rackup: config.ru
+    require: []
+    wait: 30
+    threadpool_size: 20
+    daemonize: true
