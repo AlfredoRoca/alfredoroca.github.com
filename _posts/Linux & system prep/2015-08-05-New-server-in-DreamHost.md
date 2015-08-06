@@ -383,3 +383,8 @@ Set environment, app folder, port accordingly
     wait: 30
     threadpool_size: 20
     daemonize: true
+
+##Rails console
+Login as deployer user
+    cd /var/www/shk/current
+    bundle exec rails c
