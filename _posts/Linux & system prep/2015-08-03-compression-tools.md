@@ -3,7 +3,7 @@ layout: post
 title: "Working with compressed files"
 description: ""
 category: [linux]
-tags: [commpresion]
+tags: [compression]
 ---
 {% include JB/setup %}
 
