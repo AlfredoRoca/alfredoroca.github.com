@@ -65,6 +65,9 @@ next line only to install thin as a service, later can be removed
 
     chmod 0440 /etc/sudoers.d/myuser  -> read only
 
+reco for editing
+     sudo visudo -f /etc/sudoers.d/myuser
+
 ###Add users to deployers group
     useradd -G deployers,rvm <deployer-name>
     userpw <deployer-name>
@@ -344,6 +347,8 @@ As deployer user
     cap staging deploy:check
     cap staging setup:upload_sensitive_files
     cap staging deploy
+    cap staging logs:tail_rails
+    cap staging logs:tail_thin
 
 Login server, cd /app_folder/releases/<release> and execute
 
