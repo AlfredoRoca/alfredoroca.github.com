@@ -9,6 +9,7 @@ tags: [conflict_resolution, workflow]
 
 
 In the app folder, with local/master sync with origin/master
+
     git checkout -b remote_branch_to_testgit 
     pull remote_branch_to_testgit 
     checkout master

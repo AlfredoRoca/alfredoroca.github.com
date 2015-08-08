@@ -3,7 +3,7 @@ layout: post
 title: "Understanding SSHKit"
 description: ""
 category: [SSHKit, capistrano]
-tags: [capistrano, rake]
+tags: [capistrano, rake, deployment]
 ---
 {% include JB/setup %}
 
