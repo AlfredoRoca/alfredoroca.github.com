@@ -10,6 +10,8 @@ tags: []
 #app-name.yml
 
   ---
+  user: deployer
+  groups: deployer
   chdir: "/var/www/app/current"
   environment: production
   address: 0.0.0.0
@@ -27,4 +29,7 @@ tags: []
   tag: shk
   servers: 2
   onebyone: true
+
+
+Reco: use sochets instead of ports for better perfomance
   socket: tmp/sockets/thin.sock

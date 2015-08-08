@@ -370,10 +370,17 @@ In the app code folder, to test server
 
 Reboot
 
+In case of mess up
+    rvm get stable --auto-dotfiles
+    rvm reinstall 2.2.0
+
+
 ###Thin config file sample
 Set environment, app folder, port accordingly
     #/etc/thin/shk.yml
     ---
+    user: deployer
+    groups: deployer
     chdir: "var/www/shk/current"
     environment: production
     address: 0.0.0.0
@@ -388,6 +395,37 @@ Set environment, app folder, port accordingly
     wait: 30
     threadpool_size: 20
     daemonize: true
+
+### Restarting thin from Capistrano
+1. Using RVM wrapper - preferred
+2. With sh file in server
+
+#### Using RVM wrapper and this task
+    %w[start stop restart].each do |command|
+      desc "#{command} Thin server."
+      task command do
+        on roles(:app) do
+          execute "~/.rvm/wrappers/default/thin #{command} -C /etc/thin/shk.yml"
+        end
+      end
+    end
+
+#### With sh file in server
+
+    #!/bin/bash
+    cd /var/www/shk/current
+    ~/.rvm/gems/ruby-2.2.0/bin/thin restart -C /etc/thin/shk.yml
+
+And using this task
+    %w[start stop restart].each do |command|
+      desc "#{command} Thin server."
+      task command do
+        on roles(:app) do
+          execute "/bin/bash --login ~/restart_shk_thin.sh"
+        end
+      end
+    end
+
 
 ##Rails console
 Login as deployer user
