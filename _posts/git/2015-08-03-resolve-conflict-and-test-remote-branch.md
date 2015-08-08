@@ -12,10 +12,10 @@ In the app folder, with local/master sync with origin/master
 
     git checkout -b remote_branch_to_test
     git pull remote_branch_to_test
-    git checkout master
 
 ==> asure local master is up to date
 
+    git checkout master
     git fetch origin
     git pull origin master
 
@@ -29,10 +29,13 @@ In the app folder, with local/master sync with origin/master
     git commit -m "remote branch conflict resolved"
     git push origin new_local_branch
 
-==> PR for new_local_branch merged with remote_branch_to_test with resolved conflicts
+==> PR for new_local_branch merged with remote_branch_to_test with resolved conflicts. No conflicts, merge should be posible.
 
 ==> update local master again
 
   git checkout master
   git pull
 
+==> deploy
+
+  cap production deploy
