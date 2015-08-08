@@ -18,24 +18,38 @@ Add to deploy.rb
 
     set :branch, ENV['BRANCH'] || "master"
 
-    if ENV['BRANCH']
-      before "deploy", "deploy:check_branch"
-    end
-    after "deploy:finalize_update", "deploy:put_branch"
 
-    namespace :deploy do
-      task :check_branch do
-        current_branch_info = capture("cat #{current_path}/BRANCH; true")
+Add to deploy.rake
+
+    desc "updates BRANCH file to 'block' deploy when some other or other's branch is deployed"
+    task :put_branch do
+      branch_to_deploy = "#{fetch(:branch)}"
+      on roles(:app) do
+        execute "echo \"#{branch_to_deploy}:#{ENV['USER']}\" > #{release_path}/BRANCH"
+      end
+    end
+
+    desc "read BRANCH file to let branch deploy when there is no other or other's branch deployed"
+    task :check_branch do
+      on roles(:app) do
+        current_branch_info = capture("cat #{current_path}/BRANCH")
+        current_branch_info ||= "master"
         current_branch = current_branch_info.split(':')[0]
         deployer = current_branch_info.split(':')[1]
+        branch_to_deploy = "#{fetch(:branch)}"
 
-        if branch != 'master' && current_branch != 'master' && current_branch != branch
-          puts "Sorry, #{deployer} is already deploying the feature #{current_branch}"
+        if branch_to_deploy != 'master' && current_branch != 'master' && current_branch != branch_to_deploy
+          puts "*************************************************************"
+          puts " Sorry, #{deployer} is already deploying the feature #{current_branch}"
+          puts "*************************************************************"
           exit
         end
       end
-
-      task :put_branch do
-        put "#{branch}:#{ENV['USER']}", "#{release_path}/BRANCH"
-      end
     end
+
+    if ENV['BRANCH']
+      before "deploy", "deploy:check_branch"
+    end
+    after :published, "deploy:put_branch"
+
+

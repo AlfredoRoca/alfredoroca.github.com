@@ -33,9 +33,21 @@ In the app folder, with local/master sync with origin/master
 
 ==> update local master again
 
-  git checkout master
-  git pull
+    git checkout master
+    git pull
 
 ==> deploy
 
-  cap production deploy
+    cap production deploy
+
+==> Execute locally or the rails console
+
+    rails c
+
+==> Execute task to upload the version file that has to updated in development.
+
+    cap production setup:upload_version_file
+
+Version can be display in the '/version' route
+
+
