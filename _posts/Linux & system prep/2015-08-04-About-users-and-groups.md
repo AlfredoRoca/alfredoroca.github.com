@@ -11,11 +11,11 @@ tags: [users, groups]
 
 To list the currently logged-on users, type
 
-    who
+    $ who
 
 #To identify the current user, type
 
-    whoami
+    $ whoami
 
     /user/sbin
 
@@ -24,21 +24,25 @@ To list the currently logged-on users, type
     $ sudo useradd <alfredo>
     $ sudo passwd <alfredo>
 
-Home directory:
+    sudo useradd <name> -p PASSWORD
+    sudo useradd <name< -G GROUP1[,GROUP2,...[,GROUPN]]]
+
+##Home directory:
 
     /home/user_name
 
     id
     => alfredo:x:1000:1000::/home/alfredo:/bin/bash
 
+##Home directory remains (temporary inactivation)
+
     $ sudo userdel <user name>
 
-Home directory remains (temporary inactivation)
+##Home directory is deleted.
 
     $ sudo userdel <user_name> -r
 
-Home directory is deleted.
-
+#Identifying
     $ id
     uid=0(root) gid=0(root) groups=0(root)
     $ id alfredo
@@ -60,28 +64,28 @@ Home directory is deleted.
 
     $ sudo usermod -G <group1>,<grouop2> <user_name>
 
-Creates and add user to groups
+##Creates and add user to groups
 
     $ sudo useradd -G <group1>,<grouop2> <user_name>
 
-Refresh group membership without logging out
+##Refresh group membership without logging out
 
     exec su -l alfredo
 
-Files
+##Files
 
     /etc/group  --> list of groups
     /etc/passwd
 
-set up sudo user
+##Set up sudo user
 
     echo "student ALL=(ALL) ALL" > /etc/sudoers.d/student
     chmod 440 /etc/sudoers.d/student
 
-Sudoers list
+##Sudoers list
 
-    cat /etc/sudoers  --> for printing
-    visudo            --> for editing
+    visudo
+    visudo -f /etc/sudoers.d/<file>
 
 The basic structure of a line is
 
@@ -102,11 +106,11 @@ Ex:
 
     Jun 10 12:14:50 VBoxDev1 sudo:  alfredo : TTY=pts/0 ; PWD=/home/alfredo ; USER=root ; COMMAND=/bin/cat /etc/sudoers.d/README
 
-#which group user belongs to
+##Which group user belongs to
     groups <user name>
 
 
-#profile
+#Profile
 
 On boot:
 
