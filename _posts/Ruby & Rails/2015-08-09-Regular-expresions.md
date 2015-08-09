@@ -7,9 +7,9 @@ tags: [regex]
 ---
 {% include JB/setup %}
 
-[Email](#Email)
-[Find phone numbers](#Find phone numbers)
-[Any symbol](#Any symbol)
+- [Email](#Email)
+- [Find phone numbers](#Find phone numbers)
+- [Any symbol](#Any symbol)
 
 #Email
 
