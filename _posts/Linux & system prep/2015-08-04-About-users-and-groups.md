@@ -64,6 +64,10 @@ To list the currently logged-on users, type
 
     $ sudo usermod -G <group1>,<grouop2> <user_name>
 
+#Add user to group and preserves other groups
+
+    $ sudo usermod -a -G <group1> <user_name>
+
 ##Creates and add user to groups
 
     $ sudo useradd -G <group1>,<grouop2> <user_name>
