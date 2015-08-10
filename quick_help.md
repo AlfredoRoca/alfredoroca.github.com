@@ -33,5 +33,7 @@ group: navigation
 
 [http://blog.ghost.org/markdown/](http://support.ghost.org/markdown-guide/){:target="_blank"}
 
+<http://stackoverflow.com/editing-help>
+
 #Liquid
 [https://github.com/Shopify/liquid/wiki/Liquid-for-Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers){:target="_blank"}
