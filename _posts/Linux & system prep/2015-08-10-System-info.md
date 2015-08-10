@@ -22,4 +22,8 @@ tags: [server, system, administration]
 
     lsb_release -a
 
+
     uname -a
+
+        ==> i686    ==> 32-bit version of Linux.
+        ==> x86_64  ==> 64-bit version of Linux.
