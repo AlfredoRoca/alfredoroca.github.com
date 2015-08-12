@@ -10,9 +10,12 @@ tags: [initialisation, bash]
 Source: 
 
 - <http://www.solipsys.co.uk/new/BashInitialisationFiles.html>
-- <https://github.com/sstephenson/rbenv/wiki/Unix-shell-initialization>
 
 #Shell modes
+See source for more info on other shells
+
+- <https://github.com/sstephenson/rbenv/wiki/Unix-shell-initialization>
+
 
 Which initialization files get sourced by the shell is dependent on the combination of modes in which a particular shell process runs. There are two main, non-exclusive modes:
 
