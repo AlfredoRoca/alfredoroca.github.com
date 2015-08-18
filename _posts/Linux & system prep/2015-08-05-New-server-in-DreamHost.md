@@ -77,7 +77,7 @@ reco for editing
 ###Config port
 
     /etc/ssh/sshd_config
-    => change Port #PORTNUMBER
+    => change Port PORTNUMBER
     => PermitRootLogin no
     => last line UseDNS no
     => PasswordAuthentication yes
@@ -90,13 +90,13 @@ reco for editing
     service sshd status
 
 ### Check who is listening on port #PORT
-    netstat -plant | grep #PORT
+    netstat -plant | grep PORT
 
 ### Check open ports
     lsof -i
 
 ### Tell SELinux about the port    
-    semanage port -a -t ssh_port_t -p tcp #PORTNUMBER
+    semanage port -a -t ssh_port_t -p tcp PORTNUMBER
 
 ### SSH keys for developer
     ssh-key-gen -C "dev email"
@@ -242,6 +242,7 @@ Create rvm group as superuser
 
 ### Ruby
 As deployer user
+
     rvm install 2.2.1
     rvm gemset create gemset_name    # create a gemset
     rvm 2.2.1@gemset_name  # specify Ruby version and our new gemset
@@ -314,6 +315,7 @@ Change /var/lib/pgsql/data/postgresql.conf
 
 ## ExecJs runtime and NodeJS
 As deployer user
+
     gem install execjs
     sudo yum -y install nodejs
 
@@ -358,26 +360,31 @@ Login server, cd /app_folder/releases/<release> and execute
 
 ##Thin
 login as deployer user (with proper priviledges)
+
     gem install thin
     bin/thin install
 
 if error about ruby version discrepancies with gemfile, change in gemfile and try again or try rvm use 2.2.0 --default
+
     mv /etc/rc.d/thin /etc/rc.d/init.d/
     /sbin/chkconfig --level 345 thin on
 
 In the app code folder, to test server
+
     cd /var/www/shk/current/
     bin/thin start -C /etc/thin/shk.yml
 
 Reboot
 
 In case of mess up
+
     rvm get stable --auto-dotfiles
     rvm reinstall 2.2.0
 
 
 ###Thin config file sample
 Set environment, app folder, port accordingly
+
     #/etc/thin/shk.yml
     ---
     user: deployer
@@ -418,6 +425,7 @@ Set environment, app folder, port accordingly
     ~/.rvm/gems/ruby-2.2.0/bin/thin restart -C /etc/thin/shk.yml
 
 And using this task
+
     %w[start stop restart].each do |command|
       desc "#{command} Thin server."
       task command do
@@ -430,5 +438,6 @@ And using this task
 
 ##Rails console
 Login as deployer user
+
     cd /var/www/shk/current
     bundle exec rails c

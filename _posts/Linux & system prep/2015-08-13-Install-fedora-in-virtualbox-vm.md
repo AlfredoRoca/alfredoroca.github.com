@@ -9,9 +9,9 @@ tags: [virtualbox, vm]
 
 #Install Fedora ina new VM
 - Download Latest version of Fedora Live Image from <https://getfedora.org/en/workstation/download/>
-- Burn DVD or USB  with downloaded iso image or copy it to host
+- Burn DVD or USB, copy it to host or download directly in host
 - Create new VM on host and make boot from DVD
-- Add DVD and open Live IMAGE iso
+- Add a CD/DVD unit and associate the Live IMAGE iso
 - Start VM
 - Install Fedora in HDD following instructions
 - Add root password
