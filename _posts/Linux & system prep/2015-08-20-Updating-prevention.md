@@ -18,6 +18,6 @@ To prevent accidentally updating kernel:
 
     # yum –exclude=kernel* update
 
-Or in */etc/yum.conf* and */etc/dnf/dnf.conf*
+Or in **/etc/yum.conf** and **/etc/dnf/dnf.conf**
 
     exclude=kernel*
