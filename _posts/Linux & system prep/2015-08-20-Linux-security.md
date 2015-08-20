@@ -16,8 +16,6 @@ check if ports is associated with a known service
 
     cat /etc/services | grep PORT
 
-
     netstat -anp | grep PORT
 
     lsof -i | grep PORT
-
