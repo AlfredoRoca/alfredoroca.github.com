@@ -30,3 +30,10 @@ Having our keys generated, we’re now ready to copy our public key over to the 
     ssh-copy-id -i ~/.ssh/id_rsa.pub  name@remote-server
 
 This will create a new file called authorized_keys on your remote server inside the ~/.ssh directory and store your public key in it. If you now try to ssh into your server, you should be authenticated and logged in without entering your password.
+
+
+Files permissions are important!
+
+    chmod 700 ~/.ssh
+    chmod 600 ~/.ssh/authorized_keys
+
