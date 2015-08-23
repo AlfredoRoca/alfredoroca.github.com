@@ -8,9 +8,11 @@ tags: [new_install, rvm, git, rails, ruby, capistrano, deployment, ssh, linux, f
 {% include JB/setup %}
 
 #DH Dashboard,
+
 ####Launch instance
 
 Details:
+
 - Flavour: subsonic
 - Boot source: Boot from image (creates new volume)
 - Image: Fedora 21
@@ -18,6 +20,7 @@ Details:
 - Dev name: vda (default)
 
 Access & security
+
 - Import SSH public key and choose it
 - Security group: default
 
