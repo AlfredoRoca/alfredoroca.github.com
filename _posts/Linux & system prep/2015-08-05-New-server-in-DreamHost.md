@@ -445,3 +445,9 @@ Login as deployer user
 
     cd /var/www/shk/current
     bundle exec rails c
+
+##ImageMagic
+
+    sudo yum install -y ImageMagick GraphicsMagick
+
+
