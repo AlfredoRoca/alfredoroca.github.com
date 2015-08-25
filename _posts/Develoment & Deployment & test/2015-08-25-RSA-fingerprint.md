@@ -2,7 +2,7 @@
 layout: post
 title: "RSA fingerprint"
 description: ""
-category: [linux, security]
+category: [server, system, security]
 tags: []
 ---
 {% include JB/setup %}

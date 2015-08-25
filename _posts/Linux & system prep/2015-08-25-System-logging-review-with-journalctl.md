@@ -2,7 +2,7 @@
 layout: post
 title: "System logging review with journalctl"
 description: ""
-category: [linux, logging, journalctl ]
+category: [server, system, logging, journalctl, monitoring ]
 tags: []
 ---
 {% include JB/setup %}

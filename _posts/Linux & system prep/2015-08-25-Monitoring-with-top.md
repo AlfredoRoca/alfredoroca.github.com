@@ -2,7 +2,7 @@
 layout: post
 title: "Monitoring with top"
 description: ""
-category: [linux, monitoring]
+category: [server, system, monitoring]
 tags: []
 ---
 {% include JB/setup %}
