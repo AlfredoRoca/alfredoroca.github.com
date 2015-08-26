@@ -183,13 +183,56 @@ Check with
     => Created symlink from /etc/systemd/system/multi-user.target.wants/nginx.service to /usr/lib/systemd/system/nginx.service.
     systemctl start nginx.service
 
-Change user to rails app folder owner
 
     vi /etc/nginx/nginx.conf
+    => Change user to rails app folder owner or root
 
-In /etc/nginx/conf.d 
-    vi /67webs.conf
-    => server block configuration
+server config sample
+    
+    vi /etc/nginx/conf.d/67webs.conf
+    
+    server {    
+            client_max_body_size 20M;    
+            client_body_temp_path /var/www/uploads_temp;    
+            listen    80;    
+            server_name  67webs.com *.67webs.com;    
+            root         /var/www/shk;
+            location / {            
+                    proxy_pass_header Server;    
+                    proxy_temp_path /tmp/nginx 1 2;
+                    proxy_set_header  X-Real-IP  $remote_addr;    
+                    proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;    
+                    proxy_set_header Host $http_host;    
+                    proxy_set_header X-FORWARDED-PROTO $scheme;    
+                    proxy_redirect off;    
+                    proxy_pass http://localhost:3000;    
+                    break;    
+            }
+        location /monit/ {            
+                proxy_set_header Host $host;    
+                proxy_set_header  X-Real-IP  $remote_addr;    
+                proxy_set_header  X-Forwarded-For $proxy_add_x_forwarded_for;    
+                proxy_pass http://localhost:2812;    
+                proxy_redirect off;    
+                rewrite ^/monit/(.*) /$1 break;    
+                proxy_ignore_client_abort on;    
+        }
+        error_page 503 @503;    
+        # Return a 503 error if the maintenance page exists.    
+        if (-f /var/www/shk/shared/public/system/maintenance.html) {      
+                return 503;    
+        }
+        location @503 {      
+            # Serve static assets if found.      
+            if (-f $request_filename) {        
+                break;    
+            }
+            # Set root to the shared directory.      
+            root /var/www/shk/shared/public;    
+            rewrite ^(.*)$ /system/maintenance.html 
+            break;    
+        }      
+    }
 
     systemctl restart nginx.service
 
