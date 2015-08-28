@@ -29,6 +29,7 @@ tags: []
     tag: shk
     servers: 2
     onebyone: true
+    tag: shk
 
 
 Reco: use sochets instead of ports for better perfomance

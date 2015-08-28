@@ -444,6 +444,7 @@ Set environment, app folder, port accordingly
     wait: 30
     threadpool_size: 20
     daemonize: true
+    tag: shk
 
 ## Capistrano
 
