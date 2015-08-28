@@ -59,21 +59,21 @@ login again as superuser
     groupadd deployers
 
 ###Sudoers config
-Create file /etc/sudoers.d/myuser with one or more lines like
+Create file /etc/sudoers.d/myuser 
+
+    sudo visudo -f /etc/sudoers.d/my_deployer_user
 
     my_deployer_user ALL=(ALL) NOPASSWD: /usr/sbin/service nginx start,/usr/sbin/service nginx restart,/usr/sbin/service nginx reload,/usr/sbin/service thin start,/usr/sbin/service thin restart
 
 next line only to install thin as a service, later can be removed
     my_deployer_user ALL=(ALL) NOPASSWD: /var/www/shk/current/bin/thin install
 
-    chmod 0440 /etc/sudoers.d/myuser  -> read only
+    chmod 0440 /etc/sudoers.d/my_deployer_user  -> read only
 
-reco for editing
-     sudo visudo -f /etc/sudoers.d/myuser
 
 ###Add users to deployers group
     useradd -G deployers,rvm <deployer-name>
-    userpw <deployer-name>
+    passwd <deployer-name>
 
 ## SSH ACCESS
 
@@ -102,11 +102,11 @@ reco for editing
     semanage port -a -t ssh_port_t -p tcp PORTNUMBER
 
 ### SSH keys for developer
-    ssh-key-gen -C "dev email"
+    ssh-keygen -C "dev email"
     ssh-copy-id dev@your_server_ip 
 
 ### SSH keys for developer for deployment
-    ssh-key-gen -C "dev email"   -> if there is no key pair in .ssh
+    ssh-keygen -C "dev email"   -> if there is no key pair in .ssh
     ssh-add -L (or cat id_rsa.pub)
     copy and add the pubkey to authorization_keys of deployer user name in remote server
 
@@ -170,6 +170,10 @@ Check with
         ACCEPT     tcp  --  anywhere             anywhere             state NEW tcp dpt:https
         REJECT     all  --  anywhere             anywhere             reject-with icmp-host-prohibited
         ...
+## FIREWALLD
+
+    systemctl disable firewalld
+
 
 ## LOCATE (optional)
     yum install -y mlocate
@@ -184,8 +188,17 @@ Check with
     systemctl start nginx.service
 
 
-    vi /etc/nginx/nginx.conf
-    => Change user to rails app folder owner or root
+    vi /etc/nginx/nginx.conf changes
+    user  root;
+    tcp_nopush     on;
+    tcp_nodelay    on;
+
+    server ...
+        location / {
+                autoindex on;
+                autoindex_exact_size off;
+        }
+
 
 server config sample
     
@@ -265,6 +278,11 @@ If this solved the problem
     chcon -Rt httpd_sys_content_t /var/www
     setenforce Enforcing
 
+Or disable it
+
+    vi /etc/sysconfig/selinux
+    SELINUX=disabled
+
 ## DNS
 In register (Whois) change DNS to ns1, ns2, ns3.dreamhost.com
 
@@ -281,7 +299,7 @@ Create rvm group as superuser
 
     gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
     \curl -sSL https://get.rvm.io | bash -s stable
-    source /home/alfredo/.rvm/scripts/rvm
+    source /home/deployer/.rvm/scripts/rvm
     echo 'rvm_path="$HOME/.rvm"' >> ~/.rvmrc
 
     rvm info -> gives lot of info
@@ -328,7 +346,7 @@ As deployer user
             CREATE USER username WITH PASSWORD 'password';
             ALTER ROLE username WITH SUPERUSER;
 
-Change data/pg_hba.conf, method peer by md5
+Change /var/lib/pgsql/data/pg_hba.conf, method peer by md5
 
     # TYPE  DATABASE        USER            ADDRESS                 METHOD
     # "local" is for Unix domain socket connections only
@@ -375,35 +393,11 @@ As deployer user
 
     
 ## Rails App folder
+    mkdir /var/www/
     mkdir /var/www/shk
-    chown -R /var/www deployer:deployers
+    chown deployer:deployers -R /var/www 
     chmod 755 /var/www -R
 
-## Capistrano
-
-    # staging.rb
-    server 'xx.xx.xx.xx', user: 'xxxxxxx', roles: %w{web app db}, primary: true, port: xxxx
-    set :deploy_to, '/var/www/shk/'
-    set :use_sudo, false
-    set :rvm_ruby_version, '2.2.1@shk'
-    set :rvm_custom_path, '/home/alfredo/.rvm' # rvm installed by alfredo!
-    set :rails_env, 'staging'
-    set :rake_env, 'staging'
-
-
-    cap staging rvm:check
-    cap staging rvm1:check
-    cap staging check_write_permissions
-    cap staging deploy:check
-    cap staging setup:upload_sensitive_files
-    cap staging deploy
-    cap staging logs:tail_rails
-    cap staging logs:tail_thin
-
-Login server, cd /app_folder/releases/<release> and execute
-
-    RAILS_ENV=staging bundle exec rake db:create
-    RAILS_ENV=staging bundle exec rake db:seed
 
 ##Thin
 login as deployer user (with proper priviledges)
@@ -450,6 +444,32 @@ Set environment, app folder, port accordingly
     wait: 30
     threadpool_size: 20
     daemonize: true
+
+## Capistrano
+
+    # staging.rb
+    server 'xx.xx.xx.xx', user: 'xxxxxxx', roles: %w{web app db}, primary: true, port: xxxx
+    set :deploy_to, '/var/www/shk/'
+    set :use_sudo, false
+    set :rvm_ruby_version, '2.2.1@shk'
+    set :rvm_custom_path, '/home/alfredo/.rvm' # rvm installed by alfredo!
+    set :rails_env, 'staging'
+    set :rake_env, 'staging'
+
+
+    cap staging rvm:check
+    cap staging rvm1:check
+    cap staging check_write_permissions
+    cap staging deploy:check
+    cap staging setup:upload_sensitive_files
+    cap staging deploy
+    cap staging logs:tail_rails
+    cap staging logs:tail_thin
+
+Login server, cd /app_folder/releases/<release> and execute
+
+    RAILS_ENV=staging bundle exec rake db:create
+    RAILS_ENV=staging bundle exec rake db:seed
 
 ### Restarting thin from Capistrano
 1. Using RVM wrapper - preferred
