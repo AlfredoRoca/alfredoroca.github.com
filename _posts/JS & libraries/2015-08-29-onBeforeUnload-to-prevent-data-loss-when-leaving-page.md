@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ""
-description: "Preventing data loss when leaving page with onbeforeunload event"
+title: "Preventing data loss when leaving page with onbeforeunload event"
+description: ""
 category: [js]
 tags: [onbeforeunload]
 ---
