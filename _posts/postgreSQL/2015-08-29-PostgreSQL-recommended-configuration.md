@@ -9,7 +9,7 @@ tags: []
 
 <https://www.amberbit.com/blog/2014/2/4/postgresql-awesomeness-for-rails-developers/>
 
-    vi /etc/postgresql/9.4/main/postgresql.conf
+    vi /var/lib/pgsql/data/postgresql.conf
 
 
     listen_addresses = '*' # To which interface we should bind. '*'
