@@ -7,11 +7,25 @@ tags: [onbeforeunload]
 ---
 {% include JB/setup %}
 
+    window.onbeforeunload = function () {return false;}
+
+    //
+    // demo
+    //
+    function confirmExit() {
+      if (needToConfirm) {
+      // check to see if any changes to the data entry fields have been made
+      // no changes - return nothing
+        if ($(".invisible").length < 4) {
+          return true;
+        }
+      }
+    }
+
 Source: <http://www.4guysfromrolla.com/webtech/100604-1.shtml>
 
     <script language="JavaScript">
-      var ids = new Array('name', 'gender', 'sendEmail', 'radVanilla', 
-                                        'radChocolate', 'radStrawberry');
+      var ids = new Array('name', 'gender', 'sendEmail', 'radVanilla', 'radChocolate', 'radStrawberry');
       var values = new Array('', '', '', '', '', '');
       
       function populateArrays()
@@ -28,7 +42,31 @@ Source: <http://www.4guysfromrolla.com/webtech/100604-1.shtml>
         }      
       }
 
-      ...
+
+
+      var needToConfirm = true;
+      
+      window.onbeforeunload = confirmExit;
+      function confirmExit()
+      {
+        if (needToConfirm)
+        {
+          // check to see if any changes to the data entry fields have been made
+          for (var i = 0; i < values.length; i++)
+          {
+            var elem = document.getElementById(ids[i]);
+            if (elem)
+              if ((elem.type == 'checkbox' || elem.type == 'radio')
+                      && values[i] != elem.checked)
+                return "You have attempted to leave this page.  If you have made any changes to the fields without clicking the Save button, your changes will be lost.  Are you sure you want to exit this page?";
+              else if (!(elem.type == 'checkbox' || elem.type == 'radio') &&
+                      elem.value != values[i])
+                return "You have attempted to leave this page.  If you have made any changes to the fields without clicking the Save button, your changes will be lost.  Are you sure you want to exit this page?";
+          }
+
+          // no changes - return nothing      
+        }
+      }
     </script>
 
     ...
@@ -54,6 +92,3 @@ Source: <http://www.4guysfromrolla.com/webtech/100604-1.shtml>
     <script language="JavaScript">
       populateArrays();
     </script>
-
-
-
