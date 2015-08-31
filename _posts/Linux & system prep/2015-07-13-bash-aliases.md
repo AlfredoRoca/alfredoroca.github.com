@@ -2,7 +2,7 @@
 layout: post
 title: "bash aliases"
 description: ""
-category: [linux, system_configuration]
+category: [linux, system]
 tags: [linux, system, configuration]
 ---
 {% include JB/setup %}
