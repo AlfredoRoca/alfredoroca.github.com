@@ -108,11 +108,11 @@ next line only to install thin as a service, later can be removed
 ### SSH keys for developer for deployment
     ssh-keygen -C "dev email"   -> if there is no key pair in .ssh
     ssh-add -L (or cat id_rsa.pub)
-    copy and add the pubkey to authorization_keys of deployer user name in remote server
+    copy and add the pubkey to authorized_keys of deployer user name in remote server
 
 ### PROCEDURE FOR ADDING A NEW DEVELOPER TO DEPLOY
     1. Ask for his/her public key
-    2. Add it to deployer/.ssh/authorization_keys file
+    2. Add it to deployer/.ssh/authorized_keys file
 
 ### SSH keys for login user with custom file name 
     ssh-keygen -f custom-name -C "user email"
@@ -463,6 +463,7 @@ Set environment, app folder, port accordingly
     cap staging check_write_permissions
     cap staging deploy:check
     cap staging setup:upload_sensitive_files
+    cap staging deploy:check
     cap staging deploy
     cap staging logs:tail_rails
     cap staging logs:tail_thin
