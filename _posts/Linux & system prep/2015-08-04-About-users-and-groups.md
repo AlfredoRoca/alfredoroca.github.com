@@ -3,7 +3,7 @@ layout: post
 title: "About users and groups"
 description: ""
 category: [linux, fedora]
-tags: [users, groups]
+tags: [users, groups, visudo, sudoers]
 ---
 {% include JB/setup %}
 
