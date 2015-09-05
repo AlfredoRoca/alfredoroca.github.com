@@ -234,7 +234,7 @@ Backup:
 <p>
 Restore:
 </p>
-<pre class="code">$ psql [--table {table-name}] -U {user-name} -d {desintation_db}-f {dumpfilename.sql}</pre>
+<pre class="code">$ psql [--table {table-name}] -U {user-name} -d {destination_db}-f {dumpfilename.sql}</pre>
 
 <p>
 Backup all databases:
