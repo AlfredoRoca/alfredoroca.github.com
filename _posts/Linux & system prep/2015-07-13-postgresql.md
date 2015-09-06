@@ -35,8 +35,6 @@ tags: [postgres]
 </ul>
 </li>
 <li class="level1"><div class="li"><a href="#testing_dates_in_timezone_with_postgres">Testing dates in timezone with postgres</a></div></li>
-<li class="level1"><div class="li"><a href="#backup_restore">Backup/restore</a></div></li>
-<li class="level1"><div class="li"><a href="#postgres_automatic_backup">POSTGRES AUTOMATIC BACKUP</a></div></li>
 </ul>
 </div>
 </div>
@@ -223,92 +221,3 @@ activation_date { Time.current.utc.iso8601 }</pre>
 
 </div>
 
-<h1 class="sectionedit11" id="backup_restore">Backup/restore</h1>
-<div class="level1">
-
-<p>
-Backup:  
-</p>
-<pre class="code">$ pg_dump -U {user-name} {source_db} -f {dumpfilename.sql}</pre>
-
-<p>
-Restore:
-</p>
-<pre class="code">$ psql [--table {table-name}] -U {user-name} -d {destination_db}-f {dumpfilename.sql}</pre>
-
-<p>
-Backup all databases:
-</p>
-<pre class="code">su postgres                 -&gt;&gt; connect as postgres user (optional)
-psql -l                     -&gt;&gt; list databases
-pg_dumpall &gt; all.sql        -&gt;&gt; backup all databases
-grep &quot;^[\]connect&quot; all.sql  -&gt;&gt; verify all databases are backed up</pre>
-
-</div>
-
-<h1 class="sectionedit12" id="postgres_automatic_backup">POSTGRES AUTOMATIC BACKUP</h1>
-<div class="level1">
-
-<p>
-Fuente:
-<a href="https://wiki.postgresql.org/wiki/Automated_Backup_on_Linux" class="urlextern" title="https://wiki.postgresql.org/wiki/Automated_Backup_on_Linux"  rel="nofollow">https://wiki.postgresql.org/wiki/Automated_Backup_on_Linux</a>
-<a href="http://www.postgresql.org/docs/9.3/static/libpq-pgpass.html" class="urlextern" title="http://www.postgresql.org/docs/9.3/static/libpq-pgpass.html"  rel="nofollow">http://www.postgresql.org/docs/9.3/static/libpq-pgpass.html</a>
-</p>
-
-<p>
-El primer script crea backups diarios, semanales y mensuales para cada tabla del postgres.
-El segundo explica el archivo de contraseñas de postgres para conexiones desatendidas.
-</p>
-
-<p>
-Crear los archivos a partir de la fuente.
-He puesto los archivos adjuntos en /home/alfredo/backups
-</p>
-
-<p>
-Para forzar su ejecución ejecución:
-</p>
-<pre class="code"> sh pg_backup_rotated.sh -c ./pg_backup.config</pre>
-
-<p>
-.pgpass: Archivo de contraseñas postgres
-ubicar en en /root con privilegios “chmod 600 .pgpass” y formato
-</p>
-<pre class="code">#hostname:port:database:username:password
-# ej para todas las BD
-*:*:*:alfredo:alfredo</pre>
-
-<p>
-Si se guarda archivo .pgpass en otro lugar declarar variable
-</p>
-<pre class="code">PGPASSFILE=/home/alfredo/backups/.pgpass</pre>
-
-<p>
-Con los datos de configuración adjuntos guarda 7 diarios y 5 semanales (los viernes), y 1 mensual (dia 1 del mes)
-</p>
-
-<p>
-cronjob como root para que ejecute el script a las 4.30 cada día.
-</p>
-
-<p>
-30 04 * * * /home/alfredo/backups/pg_backup_rotated.sh -c /home/alfredo/backups/pg_backup.config
-</p>
-
-<p>
-RESTORE
-</p>
-
-<p>
-1ª eliminar si existe y crear la BD con
-$ dropdb dbname
-$ createdb -T template0 dbname
-2º crear mismo role si no existe ya
-$ psql -U alfredo postgres   (en portatil me conecto como alfredo)
-# create role pgalfredo superuser;     (en nairobi estoy como pgalfredo)
-3º importar datos del backup &#039;filename&#039; pero para si hay error
-$ gunzip -c filename.sql.gz | psql –set ON_ERROR_STOP=on dbname
-ó $ psql –set ON_ERROR_STOP=on dbname &lt; filename.sql
-</p>
-
-</div>
