@@ -8,9 +8,9 @@ tags: [backup, pg_dump, psql]
 {% include JB/setup %}
 
 Fuente:
-<https://wiki.postgresql.org/wiki/Automated_Backup_on_Linux>
 
-<http://www.postgresql.org/docs/9.3/static/libpq-pgpass.html>
+1. <https://wiki.postgresql.org/wiki/Automated_Backup_on_Linux>
+2. <http://www.postgresql.org/docs/9.3/static/libpq-pgpass.html>
 
 #BACKUP
 El primer script crea backups diarios, semanales y mensuales para cada tabla del postgres.
