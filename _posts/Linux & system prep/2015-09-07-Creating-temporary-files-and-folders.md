@@ -17,8 +17,12 @@ The best practice is to create random and unpredictable filenames for temporary 
 
 The XXXXXXXX is replaced by the mktemp utility with random characters to ensure the name of the temporary file cannot be easily predicted and is only known within your program.
 
-    **Command                                     Usage**
+    Command                                     Usage
 
     TEMP=$(mktemp /tmp/tempfile.XXXXXXXX)       To create a temporary file
     TEMPDIR=$(mktemp -d /tmp/tempdir.XXXXXXXX)  To create a temporary directory
+
+Example
+
+    $ mktemp /tmp/kk.XXXX   ==> /tmp/kk.qf4u
 
