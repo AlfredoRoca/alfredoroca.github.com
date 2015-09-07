@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Hide standar output"
+title: "Hide standard output"
 description: ""
 category: [bash, redirect, dev/null]
 tags: []
 ---
 {% include JB/setup %}
 
-Redirect the output to /dev/null
+**Redirect the output to /dev/null
 
 Example
 
