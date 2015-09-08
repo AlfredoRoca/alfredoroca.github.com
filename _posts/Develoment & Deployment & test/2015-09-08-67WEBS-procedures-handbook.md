@@ -10,20 +10,20 @@ tags: []
 
 #Intercambio de documentos:
 
-1. Carpeta compartida en Dropbox
+##Carpeta compartida en Dropbox
 
 Se compartirá carpeta en Dropbox
 
-    Nombre: como la aplicación
-    Entre todos los colaboradores del proyecto con derechos para escritura
-    Dentro de ésta se abrirán nuevas carpetas para alojamiento de
-        imagenes (fotos, logos, etc) 
-        especificaciones
-        propuestas de diseño
-        archivos de datos fuente
-        diseños finales
+Nombre: como la aplicación
+Entre todos los colaboradores del proyecto con derechos para escritura
+Dentro de ésta se abrirán nuevas carpetas para alojamiento de
+* imagenes (fotos, logos, etc) 
+* especificaciones
+* propuestas de diseño
+* archivos de datos fuente
+* diseños finales
 
-2. Nombres de los archivos
+##Nombres de los archivos
 
 [prefijo - ]<nombre autoexplicativo> - <fecha publicación> - Rev<Revisión>
 
@@ -31,67 +31,67 @@ Donde:
 
 prefijo: Opcional. Indica el estado del documento
 
-    - provisional -> contenido en desarrollo, no es definitivo
-    - final -> contenido listo para implementarse en beta o producción
-    - desarrollo -> en fase de implementación
-    - en beta -> contenido actualizado en beta
-    - producción -> operativo
+* provisional -> contenido en desarrollo, no es definitivo
+* final -> contenido listo para implementarse en beta o producción
+* desarrollo -> en fase de implementación
+* en beta -> contenido actualizado en beta
+* producción -> operativo
 
 nombre autoexplicativo
 
-    - resume en 4 palabras el contenido del documento
-    - si hacen falta más de 4 palabras, hay que partir el documento en archivos más pequeños
+- resume en 4 palabras el contenido del documento
+- si hacen falta más de 4 palabras, hay que partir el documento en archivos más pequeños
 
 fecha publicación: fecha en la que se sube el archivo a la carpeta compartida o cambia de prefijo
 
 revisión: número correlativo para distinguir versiones del mismo documento (ver las normas de modificación de contenidos)
 
-3. Modificación de contenidos en archivos de texto
+##Modificación de contenidos en archivos de texto
 
 Pueden modificarse documentos en los siguientes estados (prefijo del nombre):
 
-    - provisional
-    - final
-    - desarrollo
-    - en beta
+- provisional
+- final
+- desarrollo
+- en beta
 
 No puede modificarse documento si está en fase:
 
-    - producción
+- producción
 
 Normas:
 
 Nunca se eliminará contenido si está en "desarrollo" o "en beta".
 Se marcará claramente la parte modificada mediante alguno de los siguientes métodos:
 
-    - tachar contenido
-    - cambiar letra a cursiva
-    - cambiar color letra a gris
-    - marcar como "antes"
+- tachar contenido
+- cambiar letra a cursiva
+- cambiar color letra a gris
+- marcar como "antes"
 
 Se marcará clarament el nuevo contenido mediante alguno de los siguientes métodos:
 
-    - cambiar letra a negrita
-    - remarcar con fondo amarillo
-    - marcar como "después"
+- cambiar letra a negrita
+- remarcar con fondo amarillo
+- marcar como "después"
 
 El nuevo contenido se colocará inmediatamente después del viejo.
 
 Si el alcance de la modificación afecta a prácticamente la totalidad del documento, se creará un nuevo documento aumentando el número de revisión.
 En este caso no será necesario modificar el viejo y se notificará al equipo la publicación del nuevo documento.
 
-4. Modificación de contenidos gráficos
+##Modificación de contenidos gráficos
 
 Podrán modificarse archivos en las fases
 
-    provisional
-    final
+- provisional
+- final
 
 No podrán modificarse en fase
 
-    desarrollo
-    beta
-    producción
+- desarrollo
+- beta
+- producción
 
 Se sustituirá la parte modificada con lo nuevo.
 
@@ -99,17 +99,17 @@ Se sustituirá la parte modificada con lo nuevo.
 
 El diseñador deberá aportar la siguiente información:
 
-    Nombre de las fuentes utilizadas. Serán fuentes libres de derechos excepto el proyecto requiera una fuente que no pueda sustituirse por otra libre.
-    Paleta de colores: muestra y código RGBA
-    Texturas
-    Iconos
-    archivo PSD
+- Nombre de las fuentes utilizadas. Serán fuentes libres de derechos excepto el proyecto requiera una fuente que no pueda sustituirse por otra libre.
+- Paleta de colores: muestra y código RGBA
+- Texturas
+- Iconos
+- archivo PSD
 
 
 Sobre el archivo PSD:
 
-    Capas nombradas según su contenido para fácil identificación
-    Se eliminarán las capas no utilizadas o, al menos, se marcarán para su selección rápida.
+- Capas nombradas según su contenido para fácil identificación
+- Se eliminarán las capas no utilizadas o, al menos, se marcarán para su selección rápida.
 
 
 #Gestión de tareas
@@ -119,24 +119,24 @@ Sobre el archivo PSD:
 1. Si es necesario dividirlas en varios pasos autónomos se explicitará en uno o varios checklists
 1. Listas estándar:
 
-    Design
-    Functionality
-    Next
-    Pomodoro
-    System
-    Done
-    New ideas
+    - Design
+    - Functionality
+    - Next
+    - Pomodoro
+    - System
+    - Done
+    - New ideas
 
 
 1. Explicación estrategia/método de resolución:
 
-    En aquellas fichas que exijan una cierta elaboración o proceso, se explicará brevemente cómo se ha resuelto.
-    Para ello, se escribirá el proceso para incluirlo posteriormente en un post de la MemoWiki
-    Debe incluirse
-        el enunciado del problema,
-        el proyecto
-        los pasos seguidos
-        enlaces a las páginas consultadas
+    - En aquellas fichas que exijan una cierta elaboración o proceso, se explicará brevemente cómo se ha resuelto.
+    - Para ello, se escribirá el proceso para incluirlo posteriormente en un post de la MemoWiki
+    - Debe incluirse
+        - el enunciado del problema,
+        - el proyecto
+        - los pasos seguidos
+        - enlaces a las páginas consultadas
 
 
 #Control de horas
