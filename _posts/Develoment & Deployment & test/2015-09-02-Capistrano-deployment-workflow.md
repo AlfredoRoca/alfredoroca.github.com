@@ -13,6 +13,7 @@ At some point of the deployment ...
 extracted from shk, pending to verify in saap
 
 ... 
+
     cd /var/www/saap/repo && ( GIT_ASKPASS=/bin/echo GIT_SSH=/tmp/saap/git-ssh.sh /usr/bin/env git remote update )
     cd /var/www/saap/repo && ( GIT_ASKPASS=/bin/echo GIT_SSH=/tmp/saap/git-ssh.sh /usr/bin/env mkdir -p /var/www/saap/releases/20150830071011 )
     cd /var/www/saap/repo && ( GIT_ASKPASS=/bin/echo GIT_SSH=/tmp/saap/git-ssh.sh /usr/bin/env git archive master | tar -x -f - -C /var/www/saap/releases/20150830071011 )
