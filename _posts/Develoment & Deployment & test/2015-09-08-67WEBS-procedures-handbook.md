@@ -61,7 +61,7 @@ No puede modificarse documento si está en fase:
 
 Normas:
 
-Nunca se eliminará contenido si está en "desarrollo" o "en beta".
+1. Nunca se eliminará contenido si está en "desarrollo" o "en beta".
 Se marcará claramente la parte modificada mediante alguno de los siguientes métodos:
 
 - tachar contenido
@@ -69,15 +69,15 @@ Se marcará claramente la parte modificada mediante alguno de los siguientes mé
 - cambiar color letra a gris
 - marcar como "antes"
 
-Se marcará clarament el nuevo contenido mediante alguno de los siguientes métodos:
+2. Se marcará clarament el nuevo contenido mediante alguno de los siguientes métodos:
 
 - cambiar letra a negrita
 - remarcar con fondo amarillo
 - marcar como "después"
 
-El nuevo contenido se colocará inmediatamente después del viejo.
+3. El nuevo contenido se colocará inmediatamente después del viejo.
 
-Si el alcance de la modificación afecta a prácticamente la totalidad del documento, se creará un nuevo documento aumentando el número de revisión.
+4. Si el alcance de la modificación afecta a prácticamente la totalidad del documento, se creará un nuevo documento aumentando el número de revisión.
 En este caso no será necesario modificar el viejo y se notificará al equipo la publicación del nuevo documento.
 
 ##Modificación de contenidos gráficos
@@ -104,7 +104,6 @@ El diseñador deberá aportar la siguiente información:
 - Texturas
 - Iconos
 - archivo PSD
-
 
 Sobre el archivo PSD:
 
