@@ -14,22 +14,22 @@ tags: []
 
 Se compartirá carpeta en Dropbox
 
-Nombre: como la aplicación
-Entre todos los colaboradores del proyecto con derechos para escritura
-Dentro de ésta se abrirán nuevas carpetas para alojamiento de
-* imagenes (fotos, logos, etc) 
-* especificaciones
-* propuestas de diseño
-* archivos de datos fuente
-* diseños finales
+* Nombre: como la aplicación
+* Entre todos los colaboradores del proyecto con derechos para escritura
+* Dentro de ésta se abrirán nuevas carpetas para alojamiento de
+    * imagenes (fotos, logos, etc) 
+    * especificaciones
+    * propuestas de diseño
+    * archivos de datos fuente
+    * diseños finales
 
 ##Nombres de los archivos
 
-[prefijo - ]<nombre autoexplicativo> - <fecha publicación> - Rev<Revisión>
+```[prefijo - ]#NOMBRE_AUTOEXPLICATIVO - #FECHA_PUBLICACIÓN - Rev#REV```
 
 Donde:
 
-prefijo: Opcional. Indica el estado del documento
+```#PREFIJO```: Opcional. Indica el estado del documento
 
 * provisional -> contenido en desarrollo, no es definitivo
 * final -> contenido listo para implementarse en beta o producción
@@ -37,14 +37,14 @@ prefijo: Opcional. Indica el estado del documento
 * en beta -> contenido actualizado en beta
 * producción -> operativo
 
-nombre autoexplicativo
+```#NOMBRE_AUTOEXPLICATIVO```
 
 - resume en 4 palabras el contenido del documento
 - si hacen falta más de 4 palabras, hay que partir el documento en archivos más pequeños
 
-fecha publicación: fecha en la que se sube el archivo a la carpeta compartida o cambia de prefijo
+```#FECHA_PUBLICACIÓN```: fecha en la que se sube el archivo a la carpeta compartida o cambia de prefijo
 
-revisión: número correlativo para distinguir versiones del mismo documento (ver las normas de modificación de contenidos)
+```#REVISIÓN```: número correlativo para distinguir versiones del mismo documento (ver las normas de modificación de contenidos)
 
 ##Modificación de contenidos en archivos de texto
 
