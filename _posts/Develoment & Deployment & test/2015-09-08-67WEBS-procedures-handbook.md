@@ -64,16 +64,16 @@ Normas:
 1. Nunca se eliminará contenido si está en "desarrollo" o "en beta".
 Se marcará claramente la parte modificada mediante alguno de los siguientes métodos:
 
-- tachar contenido
-- cambiar letra a cursiva
-- cambiar color letra a gris
-- marcar como "antes"
+    - tachar contenido
+    - cambiar letra a cursiva
+    - cambiar color letra a gris
+    - marcar como "antes"
 
 2. Se marcará clarament el nuevo contenido mediante alguno de los siguientes métodos:
 
-- cambiar letra a negrita
-- remarcar con fondo amarillo
-- marcar como "después"
+    - cambiar letra a negrita
+    - remarcar con fondo amarillo
+    - marcar como "después"
 
 3. El nuevo contenido se colocará inmediatamente después del viejo.
 
