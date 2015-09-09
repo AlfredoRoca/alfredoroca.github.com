@@ -46,17 +46,20 @@ cronjob como root para que ejecute el script a las 4.30 cada día.
 #RESTORE
 
 Eliminar si existe y crear la BD con
+
     $ dropdb dbname
     $ createdb -T template0 dbname
 
 Crear mismo role si no existe ya
+
     $ psql -U alfredo postgres
     # create role alfredo superuser;
 
-Importar datos del backup "filename"; pero para si hay error
+Importar datos del backup "filename"; pero por si hay error
 
     $ gunzip -c filename.sql.gz | psql –set ON_ERROR_STOP=on dbname
 
 O
+
     $ psql –set ON_ERROR_STOP=on dbname < filename.sql
 
