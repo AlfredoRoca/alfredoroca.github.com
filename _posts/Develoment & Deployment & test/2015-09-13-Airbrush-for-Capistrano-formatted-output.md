@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "Capistrano formatted output prettfied with Airbrush"
 description: ""
 category: [capistrano, airbrush]
 tags: []
