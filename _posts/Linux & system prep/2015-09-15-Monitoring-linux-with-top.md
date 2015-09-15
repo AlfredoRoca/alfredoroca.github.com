@@ -9,6 +9,10 @@ tags: [top]
 
 Source: LinuxFoundationX: LFS101x.2 Introduction to Linux
 
+##Other tools: w, uptime
+
+<http://alfredoroca.github.io/linux/monitoring/tools/system/load_average/2015/09/15/Monitoring-tools/>
+
 ##First Line of the top Output
 
 The first line of the top output displays a quick summary of what is happening in the system including:
