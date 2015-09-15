@@ -11,7 +11,7 @@ Source: LinuxFoundationX: LFS101x.2 Introduction to Linux
 
 ##top 
 
-</server/system/monitoring/2015/09/15/Monitoring-linux-with-top/>
+<http://alfredoroca.github.io/server/system/monitoring/2015/09/15/Monitoring-linux-with-top/>
 
 ##w
 
