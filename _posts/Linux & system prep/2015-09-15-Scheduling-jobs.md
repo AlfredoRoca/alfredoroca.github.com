@@ -32,9 +32,15 @@ Examples:
 ##Delayed jobs
 
 Sources: 
+
 <https://github.com/collectiveidea/delayed_job>
+
 <http://www.sitepoint.com/delayed-jobs-best-practices/>
+
 <http://www.sitepoint.com/new-rails-shiny-activejob/>
+
 <http://www.sitepoint.com/dont-get-activejob/>
+
 <http://blog.andolasoft.com/2013/04/4-simple-steps-to-implement-delayed-job-in-rails.html>
+
 
