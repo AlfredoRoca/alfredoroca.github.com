@@ -17,7 +17,17 @@ El primer script crea backups diarios, semanales y mensuales para cada tabla del
 El segundo explica el archivo de contraseñas de postgres para conexiones desatendidas.
 
 Crear los archivos a partir de la fuente.
-He puesto los archivos adjuntos en /home/alfredo/backups
+
+vi /home/alfredo/backups/pg_backup.config
+
+    USERNAME=superuser
+    BACKUP_DIR=/home/backups/database/postgresql/
+    ENABLE_CUSTOM_BACKUPS=no
+
+Crear directorio como root
+
+    mkdir /home/backups && mkdir /home/backups/database && mkdir /home/backups/database/postgresql
+
 
 Para forzar su ejecución ejecución:
 
