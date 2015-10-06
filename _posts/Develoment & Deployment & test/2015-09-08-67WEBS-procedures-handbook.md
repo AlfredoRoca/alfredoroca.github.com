@@ -264,3 +264,7 @@ Remotely
 
 Deployed commit is in '/version' url
 
+#Programming
+
+**Follow the principle: thin controller, fat model**
+
