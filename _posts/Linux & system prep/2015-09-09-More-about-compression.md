@@ -14,6 +14,10 @@ gzip
 bzip2
 xz
 zip
+zcat
+zless
+zdiff
+zgrep
 
 #join and compress files in current folder and subfolders and copmress it with gzip
 

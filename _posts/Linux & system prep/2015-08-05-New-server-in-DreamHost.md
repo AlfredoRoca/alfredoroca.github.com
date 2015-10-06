@@ -111,8 +111,13 @@ next line only to install thin as a service, later can be removed
     copy and add the pubkey to authorized_keys of deployer user name in remote server
 
 ### PROCEDURE FOR ADDING A NEW DEVELOPER TO DEPLOY
+####To add him to connect to server
     1. Ask for his/her public key
     2. Add it to deployer/.ssh/authorized_keys file
+
+####To let him connect to bitbucket dureing deployment
+    1. Generate pub key for deployer at staging server
+    2. and add the pubkey in deployment keys in Bitbucket repo settings
 
 ### SSH keys for login user with custom file name 
     ssh-keygen -f custom-name -C "user email"
