@@ -1,13 +1,11 @@
 ---
 layout: post
-title: ""
+title: "How to create a photo video with music"
 description: ""
-category: []
+category: [windows, video]
 tags: []
 ---
 {% include JB/setup %}
-
-#HOW TO CREATE A PHOTO VIDEO WITH MUSIC
 
 1. Music
 

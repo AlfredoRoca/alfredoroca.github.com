@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ruby: best array sort method"
+title: "Best method to sort an array in ruby"
 description: ""
 category: [ruby, array, sort]
 tags: []

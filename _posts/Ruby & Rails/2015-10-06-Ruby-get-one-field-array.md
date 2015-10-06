@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Ruby: get an array of one field of each record"
+title: "Get an array of one field of each record in ruby"
 description: ""
-category: []
+category: [ruby, array, sort]
 tags: []
 ---
 {% include JB/setup %}
 
-#HOW TO GET AN ARRAY OF ONE FIELD OF EACH RECORD
 
     hotels.map(&:id)
