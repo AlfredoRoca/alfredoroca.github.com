@@ -7,14 +7,16 @@ tags: []
 ---
 {% include JB/setup %}
 
-ruby stream.rb
+##Usage
 
-For admin panel: localhost:4567/admin
+    ruby stream.rb
 
-The receiver: localhost:4567
+For admin panel: ```localhost:4567/admin```
+
+The receiver: ```localhost:4567```
 
 
-stream.rb
+##stream.rb
 
     require 'json'
     require 'sinatra'
@@ -55,7 +57,7 @@ stream.rb
       connections.each { |out| out << "data: #{notification}\n\n"}
     end
 
-public/es.js
+##public/es.js
 
     var push = function () {
       var es = new EventSource('/connect');
@@ -67,7 +69,7 @@ public/es.js
 
     $(document).ready(push);
 
-public/push.js
+##public/push.js
 
     var bind_push = function () {
       $('#send').click(function (event) {
@@ -81,7 +83,7 @@ public/push.js
 
     $(document).ready(bind_push);
 
-views/index.erb
+##views/index.erb
 
     <html>
       <head>
@@ -98,14 +100,14 @@ views/index.erb
       </body>
     </html>
 
-views/admin.erb
+##views/admin.erb
 
     <div id="wrapper">
         <input type="text" id="notification" placeholder="Enter Notification Here" /><br>
         <input type="button" id="send" value="Push" data-role="button"/>
     </div>
 
-views/receiver.erb
+##views/receiver.erb
 
     <div id="notification">
     </div>
