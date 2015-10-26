@@ -9,8 +9,6 @@ tags: []
 
 <http://api.rubyonrails.org/classes/ActionView/Helpers/TextHelper.html>
 
-for translations of long texts
+For translations of long texts use ```simple_format```
 
-simple_format
-
-<http://thepugautomatic.com/2012/07/rails-i18n-tips/>
+Tutorial: <http://thepugautomatic.com/2012/07/rails-i18n-tips/>
