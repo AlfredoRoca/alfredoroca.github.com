@@ -38,7 +38,10 @@ Finally Add localhost.ssl to your hosts file
 
     thin start -p 3001 --ssl --ssl-key-file ~/.ssl/server.key --ssl-cert-file ~/.ssl/server.crt
 
-Secure your website the easy way with sslmate
+#sslmate
+
+Secure your website the easy way with **sslmate**
 
 SSLMate makes it easy to buy, deploy, and manage your SSL certs.
-https://sslmate.com/ => to automate buying and renewing SSL certificates
+
+<https://sslmate.com/> => to automate buying and renewing SSL certificates
