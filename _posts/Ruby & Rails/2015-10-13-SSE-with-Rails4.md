@@ -22,9 +22,6 @@ Requirements:
 
 development.rb
 
-    # In the development environment your application's code is reloaded on
-    # every request. This slows down response time but is perfect for development
-    # since you don't have to restart the web server when you make code changes.
     config.cache_classes = true # SSE needs this true
 
     # Do not eager load code on boot.
@@ -43,10 +40,10 @@ push_notifications_controller.rb
           format.stream {
             response.headers['Content-Type'] = 'text/event-stream'
             begin
-              # loop do
+              loop do
                 response.stream.write "data: #{System.status}\n\n"
-                # sleep 2.second
-              # end
+                sleep 2.second
+              end
             rescue IOError # Raised when browser interrupts the connection
             ensure
               response.stream.close # Prevents stream from being open forever
@@ -60,7 +57,7 @@ push_notifications_controller.rb
 connect_to_sse.js
 
     var connectToSSE = function () {
-      var source = new EventSource('/connect');
+      var source = new EventSource('/connect_to_sse');
       source.onopen = function (event) {
         console.log("Open connection!");
       }
