@@ -8,6 +8,7 @@ tags: [new_app, bundle]
 {% include JB/setup %}
 
 new app modifier:
-    --skip-bundle
+
+    --skip-bundle OR -B
 
 
