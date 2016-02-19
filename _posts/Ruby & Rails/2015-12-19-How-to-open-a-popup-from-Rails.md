@@ -33,6 +33,19 @@ _popup_con_mensaje.html.erb
     </div>
 
 
+show_popup.js.erb
+
+    $('#myModal').modal('show')
+
+In controller action
+
+    render :show_popup
+
+In the view
+
+    <%= link_to ...., onclick: "$('#myModal').modal('show');" ...
+
+
 In bootstrap-sprockets.js
 
     //= require ./bootstrap/modal
