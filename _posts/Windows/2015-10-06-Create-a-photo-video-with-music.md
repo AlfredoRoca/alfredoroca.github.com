@@ -17,6 +17,13 @@ tags: []
 
     Create video, add music and adjust video to music
 
-3. Video
+3. Create slides with text:
+
+    Prepare with PowerPoint
+    Export slides to png format
+    Add to Picasa albúm in the proper place
+
+4. Video
 
     Convert to other formats with DVDVideoSoft FreeStudio
+
