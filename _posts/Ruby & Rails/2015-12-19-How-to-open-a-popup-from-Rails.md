@@ -32,6 +32,7 @@ _popup_con_mensaje.html.erb
       </div>
     </div>
 
+Show from the controller:
 
 show_popup.js.erb
 
@@ -41,7 +42,7 @@ In controller action
 
     render :show_popup
 
-In the view
+Show from the view:
 
     <%= link_to ...., onclick: "$('#myModal').modal('show');" ...
 
