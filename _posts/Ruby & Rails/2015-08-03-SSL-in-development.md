@@ -7,7 +7,7 @@ tags: [development]
 ---
 {% include JB/setup %}
 
-#Using SSL in your local Rails environment
+# Using SSL in your local Rails environment
 
     http://www.railway.at/2013/02/12/using-ssl-in-your-local-rails-environment/ => thin server with SSL
 
@@ -34,11 +34,11 @@ Finally Add localhost.ssl to your hosts file
     echo "127.0.0.1 localhost.ssl" | sudo tee -a /private/etc/hosts
 
 
-#Starting thin
+# Starting thin
 
     thin start -p 3001 --ssl --ssl-key-file ~/.ssl/server.key --ssl-cert-file ~/.ssl/server.crt
 
-#sslmate
+# sslmate
 
 Secure your website the easy way with **sslmate**
 

@@ -8,7 +8,7 @@ tags: []
 {% include JB/setup %}
 
 
-#for
+# for
 
     for variable-name in list
     do
@@ -26,7 +26,7 @@ Example
     echo $sum
 
 
-#while
+# while
 
     while condition is true
     do
@@ -47,7 +47,7 @@ Example
     done
     echo "Fact de $num is $fact"
 
-#until
+# until
 
     until condition is false
     do

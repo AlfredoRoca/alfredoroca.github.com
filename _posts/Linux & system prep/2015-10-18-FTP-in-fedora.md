@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-#SFTP
+# SFTP
 
 <https://docs.fedoraproject.org/en-US/Fedora/17/html/System_Administrators_Guide/s3-ftp-vsftpd-conf.html>
 

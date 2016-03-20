@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-#Creating Temporary Files and Directories
+# Creating Temporary Files and Directories
 
 Consider a situation where you want to retrieve 100 records from a file with 10,000 records. You will need a place to store the extracted information, perhaps in a temporary file, while you do further processing on it.
 

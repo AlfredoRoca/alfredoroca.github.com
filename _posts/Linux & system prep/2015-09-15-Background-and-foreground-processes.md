@@ -9,7 +9,7 @@ tags: [jobs, at]
 
 Source: LinuxFoundationX: LFS101x.2 Introduction to Linux
 
-#Background and Foreground Processes
+# Background and Foreground Processes
 
 Linux supports background and foreground job processing. (A job in this context is just a command launched from a terminal window.) Foreground jobs run directly from the shell, and when one foreground job is running, other jobs need to wait for shell access (at least in that terminal window if using the GUI) until it is completed. This is fine when jobs complete quickly. But this can have an adverse effect if the current job is going to take a long time (even several hours) to complete.
 
@@ -21,7 +21,7 @@ To run in background
 
 You can either use CTRL-Z to suspend a foreground job or CTRL-C to terminate a foreground job and can always use the bg and fg commands to run a process in the background and foreground, respectively.
 
-#Managing Jobs
+# Managing Jobs
 
 The jobs utility displays all jobs running in background. The display shows the job ID, state, and command name, as shown here.
 
@@ -29,7 +29,7 @@ The jobs utility displays all jobs running in background. The display shows the 
 
 The background jobs are connected to the terminal window, so if you log off, the jobs utility will not show the ones started from that window.
 
-#Scheduling Future Processes using at
+# Scheduling Future Processes using at
 
 Suppose you need to perform a task on a specific day sometime in the future. However, you know you will be away from the machine on that day. How will you perform the task? You can use the ```at``` utility program to execute any **non-interactive** command at a specified time, as illustrated in the diagram:
 

@@ -11,7 +11,7 @@ Source:
 
 - <http://www.solipsys.co.uk/new/BashInitialisationFiles.html>
 
-#Shell modes
+# Shell modes
 See source for more info on other shells
 
 - <https://github.com/sstephenson/rbenv/wiki/Unix-shell-initialization>
@@ -40,7 +40,7 @@ Here are some common operations and shell modes they result in:
         on Linux: non‑login, interactive
 
 
-#Shell init files
+# Shell init files
 
 In order of activation:
 
@@ -55,7 +55,7 @@ bash
     non-interactive:
         source file in $BASH_ENV
 
-#Practical guide to which files get sourced when
+# Practical guide to which files get sourced when
 
     Opening a new Terminal window/tab:
         bash

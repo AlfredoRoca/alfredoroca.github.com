@@ -7,9 +7,9 @@ tags: [new_install, rvm, git, rails, ruby, capistrano, deployment, ssh, linux, f
 ---
 {% include JB/setup %}
 
-#DH Dashboard,
+# DH Dashboard,
 
-####Launch instance
+#### Launch instance
 
 Details:
 
@@ -37,28 +37,28 @@ and set environment variables using the OpenStack RC file: [http://docs.openstac
 SSH login to floating IP addr
 
 
-#1st configuration
+# 1st configuration
 Source: [https://www.digitalocean.com/community/tutorials/initial-setup-of-a-fedora-21-server](https://www.digitalocean.com/community/tutorials/initial-setup-of-a-fedora-21-server)
 
 Source: [http://vladigleba.com/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/](http://vladigleba.com/blog/2014/03/05/deploying-rails-apps-part-1-securing-the-server/)
 
 The following done as root
 
-##SYSTEM UPDATE
+## SYSTEM UPDATE
     yum update
     reboot
 
 login again as superuser
     
-##GROUPS AND USERS
+## GROUPS AND USERS
 
-###Create password for root
+### Create password for root
     passwd  => pw for root
 
-###Deployers group with root access
+### Deployers group with root access
     groupadd deployers
 
-###Sudoers config
+### Sudoers config
 Create file /etc/sudoers.d/myuser 
 
     sudo visudo -f /etc/sudoers.d/my_deployer_user
@@ -71,13 +71,13 @@ next line only to install thin as a service, later can be removed
     chmod 0440 /etc/sudoers.d/my_deployer_user  -> read only
 
 
-###Add users to deployers group
+### Add users to deployers group
     useradd -G deployers,rvm <deployer-name>
     passwd <deployer-name>
 
 ## SSH ACCESS
 
-###Config port
+### Config port
 
     /etc/ssh/sshd_config
     => change Port PORTNUMBER
@@ -111,11 +111,11 @@ next line only to install thin as a service, later can be removed
     copy and add the pubkey to authorized_keys of deployer user name in remote server
 
 ### PROCEDURE FOR ADDING A NEW DEVELOPER TO DEPLOY
-####To add him to connect to server
+#### To add him to connect to server
     1. Ask for his/her public key
     2. Add it to deployer/.ssh/authorized_keys file
 
-####To let him connect to bitbucket dureing deployment
+#### To let him connect to bitbucket dureing deployment
     1. Generate pub key for deployer at staging server
     2. and add the pubkey in deployment keys in Bitbucket repo settings
 
@@ -404,7 +404,7 @@ As deployer user
     chmod 755 /var/www -R
 
 
-##Thin
+## Thin
 login as deployer user (with proper priviledges)
 
     gem install thin
@@ -428,7 +428,7 @@ In case of mess up
     rvm reinstall 2.2.0
 
 
-###Thin config file sample
+### Thin config file sample
 Set environment, app folder, port accordingly
 
     #/etc/thin/shk.yml
@@ -510,13 +510,13 @@ And using this task
     end
 
 
-##Rails console
+## Rails console
 Login as deployer user
 
     cd /var/www/shk/current
     bundle exec rails c
 
-##ImageMagic
+## ImageMagic
 
     sudo yum install -y ImageMagick GraphicsMagick
 

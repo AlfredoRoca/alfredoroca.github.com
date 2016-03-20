@@ -9,7 +9,7 @@ tags: [cron, crontab]
 
 Source: LinuxFoundationX: LFS101x.2 Introduction to Linux
 
-##cron 
+## cron 
 
 **cron** is a time-based scheduling utility program. It can launch routine background jobs at specific times and/or days on an on-going basis. **cron** is driven by a configuration file called ```/etc/crontab``` (**cron** table) which contains the various shell commands that need to be run at the properly scheduled times. There are both system-wide crontab files and individual user-based ones. Each line of a crontab file represents a job, and is composed of a so-called CRON expression, followed by a shell command to execute.
 
@@ -29,7 +29,7 @@ Examples:
 - The entry ```30 08 10 06 * /home/sysadmin/full-backup``` will schedule a full-backup at 8.30am, 10-June irrespective of the day of the week.
 
 
-##Delayed jobs
+## Delayed jobs
 
 Sources: 
 

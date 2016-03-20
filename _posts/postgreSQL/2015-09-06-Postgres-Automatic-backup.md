@@ -12,7 +12,7 @@ Fuente:
 1. <https://wiki.postgresql.org/wiki/Automated_Backup_on_Linux>
 2. <http://www.postgresql.org/docs/9.3/static/libpq-pgpass.html>
 
-#BACKUP
+# BACKUP
 El primer script crea backups diarios, semanales y mensuales para cada tabla del postgres.
 El segundo explica el archivo de contraseñas de postgres para conexiones desatendidas.
 
@@ -53,7 +53,7 @@ cronjob como root para que ejecute el script a las 4.30 cada día.
 
     30 04 * * * /home/alfredo/backups/pg_backup_rotated.sh -c /home/alfredo/backups/pg_backup.config
 
-#RESTORE
+# RESTORE
 
 Eliminar si existe y crear la BD con
 

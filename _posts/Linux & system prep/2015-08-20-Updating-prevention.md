@@ -8,7 +8,7 @@ tags: []
 {% include JB/setup %}
 
 
-#How to Prevent YUM from Updating the Kernel
+# How to Prevent YUM from Updating the Kernel
 
 <http://www.howtogeek.com/50898/how-to-prevent-yum-from-updating-the-kernel/>
 

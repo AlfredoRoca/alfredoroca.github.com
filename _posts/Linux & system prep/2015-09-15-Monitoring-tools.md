@@ -9,11 +9,11 @@ tags: [top, uptime, w]
 
 Source: LinuxFoundationX: LFS101x.2 Introduction to Linux
 
-##top 
+## top 
 
 <http://alfredoroca.github.io/server/system/monitoring/2015/09/15/Monitoring-linux-with-top/>
 
-##w
+## w
 
 uptime, load average and user processes
 
@@ -24,14 +24,14 @@ uptime, load average and user processes
     alfredo  pts/1     07:52   12:11   0.91s  0.70s spring server | shk | started 1 hour ago                        
     alfredo  pts/2     08:26    1.00s  0.44s  0.00s w
 
-##uptime
+## uptime
 
 uptime and load average
 
     09:49:46 up  2:02,  4 users,  load average: 0.47, 0.41, 0.39
 
 
-##Interpreting Load Averages
+## Interpreting Load Averages
 
 The load average is displayed using three different sets of numbers, as shown in the following example:
 

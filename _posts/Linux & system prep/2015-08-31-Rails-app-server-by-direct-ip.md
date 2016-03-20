@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-#How to configure nginx server to redirect rails app without domain name
+# How to configure nginx server to redirect rails app without domain name
 
     /etc/nginx/conf.d/shk.conf 
 
