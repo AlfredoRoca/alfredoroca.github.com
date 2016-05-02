@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to filter registers whose has many association is empty"
+title: "Config to log request parameters"
 description: ""
 category: [rails, activerecord]
 tags: []
@@ -8,7 +8,7 @@ tags: []
 {% include JB/setup %}
 
 
-Config to log request parameters also
+Config to log request parameters
 
     Rails.application.configure do
       config.lograge.enabled = false

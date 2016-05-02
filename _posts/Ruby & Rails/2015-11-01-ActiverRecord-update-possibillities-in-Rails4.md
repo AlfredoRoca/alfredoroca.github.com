@@ -2,7 +2,7 @@
 layout: post
 title: "ActiverRecord update possibillities in Rails 4"
 description: ""
-category: [active_record, rails]
+category: [activerecord, rails]
 tags: []
 ---
 {% include JB/setup %}

@@ -2,8 +2,8 @@
 layout: post
 title: "Eager load"
 description: ""
-category: [active_record, associations] 
-tags: [active_record, associations]
+category: [activerecord, associations] 
+tags: [activerecord, associations]
 ---
 {% include JB/setup %}
 

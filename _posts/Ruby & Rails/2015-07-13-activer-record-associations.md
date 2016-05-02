@@ -2,8 +2,8 @@
 layout: post
 title: "Activer record associations"
 description: ""
-category: [active_record, rails] 
-tags: [active_record, associations]
+category: [activerecord, rails] 
+tags: [activerecord, associations]
 ---
 {% include JB/setup %}
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Multiple has_many associations beetween same tables"
 description: ""
-category: [rails, active_record, associations]
+category: [rails, activerecord, associations]
 tags: []
 ---
 {% include JB/setup %}
