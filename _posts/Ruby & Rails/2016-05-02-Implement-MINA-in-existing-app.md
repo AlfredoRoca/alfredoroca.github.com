@@ -9,30 +9,35 @@ tags: []
 
 For instance, the app is 'helpjuicetest'
 
-  1. Add gems in `Gemfile`
-  
-  ```
-  gem 'mina'
+Add gems in `Gemfile`
 
-  gem 'mina-multistage'
-  ```
+```
+gem 'mina'
 
-  1. `bundle`
-  
-  1. Add config files: `config/deploy.rb`, `config/deploy/staging.rb`, ...
-  1. Create remote folder `/var/www/app-name` and ssh to server
-  1. [root@shk-1 www]# `mkdir /var/www/helpjuicetest`
-  1. [root@shk-1 www]# `chown deployer:deployer /var/www/helpjuicetest/`
+gem 'mina-multistage'
 
-  ```mina staging setup```
-  
-  ```mina staging setup:create_database```
-  
-  ```mina staging setup:upload_sensitive_files```
-  
-  1. Customize and copy `thin-staging.yml` into `server@/etc/thin/`
-  
-  ```mina staging setup:thin```
+```
 
-  ```mina staging deploy```
+`bundle`
+
+Add config files: `config/deploy.rb`, `config/deploy/staging.rb`, ...
+
+Create remote folder `/var/www/app-name` and ssh to server
+
+[root@shk-1 www]# `mkdir /var/www/helpjuicetest`
+
+[root@shk-1 www]# `chown deployer:deployer /var/www/helpjuicetest/`
+
+
+```mina staging setup```
+
+```mina staging setup:create_database```
+
+```mina staging setup:upload_sensitive_files```
+
+Customize and copy `thin-staging.yml` into `server@/etc/thin/`
+
+```mina staging setup:thin```
+
+```mina staging deploy```
 
