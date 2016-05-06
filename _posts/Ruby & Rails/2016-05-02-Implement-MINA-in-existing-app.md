@@ -11,12 +11,9 @@ For instance, the app is 'helpjuicetest'
 
 Add gems in `Gemfile`
 
-```
-gem 'mina'
+`gem 'mina'`
 
-gem 'mina-multistage'
-
-```
+`gem 'mina-multistage'`
 
 `bundle`
 
