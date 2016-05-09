@@ -9,6 +9,8 @@ tags: []
 
 Source: <vanseodesign.com/blog/demo/vertical-centering/line-height.php>
 
+More at: <http://vanseodesign.com/css/vertical-centering/>
+
 # Centering vertically one line of text
 
 HTML
