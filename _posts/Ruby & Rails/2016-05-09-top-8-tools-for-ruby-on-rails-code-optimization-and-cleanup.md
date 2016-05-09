@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pop 8 tools for Ruby on Rails code optimization and cleanup"
+title: "Top 8 tools for Ruby on Rails code optimization and cleanup"
 description: ""
 category: []
 tags: []
