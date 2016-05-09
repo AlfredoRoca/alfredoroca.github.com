@@ -26,9 +26,8 @@ into
       def index
       end
     end
+
     class Inboxes::PendingsController < ApplicationController
       def index
       end
     end
-
-

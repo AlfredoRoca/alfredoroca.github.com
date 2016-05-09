@@ -19,7 +19,7 @@ Update
 
 Clear cache before updating
 
-   yum clean all
+    yum clean all
 
 Check services using glibc
 
