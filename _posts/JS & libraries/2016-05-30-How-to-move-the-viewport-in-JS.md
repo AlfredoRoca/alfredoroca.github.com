@@ -7,14 +7,14 @@ tags: [viewport]
 ---
 {% include JB/setup %}
 
-##With animation##
+## With animation ##
 
     $('html, body').animate({
         scrollTop: offset.top,
         scrollLeft: offset.left
     }, 'fast');
 
-##Without animation##
+## Without animation ##
 
     window.scroll(0,0)
 
