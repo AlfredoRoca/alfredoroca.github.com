@@ -8,5 +8,5 @@ tags: [mediaqueries, collapse]
 {% include JB/setup %}
 
     
-@media (min-width: $grid-float-breakpoint) {
-...
+    @media (min-width: $grid-float-breakpoint) {
+    ...

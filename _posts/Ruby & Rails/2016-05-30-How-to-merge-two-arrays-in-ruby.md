@@ -7,15 +7,11 @@ tags: [merge]
 ---
 {% include JB/setup %}
 
-1. zip + flatten + uniq
-
-Code
+##zip + flatten + uniq##
 
     arr1.zip(arr2, arr3).flatten.uniq
 
 
-2. union operator
-
-Code
+##union operator##
 
     arr1 | arr2 | arr3 

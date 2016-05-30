@@ -7,4 +7,5 @@ tags: [positioning]
 ---
 {% include JB/setup %}
 
-http://blog.grayghostvisuals.com/js/detecting-scroll-position/    
+<http://blog.grayghostvisuals.com/js/detecting-scroll-position/>
+
