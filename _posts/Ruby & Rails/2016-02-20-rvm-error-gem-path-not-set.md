@@ -8,7 +8,7 @@ tags: []
 {% include JB/setup %}
 
 
-Source: <http://unix.stackexchange.com/questions/203376/how-to-set-ruby-gem-home-and-gem-path>
+Source: <http://unix.stackexchange.com/a/224974>
 
     rvm list
 
@@ -18,6 +18,7 @@ Source: <http://unix.stackexchange.com/questions/203376/how-to-set-ruby-gem-home
 .bashrc
 
     export GEM_HOME=/home/deployer/.rvm/gems/ruby-2.2.0
-
     export GEM_PATH=/home/deployer/.rvm/gems/ruby-2.2.0:/home/deployer/.rvm/gems/ruby-2.2.0@global
 
+    export RAILS_ENV=production
+    export RAKE_ENV=production
