@@ -8,11 +8,11 @@ tags: [certbot, letsencrypt, ssl]
 {% include JB/setup %}
 
 
-#Certificado emitido por Let's Encrypt con nuevo cliente Certbot
+# Certificado emitido por Let's Encrypt con nuevo cliente Certbot
 
 <https://letsencrypt.readthedocs.io/en/latest/#>
 
-##Instalar el cliente Certbot
+## Instalar el cliente Certbot
 
 Visitar <https://certbot.eff.org/> para ver si hay algún paquete para el SO destino.
 
@@ -23,7 +23,7 @@ En `/usr/local/bin`
     root# wget https://dl.eff.org/certbot-auto
     root# chmod a+x certbot-auto
 
-###Opciones de la línea de comandos:
+### Opciones de la línea de comandos:
 
     certbot --help all
 
@@ -32,13 +32,13 @@ En `/usr/local/bin`
 
 El plugin `webroot` permite crear y renovar el certificado sin parar Nginx. Ver info en <http://letsencrypt.readthedocs.io/en/latest/using.html#webroot>
 
-##Crear el certificado SSL la primera vez 
+## Crear el certificado SSL la primera vez 
 
     certbot-auto certonly --webroot -w /var/www/nomaspapeles/shared/public -d nomaspapeles.com -d www.nomaspapeles.com --email admin@example.com --agree-tos
 
 El plugin webroot crea un archivo temporal en `${webroot-path}/.well-known/acme-challenge`. webroot-path es el path del parámetro `-w`. Luego, el servidor de validación de Let’s Encrypt realiza petición HTTP para validar que el DNS del dominio de cada petición dirige al servidor que está ejecutando Certbot. Por eso, nginx debe permitir el acceso a ese directorio.
 
-##Configuración de Nginx
+## Configuración de Nginx
 
     server {
     ....
@@ -60,7 +60,7 @@ El plugin webroot crea un archivo temporal en `${webroot-path}/.well-known/acme-
         }
 
 
-##Renovación
+## Renovación
 
 Añadir la siguiente línea a crontab
 
