@@ -10,4 +10,4 @@ This site is based on [Jekyll Bootstrap](http://jekyllbootstrap.com).
 
 Thanks to all people that have made this possible.
 
-Any comment to [Alfredo](mailto:alfredo.roca.mas@gmail.com) will be appreciated and welcome.
+Any comment to [Alfredo] alfredo.roca.mas at gmail.com will be appreciated and welcome.
