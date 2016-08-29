@@ -11,7 +11,3 @@ tags: []
 
     rvm all do gem list
 
-
-
-
-
