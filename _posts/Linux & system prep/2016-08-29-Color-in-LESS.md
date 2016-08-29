@@ -2,7 +2,7 @@
 layout: post
 title: "How to put colors in LESS"
 description: ""
-category: [bash, less]
+category: [bash, less, system]
 tags: [less]
 ---
 {% include JB/setup %}
@@ -11,7 +11,7 @@ tags: [less]
 
 You can utilize the power of pygmentize with less - automatically! (No need to pipe by hand.)
 
-Write a file '~/.lessfilter'
+Write a file `~/.lessfilter`
 
     #!/bin/sh
     case "$1" in
@@ -34,11 +34,11 @@ Write a file '~/.lessfilter'
 
     exit 0
 
-In your '.bashrc' add
+In your `.bashrc` add
 
     export LESS='-R'
     export LESSOPEN='|~/.lessfilter %s'
 
-Also, you need to make '~/.lessfilter' executable by running
+Also, you need to make `~/.lessfilter` executable by running
 
     chmod u+x ~/.lessfilter

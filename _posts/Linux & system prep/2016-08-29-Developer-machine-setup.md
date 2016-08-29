@@ -31,5 +31,6 @@ File `.rvmrc`
 Create ssh keys with `ssh-keygen`
 
 `.bash_aliases` en GIST
+
 `.bashrc` - git coloured prompt GIST
 
