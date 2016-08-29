@@ -1,0 +1,44 @@
+---
+layout: post
+title: "How to put colors in LESS"
+description: ""
+category: [bash, less]
+tags: [less]
+---
+{% include JB/setup %}
+
+<http://superuser.com/a/337640>
+
+You can utilize the power of pygmentize with less - automatically! (No need to pipe by hand.)
+
+Write a file '~/.lessfilter'
+
+    #!/bin/sh
+    case "$1" in
+        *.awk|*.groff|*.java|*.js|*.m4|*.php|*.pl|*.pm|*.pod|*.sh|\
+        *.ad[asb]|*.asm|*.inc|*.[ch]|*.[ch]pp|*.[ch]xx|*.cc|*.hh|\
+        *.lsp|*.l|*.pas|*.p|*.xml|*.xps|*.xsl|*.axp|*.ppd|*.pov|\
+        *.diff|*.patch|*.py|*.rb|*.sql|*.ebuild|*.eclass)
+            pygmentize -f 256 "$1";;
+        .bashrc|.bash_aliases|.bash_environment)
+            pygmentize -f 256 -l sh "$1"
+            ;;
+        *)
+            grep "#\!/bin/bash" "$1" > /dev/null
+            if [ "$?" -eq "0" ]; then
+                pygmentize -f 256 -l sh "$1"
+            else
+                exit 1
+            fi
+    esac
+
+    exit 0
+
+In your '.bashrc' add
+
+    export LESS='-R'
+    export LESSOPEN='|~/.lessfilter %s'
+
+Also, you need to make '~/.lessfilter' executable by running
+
+    chmod u+x ~/.lessfilter
