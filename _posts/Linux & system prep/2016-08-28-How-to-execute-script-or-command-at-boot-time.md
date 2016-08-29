@@ -12,7 +12,7 @@ tags: [security, limits]
 
 Source: <http://unix.stackexchange.com/a/47715>
 
-Create '/etc/systemd/system/my_service.service' (copy structure from existing file)
+Create `/etc/systemd/system/my_service.service` (copy structure from existing file)
 
     [Unit]
     description=Mi servicio

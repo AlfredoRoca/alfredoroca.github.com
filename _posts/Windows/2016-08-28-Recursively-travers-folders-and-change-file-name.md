@@ -9,5 +9,3 @@ tags: [traverse]
 
     forfiles /S /M "en.yml" /C "cmd /c ren * it.yml"
 
-
-recursively-travers-folders-and-change-file-name

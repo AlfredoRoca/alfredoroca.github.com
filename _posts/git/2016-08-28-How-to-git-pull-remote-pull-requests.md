@@ -10,4 +10,3 @@ tags: []
 
 <https://gist.github.com/piscisaureus/3342247>
 
-How-to-git-pull-remote-pull-requests
