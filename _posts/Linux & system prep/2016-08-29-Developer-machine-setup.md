@@ -7,9 +7,9 @@ tags: []
 ---
 {% include JB/setup %}
 
-'/home/developer'
+`/home/developer`
 
-File '.gitconfig'
+File `.gitconfig`
 
     [user]
         name = Alfredo Roca
@@ -24,12 +24,12 @@ File '.gitconfig'
 
 The following maybe it's done by RVM automatically
 
-File '.rvmrc'
+File `.rvmrc`
 
     rvm_path="$HOME/.rvm"
 
-Create ssh keys with 'ssh-keygen'
+Create ssh keys with `ssh-keygen`
 
-'.bash_aliases' en GIST
-'.bashrc' - git coloured prompt GIST
+`.bash_aliases` en GIST
+`.bashrc` - git coloured prompt GIST
 

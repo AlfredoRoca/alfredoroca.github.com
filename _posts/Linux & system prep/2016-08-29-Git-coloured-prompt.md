@@ -7,7 +7,7 @@ tags: [coloured prompt]
 ---
 {% include JB/setup %}
 
-Add to '.bashrc'
+Add to `.bashrc`
 
     #########################
     ## GIT coloured prompt ##

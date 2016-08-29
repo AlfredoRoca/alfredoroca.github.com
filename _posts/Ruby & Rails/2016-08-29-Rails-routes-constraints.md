@@ -7,7 +7,7 @@ tags: [constraints]
 ---
 {% include JB/setup %}
 
-'routes.rb'
+`routes.rb`
 
     resources :documents do
       collection do
@@ -23,6 +23,6 @@ Resultant route
 
 Result:
 
-- documents/lost.json will answer with json
-- documents/lost will redirect to root route
+- `documents/lost.json` will answer with json
+- `documents/lost` will redirect to root route
 
