@@ -2,12 +2,12 @@
 layout: post
 title: "Devise and user default scope"
 description: ""
-category: [rails5, devise]
+category: [rails, devise]
 tags: [default_scope]
 ---
 {% include JB/setup %}
 
-#Devise y default_scope en modelo User
+# Devise y default_scope en modelo User
 
 Some Devise actions fail if default_Scope is used i User model.
 For instance, the authentication fails even user and password are correct.
