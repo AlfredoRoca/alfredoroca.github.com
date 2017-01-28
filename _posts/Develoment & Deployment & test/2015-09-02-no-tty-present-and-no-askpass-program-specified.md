@@ -3,7 +3,7 @@ layout: post
 title: "sudo: no tty present and no askpass program specified"
 description: ""
 category: [capistrano, deployment, shell]
-tags: [visudo, sudoers, deployment, shell]
+tags: []
 ---
 {% include JB/setup %}
 

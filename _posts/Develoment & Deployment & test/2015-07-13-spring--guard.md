@@ -2,8 +2,8 @@
 layout: post
 title: "Spring & Guard"
 description: ""
-category: [spring, guard]
-tags: [spring, guard, test]
+category: [spring, guard, test]
+tags: []
 ---
 {% include JB/setup %}
 

@@ -3,7 +3,7 @@ layout: post
 title: "Deployment"
 description: ""
 category: [deployment, thin, nginx] 
-tags: [deployment, thin, nginx]
+tags: []
 ---
 {% include JB/setup %}
 

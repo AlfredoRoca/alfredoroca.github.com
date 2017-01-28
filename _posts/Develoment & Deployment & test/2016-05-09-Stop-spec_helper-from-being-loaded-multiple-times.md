@@ -2,7 +2,7 @@
 layout: post
 title: "Stop spec_helper from being loaded multiple times"
 description: ""
-category: [rspec, testing]
+category: [rspec, test]
 tags: []
 ---
 {% include JB/setup %}

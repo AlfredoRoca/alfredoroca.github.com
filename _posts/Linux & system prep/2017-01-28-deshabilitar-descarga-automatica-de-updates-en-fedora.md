@@ -2,7 +2,7 @@
 layout: post
 title: "Deshabilitar descarga automatica de updates en Fedora"
 description: ""
-category: "fedora"
+category: [linux]
 tags: []
 ---
 {% include JB/setup %}

@@ -2,7 +2,7 @@
 layout: post
 title: "Test Pundit policies with RSpec"
 description: ""
-category: [rspec, pundit]
+category: [rspec, pundit, test]
 tags: []
 ---
 {% include JB/setup %}

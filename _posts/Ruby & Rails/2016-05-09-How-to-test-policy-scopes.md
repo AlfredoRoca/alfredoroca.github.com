@@ -2,7 +2,7 @@
 layout: post
 title: "How to test policy scopes"
 description: ""
-category: [pundit, testing]
+category: [pundit, test]
 tags: []
 ---
 {% include JB/setup %}

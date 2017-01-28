@@ -2,7 +2,7 @@
 layout: post
 title: "How to test actions that redirect to request.referer"
 description: ""
-category: [rspec]
+category: [rspec, test]
 tags: []
 ---
 {% include JB/setup %}

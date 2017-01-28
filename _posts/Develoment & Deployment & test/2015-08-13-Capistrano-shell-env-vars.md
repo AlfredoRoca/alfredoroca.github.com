@@ -2,7 +2,7 @@
 layout: post
 title: "Capistrano shell environments variables"
 description: ""
-category: [capistrano, shell]
+category: [capistrano]
 tags: []
 ---
 {% include JB/setup %}

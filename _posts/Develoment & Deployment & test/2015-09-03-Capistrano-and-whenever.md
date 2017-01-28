@@ -3,7 +3,7 @@ layout: post
 title: "Capistrano & whenever"
 description: ""
 category: [capistrano, whenever, deployment]
-tags: [cronjobs]
+tags: []
 ---
 {% include JB/setup %}
 

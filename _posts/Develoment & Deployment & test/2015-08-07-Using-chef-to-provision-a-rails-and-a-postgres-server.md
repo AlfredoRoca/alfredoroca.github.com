@@ -3,7 +3,7 @@ layout: post
 title: "Using Chef to provision a Rails and Postgres server"
 description: ""
 category: [deployment]
-tags: [chef, deployment, server]
+tags: [chef]
 ---
 {% include JB/setup %}
 

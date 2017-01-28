@@ -2,7 +2,7 @@
 layout: post
 title: "Rails routes en web"
 description: ""
-category: []
+category: [rails]
 tags: []
 ---
 {% include JB/setup %}

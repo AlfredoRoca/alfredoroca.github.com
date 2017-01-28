@@ -2,8 +2,8 @@
 layout: post
 title: "RVM hook to binstubs"
 description: ""
-category: [rvm, ]
-tags: [rvm, binstubs, bundle]
+category: [rvm]
+tags: []
 ---
 {% include JB/setup %}
 

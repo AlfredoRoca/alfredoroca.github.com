@@ -2,7 +2,7 @@
 layout: post
 title: "How to list all notes in code"
 description: ""
-category: []
+category: [rake, development]
 tags: []
 ---
 {% include JB/setup %}

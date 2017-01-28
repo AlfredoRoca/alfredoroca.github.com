@@ -3,7 +3,7 @@ layout: post
 title: "Tailing log files with Capistrano 3"
 description: ""
 category: [deployment, capistrano]
-tags: [tail_logs,capistrano, deployment]
+tags: [t]
 ---
 {% include JB/setup %}
 

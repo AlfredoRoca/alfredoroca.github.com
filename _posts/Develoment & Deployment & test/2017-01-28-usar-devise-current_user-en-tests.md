@@ -2,7 +2,7 @@
 layout: post
 title: "Usar devise current_user en tests"
 description: ""
-category: "test"
+category: [test]
 tags: []
 ---
 {% include JB/setup %}

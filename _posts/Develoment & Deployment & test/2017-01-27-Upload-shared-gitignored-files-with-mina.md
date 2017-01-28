@@ -2,7 +2,7 @@
 layout: post
 title: "Upload shared gitignored files with mina"
 description: ""
-category: [mina]
+category: [mina, deployment]
 tags: []
 ---
 {% include JB/setup %}
