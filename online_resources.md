@@ -99,8 +99,13 @@ La Red Municipal de Bibliotecas de Sevilla: <a href="http://www.rmbs.es/catalogo
 CodePen is an <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, and JavaScript code editor in your browser with instant previews of the code you see and write.<br/>
 
 # Tools #
+
 ### Open source folder syncronization
-<a href="http://freefilesync.sourceforge.net/" class="urlextern" title="http://freefilesync.sourceforge.net/"  rel="nofollow">http://freefilesync.sourceforge.net/</a> portable: <a href="http://portableapps.com/apps/utilities/freefilesync-portable" class="urlextern" title="http://portableapps.com/apps/utilities/freefilesync-portable"  rel="nofollow">http://portableapps.com/apps/utilities/freefilesync-portable</a><br/>
+<a href="http://freefilesync.sourceforge.net/" class="urlextern" title="http://freefilesync.sourceforge.net/"  rel="nofollow">http://freefilesync.sourceforge.net/</a>
+
+portable: 
+
+<a href="http://portableapps.com/apps/utilities/freefilesync-portable" class="urlextern" title="http://portableapps.com/apps/utilities/freefilesync-portable"  rel="nofollow">http://portableapps.com/apps/utilities/freefilesync-portable</a><br/>
 
 ### Free and open source (<abbr title="GNU General Public License">GPL</abbr>) software media player and entertainment hub 
 <a href="http://xbmc.org/about/" class="urlextern" title="http://xbmc.org/about/"  rel="nofollow">http://xbmc.org/about/</a><br/>
