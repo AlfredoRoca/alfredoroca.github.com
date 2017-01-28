@@ -37,7 +37,8 @@ group: navigation
 
 <https://guides.github.com/features/mastering-markdown/>
 
-#Liquid
+
+# Liquid
 
 [https://github.com/Shopify/liquid/wiki/Liquid-for-Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers){:target="_blank"}
 
