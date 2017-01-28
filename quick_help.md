@@ -24,7 +24,7 @@ group: navigation
     end
 
 # New post creation
-    rake post title="new post title"
+    rake post title="new post title" [tags=[tag1,tag2]] [category=[category1, category2]]
 
 # Markdown sintaxis
 [http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax){:target="_blank"}
