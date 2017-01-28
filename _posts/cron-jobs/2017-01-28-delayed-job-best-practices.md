@@ -7,4 +7,4 @@ tags: []
 ---
 {% include JB/setup %}
 
-https://www.sitepoint.com/delayed-jobs-best-practices/
+<https://www.sitepoint.com/delayed-jobs-best-practices/>

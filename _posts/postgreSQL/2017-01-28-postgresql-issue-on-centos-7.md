@@ -8,7 +8,7 @@ tags: []
 {% include JB/setup %}
 
 
-Follow http://www.if-not-true-then-false.com/2012/install-postgresql-on-fedora-centos-red-hat-rhel/
+Follow <http://www.if-not-true-then-false.com/2012/install-postgresql-on-fedora-centos-red-hat-rhel/>
 
 if **Can't find the 'libpq-fe.h header**
 

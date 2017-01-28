@@ -9,7 +9,7 @@ tags: []
 
 Package: ERB Snippets
 
-https://packagecontrol.io/packages/ERB%20Snippets
+<https://packagecontrol.io/packages/ERB%20Snippets>
 
 Snippets and Bindings
 

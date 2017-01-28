@@ -7,8 +7,6 @@ tags: []
 ---
 {% include JB/setup %}
 
-
-
 `gemfile`
 
     gem 'rack-mini-profiler', require: false

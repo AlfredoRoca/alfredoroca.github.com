@@ -7,9 +7,9 @@ tags: []
 ---
 {% include JB/setup %}
 
-Source: http://stackoverflow.com/a/5201642/4191133
+Source: <http://stackoverflow.com/a/5201642/4191133>
 
-git rebase -i <after-this-commit> and replace "pick" on the second and subsequent commits with "squash" or "fixup", as described in the manual
+`git rebase -i <after-this-commit>` and replace "pick" on the second and subsequent commits with "squash" or "fixup", as described in the manual
 
 Ejemplo: se quiere squashear toda la rama br1 en un solo commit
 

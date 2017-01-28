@@ -7,4 +7,4 @@ tags: []
 ---
 {% include JB/setup %}
 
-Source: https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history
+Source: <https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history>

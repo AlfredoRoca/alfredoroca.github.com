@@ -8,7 +8,7 @@ tags: []
 {% include JB/setup %}
 
 
-https://www.digitalocean.com/community/tutorials/how-to-set-up-a-basic-iptables-firewall-on-centos-6
+<https://www.digitalocean.com/community/tutorials/how-to-set-up-a-basic-iptables-firewall-on-centos-6>
 
 
     iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT

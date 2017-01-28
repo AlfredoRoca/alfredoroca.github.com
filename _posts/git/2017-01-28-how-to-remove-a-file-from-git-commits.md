@@ -9,4 +9,4 @@ tags: []
 
     git rm <file>
 
-and add it to .gitignore
+and add it to `.gitignore`
