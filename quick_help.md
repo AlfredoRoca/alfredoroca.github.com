@@ -5,10 +5,13 @@ group: navigation
 ---
 {% include JB/setup %}
 
+# New post creation
+    rake post title="new post title" [tags=[tag1,tag2]] [category=[category1, category2]]
+
 # Generate Table of contents from the markdown file
 
-    # create_toc.rb
-    With next ruby code:
+`create_toc.rb`
+
     unless ARGV.empty? 
       File.open(ARGV.first, 'r') do |f|
         f.each_line do |line|
@@ -23,9 +26,6 @@ group: navigation
       puts "Usage: ruby create_toc <md file>"
     end
 
-# New post creation
-    rake post title="new post title" [tags=[tag1,tag2]] [category=[category1, category2]]
-
 # Markdown sintaxis
 [http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax){:target="_blank"}
 
@@ -38,4 +38,6 @@ group: navigation
 <https://guides.github.com/features/mastering-markdown/>
 
 #Liquid
+
 [https://github.com/Shopify/liquid/wiki/Liquid-for-Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers){:target="_blank"}
+
