@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Convert seconds to "d h m""
+title: "Convert seconds to d h m"
 description: ""
 category: [ruby, date]
 tags: []
