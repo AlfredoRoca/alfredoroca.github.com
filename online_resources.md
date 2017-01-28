@@ -103,15 +103,13 @@ CodePen is an <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="
 ### Open source folder syncronization
 <a href="http://freefilesync.sourceforge.net/" class="urlextern" title="http://freefilesync.sourceforge.net/"  rel="nofollow">http://freefilesync.sourceforge.net/</a>
 
-portable: 
-
-<a href="http://portableapps.com/apps/utilities/freefilesync-portable" class="urlextern" title="http://portableapps.com/apps/utilities/freefilesync-portable"  rel="nofollow">http://portableapps.com/apps/utilities/freefilesync-portable</a><br/>
+portable: <a href="http://portableapps.com/apps/utilities/freefilesync-portable" class="urlextern" title="http://portableapps.com/apps/utilities/freefilesync-portable"  rel="nofollow">http://portableapps.com/apps/utilities/freefilesync-portable</a><br/>
 
 ### Free and open source (<abbr title="GNU General Public License">GPL</abbr>) software media player and entertainment hub 
 <a href="http://xbmc.org/about/" class="urlextern" title="http://xbmc.org/about/"  rel="nofollow">http://xbmc.org/about/</a><br/>
 
 ### Locate32 
-finds files and directories based on file and folder names stored in a database: <a href="http://locate32.cogit.net/" class="urlextern" title="http://locate32.cogit.net/"  rel="nofollow">http://locate32.cogit.net/</a><br/>
+<a href="http://locate32.cogit.net/" class="urlextern" title="http://locate32.cogit.net/"  rel="nofollow">http://locate32.cogit.net/</a> Finds files and directories based on file and folder names stored in a database: 
 
 ### Find and share logins
 <a href="http://bugmenot.com/" class="urlextern" title="http://bugmenot.com/"  rel="nofollow">http://bugmenot.com/</a><br/>
@@ -136,4 +134,4 @@ finds files and directories based on file and folder names stored in a database:
 
 [codepen.io](http://codepen.io)
 
-[fiddle] (http://jsfiddle.net)
+[fiddle](http://jsfiddle.net)
