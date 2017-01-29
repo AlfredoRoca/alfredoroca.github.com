@@ -2,8 +2,8 @@
 layout: post
 title: "Monitoring Linux system with TOP"
 description: ""
-category: [server, system, monitoring]
-tags: [top]
+category: [linux]
+tags: [monitoring, tools]
 ---
 {% include JB/setup %}
 

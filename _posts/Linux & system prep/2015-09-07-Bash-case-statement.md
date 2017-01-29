@@ -2,8 +2,8 @@
 layout: post
 title: "Case statement in Bash"
 description: ""
-category: [bash, case]
-tags: []
+category: [bash]
+tags: [case]
 ---
 {% include JB/setup %}
 

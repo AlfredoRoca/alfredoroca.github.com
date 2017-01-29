@@ -3,7 +3,7 @@ layout: post
 title: "Humanize seconds in Ruby"
 description: ""
 category: [ruby, time]
-tags: []
+tags: [iso8601]
 ---
 {% include JB/setup %}
 
@@ -16,4 +16,12 @@ tags: []
         end
       }.compact.reverse.join(' ')
     end
+
+Convert to UTC
+
+    Time.now.utc
+
+How to convert timestamp to ISO8601 to pass to moment.js
+
+    timestamp.to_time.iso8601
 

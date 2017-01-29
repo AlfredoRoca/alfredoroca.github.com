@@ -3,7 +3,7 @@ layout: post
 title: "How to detect screen movement reaching top"
 description: ""
 category: [js]
-tags: [screen top]
+tags: []
 ---
 {% include JB/setup %}
 

@@ -2,8 +2,8 @@
 layout: post
 title: "Capistrano & whenever"
 description: ""
-category: [capistrano, whenever, deployment]
-tags: []
+category: [capistrano, deployment]
+tags: [whenever]
 ---
 {% include JB/setup %}
 

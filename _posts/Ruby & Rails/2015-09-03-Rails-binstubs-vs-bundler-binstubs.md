@@ -2,8 +2,8 @@
 layout: post
 title: "Rails binstubs vs bundler binstubs"
 description: ""
-category: [rails, bundler, binstubs]
-tags: []
+category: [rails]
+tags: [binstubs, bundler]
 ---
 {% include JB/setup %}
 

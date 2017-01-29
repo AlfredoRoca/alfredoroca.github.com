@@ -8,23 +8,18 @@ tags: [authentification]
 {% include JB/setup %}
 
 
-`gemfile`
-
+    # gemfile
     gem 'bcrypt', '~> 3.1.7'
 
+`$ rails g model user name password_digest:text`
 
-    $ rails g model user name password_digest:text
-
-`user.rb`
-
+    # user.rb
     has_secure_password
     validates :name, :email, presence: true, length: { in: 2..255 }
 
+`$ rails g controller sessions new`
 
-    $ rails g controller sessions new
-
-`sessions controller.rb`
-
+    # sessions controller.rb
     class SessionsController < ApplicationController
     def new
     end
@@ -43,8 +38,9 @@ tags: [authentification]
     end
     end
 
-`sessions/new.html.erb`
+.
 
+    # sessions/new.html.erb
     <h1>Login</h1>
     <%= form_tag sessions_path do %>
     <%= label_tag :name %>
@@ -54,19 +50,20 @@ tags: [authentification]
     <%= submit_tag "Log in" %>
     <% end %>
 
-    $ rails g controller welcome index
+`$ rails g controller welcome index`
 
-`welcome_controller.rb`
-
+    # welcome_controller.rb
     def index
     end
 
-`welcome/index.html.erb`
+.
 
+    # welcome/index.html.erb
     <h1>Welcome</h1>
 
-`application_controller.rb`
+.
 
+    # application_controller.rb
     def current_user
       if session[:user_id]
         current_user = User.find(session[:user_id])
@@ -74,7 +71,7 @@ tags: [authentification]
     end
     helper_method :current_user
 
-`in the action controllers`
+in the action controllers
 
     before_action :authenticate_user
 

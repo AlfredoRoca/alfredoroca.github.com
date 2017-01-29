@@ -2,8 +2,8 @@
 layout: post
 title: "Scheduling jobs with cron"
 description: ""
-category: [linux, scheduling, system, delayed_jobs, cronjobs]
-tags: [cron, crontab]
+category: [linux, delayed_job, cronjob]
+tags: []
 ---
 {% include JB/setup %}
 

@@ -2,8 +2,8 @@
 layout: post
 title: "Linux monitoring tools - load average"
 description: ""
-category: [linux, monitoring, tools, system, load_average]
-tags: [top, uptime, w]
+category: [linux]
+tags: [monitoring, tools]
 ---
 {% include JB/setup %}
 

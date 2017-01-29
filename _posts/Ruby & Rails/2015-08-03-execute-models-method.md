@@ -2,8 +2,8 @@
 layout: post
 title: "Execute model's method in command console or with a cronjob"
 description: ""
-category: [rails, cronjobs]
-tags: [cronjob]
+category: [rails, cronjob]
+tags: []
 ---
 {% include JB/setup %}
 

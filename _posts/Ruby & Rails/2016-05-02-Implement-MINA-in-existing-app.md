@@ -2,7 +2,7 @@
 layout: post
 title: "Implement MINA for deploying in existing app"
 description: ""
-category: [mina, deploy]
+category: [mina, deployment]
 tags: []
 ---
 {% include JB/setup %}

@@ -2,8 +2,8 @@
 layout: post
 title: "W8-W10 no reconoce CD/DVD-ROM"
 description: ""
-category: [windows, CDROM, DVDROM, w8, w10]
-tags: [windows, regedit]
+category: [windows]
+tags: [regedit]
 ---
 {% include JB/setup %}
 

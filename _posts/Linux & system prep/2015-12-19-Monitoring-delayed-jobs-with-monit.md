@@ -2,8 +2,8 @@
 layout: post
 title: "Monitoring delayed jobs with monit"
 description: ""
-category: [monit, delayed_jobs]
-tags: []
+category: [monit, delayed_job]
+tags: [monitoring, tools]
 ---
 {% include JB/setup %}
 

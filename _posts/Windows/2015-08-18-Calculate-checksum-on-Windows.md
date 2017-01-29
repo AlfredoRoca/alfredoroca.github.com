@@ -2,7 +2,7 @@
 layout: post
 title: "Calculate checksum on Windows"
 description: ""
-category: [windows, checksum]
+category: [windows]
 tags: [sha256, md5, checksum]
 ---
 {% include JB/setup %}

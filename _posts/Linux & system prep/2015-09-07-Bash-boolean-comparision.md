@@ -2,8 +2,8 @@
 layout: post
 title: "Boolean comparision in Bash"
 description: ""
-category: [bash, boolean]
-tags: []
+category: [bash]
+tags: [boolean]
 ---
 {% include JB/setup %}
 

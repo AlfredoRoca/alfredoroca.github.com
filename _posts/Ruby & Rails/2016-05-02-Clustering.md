@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Cluster array"
+title: "Cluster array - group adjacent values"
 description: ""
-category: [cluster]
-tags: []
+category: [clustering]
+tags: [array]
 ---
 {% include JB/setup %}
 

@@ -3,7 +3,7 @@ layout: post
 title: "start stop delayed_job with monit"
 description: ""
 category: [monit,delayed_job]
-tags: []
+tags: [monitoring]
 ---
 {% include JB/setup %}
 

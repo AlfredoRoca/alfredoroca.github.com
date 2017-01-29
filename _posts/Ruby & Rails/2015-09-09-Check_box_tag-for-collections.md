@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Check_box_tag for collections ina form_tag"
+title: "Check_box_tag for collections"
 description: ""
-category: [rails, check_box_tag, form_tag]
+category: [rails]
 tags: [check_box, form, collections]
 ---
 {% include JB/setup %}

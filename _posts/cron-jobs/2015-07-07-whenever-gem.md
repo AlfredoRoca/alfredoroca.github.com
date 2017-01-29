@@ -2,8 +2,8 @@
 layout: post
 title: "Whenever gem"
 description: ""
-category: [linux, cronjobs]
-tags: [linux, cronjobs, rails, system, configuration]
+category: [linux, cronjob, rails]
+tags: [configuration]
 ---
 {% include JB/setup %}
 

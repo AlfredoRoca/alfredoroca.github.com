@@ -2,8 +2,8 @@
 layout: post
 title: "Email configuration"
 description: ""
-category: [email_configuration] 
-tags: [email, configuration]
+category: [rails, email_configuration] 
+tags: []
 ---
 {% include JB/setup %}
 

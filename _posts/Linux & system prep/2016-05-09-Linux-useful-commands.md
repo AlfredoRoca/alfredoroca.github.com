@@ -2,8 +2,8 @@
 layout: post
 title: "Linux useful commands"
 description: ""
-category: [linux, commands, tools]
-tags: []
+category: [linux]
+tags: [tools]
 ---
 {% include JB/setup %}
 

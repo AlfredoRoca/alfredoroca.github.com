@@ -2,7 +2,7 @@
 layout: post
 title: "Capistrano task to open rails console"
 description: ""
-category: [capistrano, console]
+category: [capistrano]
 tags: []
 ---
 {% include JB/setup %}
