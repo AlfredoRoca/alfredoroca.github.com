@@ -2,7 +2,7 @@
 layout: post
 title: "Change Postgres port on Fedora"
 description: ""
-category: [postgres, system]
+category: [postgresql]
 tags: []
 ---
 {% include JB/setup %}

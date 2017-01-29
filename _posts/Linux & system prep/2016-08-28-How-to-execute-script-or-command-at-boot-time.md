@@ -2,7 +2,7 @@
 layout: post
 title: "How to execute script/command at boot time"
 description: ""
-category: [linux, system]
+category: [linux, sysops]
 tags: [security, limits]
 ---
 {% include JB/setup %}

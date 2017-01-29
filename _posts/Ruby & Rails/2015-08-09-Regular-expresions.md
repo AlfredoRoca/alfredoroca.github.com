@@ -2,8 +2,8 @@
 layout: post
 title: "Regular expressions"
 description: ""
-category: [regex]
-tags: [regex]
+category: [regexp]
+tags: [tools]
 ---
 {% include JB/setup %}
 
@@ -22,3 +22,10 @@ tags: [regex]
 # Any symbol
 
     /[ -#$-\/:-?{-~!\"@^_`\[\]]/
+
+
+Useful links: 
+
+<http://rubular.com>
+
+<http://regexr.com/>

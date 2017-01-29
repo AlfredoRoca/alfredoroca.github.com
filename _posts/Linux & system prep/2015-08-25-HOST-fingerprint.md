@@ -2,7 +2,7 @@
 layout: post
 title: "HOST fingerprint"
 description: ""
-category: [server, system, security]
+category: [server, sysops, security]
 tags: [RSA, ECDSA, fingerprint]
 ---
 {% include JB/setup %}

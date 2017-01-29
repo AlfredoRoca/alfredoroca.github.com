@@ -2,7 +2,7 @@
 layout: post
 title: "nmap - Network mapper"
 description: ""
-category: [linux, system]
+category: [linux, sysops]
 tags: []
 ---
 {% include JB/setup %}

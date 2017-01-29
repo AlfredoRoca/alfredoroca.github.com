@@ -2,8 +2,8 @@
 layout: post
 title: "PostgreSQL recommended configuration"
 description: ""
-category: [postgres, configuration]
-tags: []
+category: [postgresql]
+tags: [configuration]
 ---
 {% include JB/setup %}
 

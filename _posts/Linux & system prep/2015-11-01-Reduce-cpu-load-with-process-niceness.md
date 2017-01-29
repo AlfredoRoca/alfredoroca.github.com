@@ -2,7 +2,7 @@
 layout: post
 title: "Reduce cpu load during deployment controlling the niceness of linux processes"
 description: ""
-category: [linux, deployment, system]
+category: [linux, deployment, sysops]
 tags: []
 ---
 {% include JB/setup %}

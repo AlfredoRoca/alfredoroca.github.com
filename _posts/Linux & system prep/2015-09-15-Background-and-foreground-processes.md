@@ -2,8 +2,8 @@
 layout: post
 title: "Background and foreground processes, managing and scheduling"
 description: ""
-category: [linux, proceses, monitoring, system, scheduling]
-tags: [jobs, at]
+category: [linux, monitoring, sysops, scheduling]
+tags: [cron]
 ---
 {% include JB/setup %}
 

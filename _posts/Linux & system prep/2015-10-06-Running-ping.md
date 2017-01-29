@@ -2,7 +2,7 @@
 layout: post
 title: "Keep pinging until host is known"
 description: ""
-category: [linux, ping, system, monitor]
+category: [linux, monitoring]
 tags: []
 ---
 {% include JB/setup %}

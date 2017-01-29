@@ -2,7 +2,7 @@
 layout: post
 title: "Thin server configuration file"
 description: ""
-category: [thin, server, configuration, system]
+category: [thin, server, configuration, sysops]
 tags: []
 ---
 {% include JB/setup %}

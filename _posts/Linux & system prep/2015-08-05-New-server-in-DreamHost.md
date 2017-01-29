@@ -2,7 +2,7 @@
 layout: post
 title: "Creating server in DreamHost.com"
 description: ""
-category: [system, server]
+category: [sysops, server]
 tags: [new_install, rvm, git, rails, ruby, capistrano, deployment, ssh, linux, firewall, iptables, selinux, nginx, locate, postgres, dns]
 ---
 {% include JB/setup %}

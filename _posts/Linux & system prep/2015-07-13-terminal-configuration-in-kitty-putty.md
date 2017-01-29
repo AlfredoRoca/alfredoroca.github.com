@@ -2,7 +2,7 @@
 layout: post
 title: "Terminal configuration in Kitty Putty"
 description: ""
-category: [terminal, configuration, kitty, putty] 
+category: [sysops]
 tags: [terminal_configuration, kitty, putty]
 ---
 {% include JB/setup %}

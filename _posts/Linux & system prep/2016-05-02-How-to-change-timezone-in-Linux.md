@@ -2,7 +2,7 @@
 layout: post
 title: "How to change timezone in Linux"
 description: ""
-category: [linux, timezone]
+category: [linux, time, sysops]
 tags: []
 ---
 {% include JB/setup %}

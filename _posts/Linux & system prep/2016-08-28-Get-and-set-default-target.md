@@ -2,7 +2,7 @@
 layout: post
 title: "Get and set default target"
 description: ""
-category: [linux, system]
+category: [linux, sysops]
 tags: [target]
 ---
 {% include JB/setup %}

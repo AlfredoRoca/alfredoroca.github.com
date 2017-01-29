@@ -2,8 +2,8 @@
 layout: post
 title: "WRK: HTTP BENCHMARKING TOOL"
 description: ""
-category: [linux, wrk, benchmarking]
-tags: [benchmark]
+category: [linux, benchmarking, sysops]
+tags: [wrk]
 ---
 {% include JB/setup %}
 

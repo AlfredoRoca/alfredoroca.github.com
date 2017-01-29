@@ -2,7 +2,7 @@
 layout: post
 title: "How to get last registers of each group in PostgreSQL"
 description: ""
-category: [postgres]
+category: [postgresql]
 tags: []
 ---
 {% include JB/setup %}

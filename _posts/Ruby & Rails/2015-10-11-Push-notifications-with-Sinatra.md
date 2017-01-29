@@ -2,8 +2,8 @@
 layout: post
 title: "Push notifications with Sinatra"
 description: ""
-category: [push, sinatra, notifications]
-tags: []
+category: [sinatra]
+tags: [notifications]
 ---
 {% include JB/setup %}
 

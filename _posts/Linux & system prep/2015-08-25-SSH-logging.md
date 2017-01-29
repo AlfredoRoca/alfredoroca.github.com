@@ -2,7 +2,7 @@
 layout: post
 title: "SSHD Logging"
 description: ""
-category: [server, system, ssh, logging, monitoring]
+category: [server, sysops, ssh, logging, monitoring]
 tags: []
 ---
 {% include JB/setup %}

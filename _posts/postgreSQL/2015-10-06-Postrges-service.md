@@ -2,8 +2,8 @@
 layout: post
 title: "Postgres service"
 description: ""
-category: [postgres, system]
-tags: []
+category: [postgresql]
+tags: [service]
 ---
 {% include JB/setup %}
 

@@ -2,8 +2,8 @@
 layout: post
 title: "Loops in Bash"
 description: ""
-category: [bash, loops, for, while, until]
-tags: []
+category: [bash]
+tags: [loops, for, while, until]
 ---
 {% include JB/setup %}
 

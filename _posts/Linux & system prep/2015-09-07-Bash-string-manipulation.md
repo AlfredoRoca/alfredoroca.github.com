@@ -2,8 +2,8 @@
 layout: post
 title: "String manipulation in Bash"
 description: ""
-category: [bash, strings]
-tags: []
+category: [bash]
+tags: [string]
 ---
 {% include JB/setup %}
 

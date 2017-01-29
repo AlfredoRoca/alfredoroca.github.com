@@ -2,7 +2,7 @@
 layout: post
 title: "Folders size"
 description: ""
-category: [linux, system]
+category: [linux, sysops]
 tags: []
 ---
 {% include JB/setup %}

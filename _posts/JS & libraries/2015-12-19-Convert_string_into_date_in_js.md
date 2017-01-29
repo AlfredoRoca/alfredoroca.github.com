@@ -3,7 +3,7 @@ layout: post
 title: "How to convert a string into date in JS"
 description: ""
 category: [js, date, string]
-tags: [convert, date, string]
+tags: [convert]
 ---
 {% include JB/setup %}
 

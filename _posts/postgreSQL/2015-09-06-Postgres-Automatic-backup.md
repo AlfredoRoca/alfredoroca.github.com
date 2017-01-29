@@ -2,7 +2,7 @@
 layout: post
 title: "Automatic postgresql database backup"
 description: ""
-category: [postgres]
+category: [postgresql]
 tags: [backup, pg_dump, psql]
 ---
 {% include JB/setup %}

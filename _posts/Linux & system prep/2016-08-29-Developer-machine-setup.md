@@ -2,7 +2,7 @@
 layout: post
 title: "Developer's machine setup"
 description: ""
-category: [linux, system]
+category: [linux, sysops]
 tags: []
 ---
 {% include JB/setup %}
