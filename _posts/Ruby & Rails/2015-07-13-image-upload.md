@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Image upload"
+title: "Image upload with ImageMagick"
 description: ""
-category: Image Upload
-tags: [image, upload]
+category: [upload]
+tags: []
 ---
 {% include JB/setup %}
 

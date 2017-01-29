@@ -2,7 +2,7 @@
 layout: post
 title: "How to call class methods from instance methods"
 description: ""
-category: [Rails, methods]
+category: [rails, ruby]
 tags: []
 ---
 {% include JB/setup %}

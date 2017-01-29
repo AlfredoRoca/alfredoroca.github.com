@@ -2,7 +2,7 @@
 layout: post
 title: "How to eliminate values from params hash that are not valid option keys"
 description: ""
-category: [Rails]
+category: [rails]
 tags: [params]
 ---
 {% include JB/setup %}

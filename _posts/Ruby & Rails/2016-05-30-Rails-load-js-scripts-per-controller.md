@@ -2,8 +2,8 @@
 layout: post
 title: "Rails load js scripts per controller"
 description: ""
-category: [Rails, scripts]
-tags: []
+category: [rails]
+tags: [assets]
 ---
 {% include JB/setup %}
 

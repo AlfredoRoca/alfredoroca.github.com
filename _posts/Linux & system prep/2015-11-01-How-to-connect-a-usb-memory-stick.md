@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "How to connect a usb memory stick"
+title: "How to connect a usb memory stick to linux"
 description: ""
-category: [linux, usb, devices]
-tags: []
+category: [linux, sysops]
+tags: [usb]
 ---
 {% include JB/setup %}
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Rails extend vs include"
 description: ""
-category: [Rails]
+category: [rails]
 tags: []
 ---
 {% include JB/setup %}

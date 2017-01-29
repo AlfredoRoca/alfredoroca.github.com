@@ -3,7 +3,7 @@ layout: post
 title: "HABTM association migration"
 description: ""
 category: [rails]
-tags: [rails, associations, migrations, habtm]
+tags: [associations, migrations, habtm]
 ---
 {% include JB/setup %}
 

@@ -2,8 +2,8 @@
 layout: post
 title: "Nested layouts in Rails"
 description: ""
-category: [rails, layout]
-tags: []
+category: [rails]
+tags: [layout]
 ---
 {% include JB/setup %}
 

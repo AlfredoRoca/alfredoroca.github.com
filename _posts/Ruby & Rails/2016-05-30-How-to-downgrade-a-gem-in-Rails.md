@@ -2,8 +2,8 @@
 layout: post
 title: "How to downgrade a gem in Rails"
 description: ""
-category: [Rails, gemfile]
-tags: [downgrade]
+category: [rails]
+tags: [downgrade, gemfile]
 ---
 {% include JB/setup %}
 

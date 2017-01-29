@@ -2,8 +2,8 @@
 layout: post
 title: "Change model validation error message"
 description: ""
-category: [rails, activerecord]
-tags: [activerecord]
+category: [rails, activerecord, I18n]
+tags: [translations]
 ---
 {% include JB/setup %}
 
