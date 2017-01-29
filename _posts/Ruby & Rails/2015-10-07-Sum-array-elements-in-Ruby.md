@@ -2,8 +2,8 @@
 layout: post
 title: "Sum array elements in Ruby"
 description: ""
-category: [ruby, array]
-tags: []
+category: [ruby]
+tags: [array]
 ---
 {% include JB/setup %}
 

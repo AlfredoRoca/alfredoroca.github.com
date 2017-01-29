@@ -2,8 +2,8 @@
 layout: post
 title: "Get random array element"
 description: ""
-category: [ruby, array]
-tags: [random]
+category: [ruby]
+tags: [random, array]
 ---
 {% include JB/setup %}
 

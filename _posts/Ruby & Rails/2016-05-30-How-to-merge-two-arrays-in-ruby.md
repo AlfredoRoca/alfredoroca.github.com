@@ -2,8 +2,8 @@
 layout: post
 title: "How to merge arrays in Ruby"
 description: ""
-category: [ruby, array]
-tags: [merge]
+category: [ruby]
+tags: [merge, array]
 ---
 {% include JB/setup %}
 

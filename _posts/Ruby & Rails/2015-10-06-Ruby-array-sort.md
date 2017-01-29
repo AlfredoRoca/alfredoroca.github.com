@@ -2,8 +2,8 @@
 layout: post
 title: "Best method to sort an array in ruby"
 description: ""
-category: [ruby, array, sort]
-tags: []
+category: [ruby]
+tags: [array, sort]
 ---
 {% include JB/setup %}
 

@@ -2,8 +2,8 @@
 layout: post
 title: "How to include subfolders in assets"
 description: ""
-category: [assets]
-tags: []
+category: [rails]
+tags: [assets]
 ---
 {% include JB/setup %}
 

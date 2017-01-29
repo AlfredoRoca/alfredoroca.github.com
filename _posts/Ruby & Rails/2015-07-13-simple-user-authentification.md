@@ -2,11 +2,91 @@
 layout: post
 title: "Simple user authentification"
 description: ""
-category: [authentification, ruby, rails] 
+category: [rails] 
 tags: [authentification]
 ---
 {% include JB/setup %}
 
+
+`gemfile`
+
+    gem 'bcrypt', '~> 3.1.7'
+
+
+    $ rails g model user name password_digest:text
+
+`user.rb`
+
+    has_secure_password
+    validates :name, :email, presence: true, length: { in: 2..255 }
+
+
+    $ rails g controller sessions new
+
+`sessions controller.rb`
+
+    class SessionsController < ApplicationController
+    def new
+    end
+    def create
+      user = User.find_by(name: params[:name])
+      if user && user.authenticate(params[:password])
+        session[:user_id] = user.id
+        redirect_to root_url
+      else
+        render :new
+      end
+    end
+    def destroy
+      session[:user_id] = nil
+      redirect_to root_url
+    end
+    end
+
+`sessions/new.html.erb`
+
+    <h1>Login</h1>
+    <%= form_tag sessions_path do %>
+    <%= label_tag :name %>
+    <%= text_field_tag :name %>
+    <%= label_tag :password %>
+    <%= password_field_tag :password %>
+    <%= submit_tag "Log in" %>
+    <% end %>
+
+    $ rails g controller welcome index
+
+`welcome_controller.rb`
+
+    def index
+    end
+
+`welcome/index.html.erb`
+
+    <h1>Welcome</h1>
+
+`application_controller.rb`
+
+    def current_user
+      if session[:user_id]
+        current_user = User.find(session[:user_id])
+      end
+    end
+    helper_method :current_user
+
+`in the action controllers`
+
+    before_action :authenticate_user
+
+    def authenticate_user
+      redirect_to login_path unless current_user 
+    end
+
+
+
+
+
+-----------------------
 <h1 class="sectionedit1" id="simple_user_authentication">Simple user authentication</h1>
 <div class="level1">
 <pre class="code"># gemfile

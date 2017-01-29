@@ -2,7 +2,7 @@
 layout: post
 title: "67WEBS Procedures handbook"
 description: ""
-category: [67webs, procedures]
+category: [best-practices]
 tags: []
 ---
 {% include JB/setup %}

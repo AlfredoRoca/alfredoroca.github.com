@@ -2,8 +2,8 @@
 layout: post
 title: "Specify order in has_many association"
 description: ""
-category: [rails, associations]
-tags: []
+category: [rails, activerecord]
+tags: [associations]
 ---
 {% include JB/setup %}
 

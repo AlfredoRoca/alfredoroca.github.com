@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Capistrano formatted output prettfied with Airbrush"
+title: "Capistrano formatted output prettyfied with Airbrush"
 description: ""
-category: [capistrano, airbrush]
+category: [capistrano]
 tags: []
 ---
 {% include JB/setup %}

@@ -2,7 +2,7 @@
 layout: post
 title: "How to filter registers whose has many association is empty"
 description: ""
-category: [rails, associations]
+category: [rails, activerecord]
 tags: [associations]
 ---
 {% include JB/setup %}
