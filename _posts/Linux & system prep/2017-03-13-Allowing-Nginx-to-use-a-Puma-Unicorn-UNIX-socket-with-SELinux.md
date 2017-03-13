@@ -10,7 +10,7 @@ tags: []
 <http://nts.strzibny.name/allowing-nginx-to-use-a-pumaunicorn-unix-socket-with-selinux/>
 
 
-En ` /var/www/etecnic/shared/log/nginx.error.log`
+En `/var/www/etecnic/shared/log/nginx.error.log`
 
     connect() to unix:/var/www/etecnic/shared/tmp/sockets/puma.sock failed (13: Permission denied) while connecting to upstream
 

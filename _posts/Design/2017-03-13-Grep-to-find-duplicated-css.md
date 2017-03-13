@@ -9,11 +9,9 @@ tags: []
 
 This video at min 22
 
-    https://www.youtube.com/watch?v=0NDyopLKE1w
+<https://www.youtube.com/watch?v=0NDyopLKE1w>
 
-
-
-    https://www.eriwen.com/tools/grep-is-a-beautiful-tool/
+<https://www.eriwen.com/tools/grep-is-a-beautiful-tool/>
 
     grep -r h[1-6] ./*.css | wc -l
 
