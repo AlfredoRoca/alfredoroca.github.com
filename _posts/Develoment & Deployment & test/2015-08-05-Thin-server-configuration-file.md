@@ -33,4 +33,5 @@ tags: []
 
 
 Reco: use sochets instead of ports for better perfomance
-  socket: tmp/sockets/thin.sock
+
+    socket: tmp/sockets/thin.sock
