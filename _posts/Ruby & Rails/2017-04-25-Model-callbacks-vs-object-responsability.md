@@ -2,8 +2,8 @@
 layout: post
 title: "Model callbacks vs object responsability"
 description: "Extract callback logic to an object"
-category: [rails, callback]
-tags: [callback]
+category: [rails]
+tags: [callback, srp]
 ---
 {% include JB/setup %}
 
