@@ -7,15 +7,15 @@ tags: []
 ---
 {% include JB/setup %}
 
-Antecedentes:
+## Antecedentes:
 
-La importación de CSV generado por Google Contacts no sirve para Mailchimp. 
+El CSV generado por Google Contacts no sirve para Mailchimp (debería ser separado por tabulaciones).
 
-La importación mediante servicio integrado Google Contacts no discrimina grupos o círculos de Google.
+La importación mediante servicio integrado Google Contacts no discrimina grupos o círculos de Google. Por eso no es práctico cuando se quieren sólo un subconjunto de los contactos.
 
 Para solucionarlo, he creado una cuenta "B" exclusiva para hacer de puente entre los contactos de la cuenta principal "A" y Mailchimp.
 
-Procedimiento:
+## Procedimiento:
 
 - Partimos del grupo "Suscriptores" en la cuenta de Gmail "A".
 - Exportar el grupo "Suscriptores" de "A" a CSV Google.
@@ -26,7 +26,7 @@ En Mailchimp,
 - crear nueva lista la primera vez.
 - Importar contactos como "Suscribed" usando servicio integrado "Google Contacts" y conectar a la cuenta "B"
 
-Comportamiento:
+## Comportamiento:
 
 - Los nuevos contactos se añaden a la lista.
 - Los contactos existentes se mantienen en su Marketing status (suscribed, unsuscribed, cleared)
