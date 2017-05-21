@@ -13,3 +13,7 @@ tags: []
       fail2ban-client status $JAIL
     done
 
+Equivalent for jail 'sshd' 
+
+    fail2ban-client status sshd
+
