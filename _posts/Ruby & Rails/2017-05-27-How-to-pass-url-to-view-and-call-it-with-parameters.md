@@ -3,7 +3,7 @@ layout: post
 title: "How to pass url to view and call it with parameters"
 description: ""
 category: [rails]
-tags: []
+tags: [arguments, helpers]
 ---
 {% include JB/setup %}
 
