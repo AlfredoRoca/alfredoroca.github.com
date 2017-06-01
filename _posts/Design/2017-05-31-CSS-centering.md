@@ -7,6 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
+Source: <https://css-tricks.com/centering-css-complete-guide/>
 
     .parent {
       position: relative;
