@@ -73,3 +73,12 @@ O
 
     $ psql –set ON_ERROR_STOP=on dbname < filename.sql
 
+
+# Ejemplo con BDD shk producción restore en development
+
+NOTA: hay que editar el sql y cambiar owner según corresponda
+
+    thin stop -C thin.yml 
+    dropdb shk_development
+    createdb -T template0 shk_development
+    psql -U alfredo --set ON_ERROR_STOP=on shk_development  < /media/sf_VirtualBoxSharedFolder/shk_production.sql 
