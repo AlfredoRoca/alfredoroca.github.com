@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-When someone visit http://localhost/route/abc the server response exactly the same as http://localhost:9000/abc
+When someone visit `http://localhost/route/abc` the server response exactly the same as `http://localhost:9000/abc`
 
 Now I configure my Nginx like this:
 
