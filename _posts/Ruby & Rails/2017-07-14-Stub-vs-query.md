@@ -23,10 +23,6 @@ Old sintaxis
       end
     end
 
-    context "given an article with an average score of 4" do
-      
-    end
-
 
 **Stubing**
 
