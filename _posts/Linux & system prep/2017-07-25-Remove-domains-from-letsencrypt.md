@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-Source: https://community.letsencrypt.org/t/remove-domain-not-required-from-cert/14010/6
+Source: <https://community.letsencrypt.org/t/remove-domain-not-required-from-cert/14010/6>
 
 Before you start, create a backup of `/etc/letsencrypt` just in case, i.e. 
 

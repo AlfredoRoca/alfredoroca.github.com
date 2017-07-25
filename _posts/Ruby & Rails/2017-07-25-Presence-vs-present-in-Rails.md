@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-Source: https://www.defmethod.com/blog/2016/12/7/nil-and-presence-in-ruby-on-rails
+Source: <https://www.defmethod.com/blog/2016/12/7/nil-and-presence-in-ruby-on-rails>
 
     some_string.present? some_string : some_default_string
 

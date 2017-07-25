@@ -7,7 +7,7 @@ tags: [scope]
 ---
 {% include JB/setup %}
 
-Source: http://www.justinweiss.com/articles/search-and-filter-rails-models-without-bloating-your-controller/
+Source: <http://www.justinweiss.com/articles/search-and-filter-rails-models-without-bloating-your-controller/>
 
     # app/models/concerns/filterable.rb
     module Filterable
