@@ -12,6 +12,7 @@ tags: []
     - Join several mp3 with FreeMp3CutterJoiner
     - Picasa Video Generator can adjust fotos to video
 
+
 2. Photos
 
     - Create a video in Picassa with the selected photos album
@@ -20,11 +21,13 @@ tags: []
     - Load music file and set up coordination with photos
     - Create video
 
+
 3. Create slides with text (picasa can add text diapos)
 
     - Prepare with PowerPoint
     - Export slides to png format
     - Add to Picasa albúm in the proper place
+
 
 4. Video
 
