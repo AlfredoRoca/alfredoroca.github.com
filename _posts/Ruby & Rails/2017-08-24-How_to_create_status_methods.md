@@ -36,9 +36,18 @@ tags: []
     class Purchase < ActiveRecord::Base
       has_statuses %w(in_progress submitted approved partially_shipped fully_shipped)
 
-      scope :all_not_shipped, where(:status => ["partially_shipped", "fully_shipped"])
+      scope :all_not_shipped, where(status: ["partially_shipped", "fully_shipped"])
 
       def not_shipped?
         !(partially_shipped? or fully_shipped?)
       end
+    end
+
+
+Table `purchases` has string field `status`
+
+Migration
+
+    def change
+      add_column :purchases, :status, :string, default: ""
     end
