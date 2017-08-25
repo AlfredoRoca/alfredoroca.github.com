@@ -8,7 +8,7 @@ tags: []
 {% include JB/setup %}
 
 
-#Extending ActiveRecord::Base#
+# Extending ActiveRecord::Base
 
     # lib/extensions/statuses.rb
     class ActiveRecord::Base
@@ -31,7 +31,7 @@ tags: []
       end
     end
 
-#How to use it:#
+# How to use it:
 
     class Purchase < ActiveRecord::Base
       has_statuses %w(in_progress submitted approved partially_shipped fully_shipped)
