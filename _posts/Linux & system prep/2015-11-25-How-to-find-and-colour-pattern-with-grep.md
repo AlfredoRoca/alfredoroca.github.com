@@ -2,7 +2,7 @@
 layout: post
 title: "How to find and colour a pattern in a text file with grep"
 description: ""
-category: [linux, grep, file]
+category: [linux]
 tags: [file_manipulation, grep]
 ---
 {% include JB/setup %}

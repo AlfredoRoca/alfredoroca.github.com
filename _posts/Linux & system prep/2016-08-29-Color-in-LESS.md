@@ -2,8 +2,8 @@
 layout: post
 title: "How to put colors in LESS"
 description: ""
-category: [bash, less, sysops]
-tags: []
+category: [bash, sysops]
+tags: [less]
 ---
 {% include JB/setup %}
 

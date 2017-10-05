@@ -2,8 +2,8 @@
 layout: post
 title: "Deploying with Capistrano: warning: setlocale: LC_CTYPE: Can not change locale"
 description: ""
-category: [linux, LC_CTYPE]
-tags: [LC_CTYPE, capistrano, deployment]
+category: [linux, capistrano, deployment]
+tags: [LC_CTYPE]
 ---
 {% include JB/setup %}
 
