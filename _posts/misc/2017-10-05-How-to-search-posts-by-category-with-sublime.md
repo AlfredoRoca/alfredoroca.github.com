@@ -9,5 +9,5 @@ tags: [regex]
 
 To find posts with catgegory `date`
 
-    ^ *(category)+(.)+(date)
+    (category)+(.)+(date)
 

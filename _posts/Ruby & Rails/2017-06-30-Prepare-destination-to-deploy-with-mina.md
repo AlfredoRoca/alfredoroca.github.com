@@ -2,7 +2,7 @@
 layout: post
 title: "Prepare destination to deploy with mina"
 description: ""
-category: [mina, deploy]
+category: [mina, deployment]
 tags: []
 ---
 {% include JB/setup %}
