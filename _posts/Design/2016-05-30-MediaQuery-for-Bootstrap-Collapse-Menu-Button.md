@@ -2,7 +2,7 @@
 layout: post
 title: "MediaQuery for Bootstrap Collapse Menu Button"
 description: ""
-category: [bootstrap, mediaqueries]
+category: [bootstrap]
 tags: [mediaqueries, collapse]
 ---
 {% include JB/setup %}
