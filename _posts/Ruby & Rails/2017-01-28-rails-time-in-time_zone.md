@@ -2,8 +2,8 @@
 layout: post
 title: "Rails time in time_zone"
 description: ""
-category: [rails,time,date]
-tags: []
+category: [rails]
+tags: [time,date]
 ---
 {% include JB/setup %}
 

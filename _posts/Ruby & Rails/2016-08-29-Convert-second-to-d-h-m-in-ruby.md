@@ -2,8 +2,8 @@
 layout: post
 title: "Convert seconds to d h m"
 description: ""
-category: [ruby, date]
-tags: []
+category: [ruby]
+tags: [date]
 ---
 {% include JB/setup %}
 
