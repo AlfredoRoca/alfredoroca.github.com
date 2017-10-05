@@ -2,8 +2,8 @@
 layout: post
 title: "Cluster-icons-for-maps"
 description: ""
-category: [maps, icon]
-tags: []
+category: [maps]
+tags: [icon]
 ---
 {% include JB/setup %}
 

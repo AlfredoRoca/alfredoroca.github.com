@@ -2,8 +2,8 @@
 layout: post
 title: "List gems in RVM gemsets"
 description: ""
-category: [rvm, gemsets]
-tags: []
+category: [rvm]
+tags: [gemsets]
 ---
 {% include JB/setup %}
 

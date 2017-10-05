@@ -2,8 +2,8 @@
 layout: post
 title: "How to load Glyphicons with Bootstrap when they are not being shown"
 description: ""
-category: [bootstrap, glyphicons]
-tags: [bootstrap, glyphicons]
+category: [bootstrap]
+tags: [glyphicons]
 ---
 {% include JB/setup %}
 

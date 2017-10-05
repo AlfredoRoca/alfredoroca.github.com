@@ -2,8 +2,8 @@
 layout: post
 title: "Devise and user default scope"
 description: ""
-category: [rails, devise]
-tags: [default_scope]
+category: [rails]
+tags: [default_scope, devise]
 ---
 {% include JB/setup %}
 

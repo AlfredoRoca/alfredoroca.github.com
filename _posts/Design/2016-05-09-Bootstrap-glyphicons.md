@@ -2,8 +2,8 @@
 layout: post
 title: "Bootstrap Glyphicons"
 description: ""
-category: [bootstrap, icon]
-tags: []
+category: [bootstrap]
+tags: [icon]
 ---
 {% include JB/setup %}
 

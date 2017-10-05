@@ -2,8 +2,8 @@
 layout: post
 title: "Custom devise mails"
 description: ""
-category: [rails, devise]
-tags: [mail]
+category: [rails]
+tags: [mail, devise]
 ---
 {% include JB/setup %}
 

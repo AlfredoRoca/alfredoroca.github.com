@@ -2,8 +2,8 @@
 layout: post
 title: "Rails text helpers"
 description: ""
-category: [rails, helpers]
-tags: []
+category: [rails]
+tags: [helpers]
 ---
 {% include JB/setup %}
 

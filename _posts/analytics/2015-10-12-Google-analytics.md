@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Gooble analytics in Rails"
+title: "Google analytics in Rails"
 description: ""
 category: [google-analytics]
 tags: []

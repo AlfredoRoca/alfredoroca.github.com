@@ -2,7 +2,7 @@
 layout: post
 title: "How to prevent zooming to much in Google Maps API"
 description: ""
-category: [Google, maps, js]
+category: [google, maps, js]
 tags: []
 ---
 {% include JB/setup %}
