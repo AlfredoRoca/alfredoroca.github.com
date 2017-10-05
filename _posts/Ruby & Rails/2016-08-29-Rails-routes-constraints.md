@@ -2,8 +2,8 @@
 layout: post
 title: "Rails routes constraints"
 description: ""
-category: [rails, routes]
-tags: [constraints]
+category: [rails]
+tags: [constraints, routes]
 ---
 {% include JB/setup %}
 

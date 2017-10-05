@@ -2,8 +2,8 @@
 layout: post
 title: "CSS Selectors"
 description: ""
-category: [css, selectors]
-tags: []
+category: [css]
+tags: [selectors]
 ---
 {% include JB/setup %}
 

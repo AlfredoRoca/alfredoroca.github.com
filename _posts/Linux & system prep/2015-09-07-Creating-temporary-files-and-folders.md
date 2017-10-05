@@ -2,7 +2,7 @@
 layout: post
 title: "Creating temporary files and folders"
 description: ""
-category: [bash, temporary]
+category: [bash]
 tags: []
 ---
 {% include JB/setup %}

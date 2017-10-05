@@ -2,8 +2,8 @@
 layout: post
 title: "How to render html from controller action responding to pdf format"
 description: ""
-category: [rails, pdf]
-tags: []
+category: [rails]
+tags: [pdf]
 ---
 {% include JB/setup %}
 
