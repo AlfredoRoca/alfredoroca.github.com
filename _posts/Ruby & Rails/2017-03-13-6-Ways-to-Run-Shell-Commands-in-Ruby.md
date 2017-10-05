@@ -2,8 +2,8 @@
 layout: post
 title: "6 Ways to Run Shell Commands in Ruby"
 description: ""
-category: [ruby, shell]
-tags: []
+category: [ruby]
+tags: [shell]
 ---
 {% include JB/setup %}
 

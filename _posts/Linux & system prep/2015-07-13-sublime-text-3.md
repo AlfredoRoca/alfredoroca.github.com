@@ -2,8 +2,8 @@
 layout: post
 title: "Sublime Text 3"
 description: ""
-category: [sublime, editors, configuration]
-tags: [sublime, editors, configuration]
+category: [sublime]
+tags: []
 ---
 {% include JB/setup %}
 
