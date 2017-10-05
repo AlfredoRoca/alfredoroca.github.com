@@ -2,8 +2,8 @@
 layout: post
 title: "How to include helpers in views directly"
 description: ""
-category: [rails, views, helpers]
-tags: []
+category: [rails]
+tags: [views, helpers]
 ---
 {% include JB/setup %}
 

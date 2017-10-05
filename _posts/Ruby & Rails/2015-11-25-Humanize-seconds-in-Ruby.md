@@ -2,8 +2,8 @@
 layout: post
 title: "Humanize seconds in Ruby"
 description: ""
-category: [ruby, time]
-tags: [iso8601]
+category: [ruby]
+tags: [iso8601, time]
 ---
 {% include JB/setup %}
 

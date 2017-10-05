@@ -2,7 +2,7 @@
 layout: post
 title: "Image upload with ImageMagick"
 description: ""
-category: [upload]
+category: [imagemagick]
 tags: []
 ---
 {% include JB/setup %}

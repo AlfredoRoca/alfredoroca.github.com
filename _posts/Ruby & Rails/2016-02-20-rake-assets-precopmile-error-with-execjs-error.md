@@ -2,8 +2,8 @@
 layout: post
 title: "Rake assets:precompile error with EXECJS runtime error"
 description: ""
-category: [rails, rake, nodejs]
-tags: []
+category: [rails, nodejs]
+tags: [rake]
 ---
 {% include JB/setup %}
 

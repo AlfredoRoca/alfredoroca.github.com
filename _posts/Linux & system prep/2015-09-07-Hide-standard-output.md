@@ -2,7 +2,7 @@
 layout: post
 title: "Hide standard output"
 description: ""
-category: [bash, redirect, dev/null]
+category: [bash]
 tags: []
 ---
 {% include JB/setup %}

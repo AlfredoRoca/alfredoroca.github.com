@@ -2,8 +2,8 @@
 layout: post
 title: "Automated Tasks with Rake"
 description: ""
-category: [rake]
-tags: []
+category: [rails]
+tags: [rake]
 ---
 {% include JB/setup %}
 

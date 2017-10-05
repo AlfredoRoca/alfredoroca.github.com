@@ -2,8 +2,8 @@
 layout: post
 title: "How to change timezone in Linux"
 description: ""
-category: [linux, time, sysops]
-tags: []
+category: [linux, sysops]
+tags: [time]
 ---
 {% include JB/setup %}
 

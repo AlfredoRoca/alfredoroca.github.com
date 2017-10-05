@@ -2,7 +2,7 @@
 layout: post
 title: "Redirecting errors in  Bash"
 description: ""
-category: [bash, debug, redirect]
+category: [bash, debug]
 tags: []
 ---
 {% include JB/setup %}

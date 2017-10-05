@@ -2,7 +2,7 @@
 layout: post
 title: "CSS tables"
 description: ""
-category: [css, tables, desing]
+category: [css, tables, design]
 tags: []
 ---
 {% include JB/setup %}
