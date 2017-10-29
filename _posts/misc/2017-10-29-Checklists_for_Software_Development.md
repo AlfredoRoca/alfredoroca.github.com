@@ -2,7 +2,7 @@
 layout: post
 title: "Checklists for Software Development"
 description: ""
-category: [sysops]
+category: [sysops, best-practices]
 tags: []
 ---
 {% include JB/setup %}

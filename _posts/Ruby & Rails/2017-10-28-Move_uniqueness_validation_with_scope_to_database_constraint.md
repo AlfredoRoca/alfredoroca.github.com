@@ -23,7 +23,7 @@ The result in the databse schema
     add_index "todocards", ["title", "user_id"], name: "index_todocards_on_title_and_user_id", unique: true
 
 
-The model, doen't need the validation on uniqueness, only needs the presence validation
+The model, doesn't need the validation on uniqueness, only needs the presence validation
 
     class Todocard < ActiveRecord::Base
       # now done in database level -> validates :title, presence: true, uniqueness: { scope: :user }

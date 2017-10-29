@@ -7,7 +7,7 @@ tags: [watermark, image]
 ---
 {% include JB/setup %}
 
-process :watermark   
+    process :watermark
 
     def watermark
     second_image = MiniMagick::Image.open("https://s3.amazonaws.com/....logo.png")

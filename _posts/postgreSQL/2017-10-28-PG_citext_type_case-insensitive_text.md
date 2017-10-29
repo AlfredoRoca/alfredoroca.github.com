@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-https://www.postgresql.org/docs/9.4/static/citext.html
+<https://www.postgresql.org/docs/9.4/static/citext.html>
 
 Rails migration example:
 

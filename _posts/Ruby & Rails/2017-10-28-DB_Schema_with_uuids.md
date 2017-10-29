@@ -7,6 +7,8 @@ tags: []
 ---
 {% include JB/setup %}
 
+Schema.db
+
     create_table "messages", id: :uuid, default: "uuid_generate_v4()", force: :cascade do |t|
         t.boolean  "read",       default: false
         t.uuid     "chat_id"

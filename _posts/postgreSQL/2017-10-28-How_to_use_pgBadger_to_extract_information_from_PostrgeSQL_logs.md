@@ -9,7 +9,7 @@ tags: []
 
 <https://github.com/dalibo/pgbadger>
 
-0. Install library 'pg_stat_statements'
+0. Install library `pg_stat_statements`
 
     # postgresql.conf
     shared_preload_libraries = 'pg_stat_statements'
@@ -23,7 +23,7 @@ tags: []
     psql -U <user> -d <database>
     # create extension pg_stat_statements;
 
-1. Install pgbadger as user alfredo
+1. Install pgbadger as user with admin rights, in this example is `alfredo`
 
 2. PostgreSQL configuration:
 
@@ -57,7 +57,7 @@ tags: []
 
 5. To run  the analysis
 
-5.1. copy the log file to temp folder owned by working user (in this example is alfredo) and give him the property of the file
+5.1. copy the log file to temp folder owned by working user (in this example is `alfredo`) and give him the property of the file
 
     sudo cp /var/lib/pgsql/data/pg_log/postgresql-2017-08.log /tmp/
     sudo chown alfredo:alfredo /tmp/postgresql-2017-08.log
@@ -67,7 +67,7 @@ tags: []
     cd /tmp
     pgbadger postgresql-2017-08.log
 
-6 copy the file to your local machine (from local)
+6. copy the file to your local machine (from local)
 
     scp alfredo@server:/tmp/out.html <destination-folder>
 

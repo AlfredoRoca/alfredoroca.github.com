@@ -7,4 +7,8 @@ tags: []
 ---
 {% include JB/setup %}
 
-    <a href="javascript:alert(1)">link</a>
+Introduce JS code in text form fields
+
+    <a href="javascript:alert('Boom!')">link</a>
+
+If alert is fired, sanitization is not working and you are in danger!

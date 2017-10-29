@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-https://www.postgresql.org/docs/9.5/static/datatype-geometric.html
+<https://www.postgresql.org/docs/9.5/static/datatype-geometric.html>
 
 DB Schema
 

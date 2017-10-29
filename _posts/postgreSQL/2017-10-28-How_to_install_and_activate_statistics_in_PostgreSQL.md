@@ -9,7 +9,8 @@ tags: []
 
 Hay que instalar la extensión `pg_stat_statemens`
 
-    https://www.postgresql.org/docs/9.4/static/pgstatstatements.html
+<https://www.postgresql.org/docs/9.4/static/pgstatstatements.html>
+
     # postgresql.conf
     shared_preload_libraries = 'pg_stat_statements'
 

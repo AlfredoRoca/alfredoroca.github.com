@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-Always execute 'ensure' block
+Always execute `ensure` block
 
 Without error executes 'else' block
 
@@ -29,7 +29,7 @@ Output:
     => nil
 
 
-With error executes 'rescue' block, but not else one.
+With error executes `rescue` block, but not `else` one.
 
     begin
       puts "1"

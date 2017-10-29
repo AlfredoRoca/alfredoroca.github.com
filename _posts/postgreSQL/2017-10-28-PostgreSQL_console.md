@@ -7,7 +7,7 @@ tags: []
 ---
 {% include JB/setup %}
 
-**Dónde está el fichero de configuración
+**Dónde está el fichero de configuración**
 
     # show config_file;
                  config_file
@@ -17,7 +17,7 @@ tags: []
 
 **Dónde están los logs**
 
-http://blog.endpoint.com/2014/11/dear-postgresql-where-are-my-logs.html
+<http://blog.endpoint.com/2014/11/dear-postgresql-where-are-my-logs.html>
 
     psql -U <user> -d <database>
     #show log_destination;
@@ -48,9 +48,9 @@ log directory is relative to data directory
      postgresql-%G-%m.log
 
 
-** Añadir la extensión a la base de datos
+**Añadir la extensión a la base de datos**
 
-http://www.craigkerstiens.com/2013/01/10/more-on-postgres-performance/
+<http://www.craigkerstiens.com/2013/01/10/more-on-postgres-performance/>
 
     psql -U <user> -d <database>
 
@@ -82,5 +82,3 @@ Consulta estadísticas
                    Buckets: 1024  Batches: 1  Memory Usage: 1kB
                    ->  Seq Scan on spaces  (cost=0.00..1.04 rows=4 width=4) (actual time=0.017..0.018 rows=4 loops=1)
      Total runtime: 0.437 ms
-
-
