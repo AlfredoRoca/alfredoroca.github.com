@@ -7,7 +7,7 @@ tags: [regex]
 ---
 {% include JB/setup %}
 
-To find posts with catgegory `date`
+To find posts with `category` `date`
 
     (category)+(.)+(date)
 
